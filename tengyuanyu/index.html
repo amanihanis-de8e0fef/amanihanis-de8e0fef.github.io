@@ -1,0 +1,2193 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>藤原Yuki黑料 - 网络争议与资料聚合</title>
+  <meta name="description" content="藤原Yuki黑料汇总：整理2026年10月至11月网络流传的争议截图、直播片段与粉丝讨论，覆盖事件时间线、各方回应和内容可信度分层，适合关注网络人物争议的读者查阅。">
+  <meta name="keywords" content="藤原Yuki黑料">
+  <style>
+    :root {
+      --primary: #1e2a3a;
+      --primary-light: #2f3e52;
+      --primary-dark: #0f1724;
+      --accent: #c44536;
+      --accent-light: #e05a4a;
+      --bg: #f6f7f9;
+      --panel-bg: #ffffff;
+      --text-primary: #1a1e24;
+      --text-secondary: #4a5568;
+      --text-tertiary: #7b8794;
+      --border: #e2e6ec;
+      --divider: #eef1f5;
+      --radius-card: 12px;
+      --radius-btn: 8px;
+      --radius-tag: 20px;
+      --radius-banner: 16px;
+      --shadow-default: 0 2px 8px rgba(0, 0, 0, 0.04);
+      --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.08);
+      --font: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      --header-height: 64px;
+      --announce-height: 40px;
+      --sticky-offset: calc(var(--header-height) + var(--announce-height));
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: var(--sticky-offset);
+    }
+
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text-primary);
+      line-height: 1.7;
+      font-size: 15px;
+      padding-top: var(--sticky-offset);
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* 吸顶公告 + 页头 */
+    .sticky-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    }
+
+    .announce-bar {
+      background: var(--primary-dark);
+      color: #e0e4ea;
+      height: var(--announce-height);
+      display: flex;
+      align-items: center;
+      font-size: 13px;
+      letter-spacing: 0.02em;
+      padding: 0 24px;
+      overflow: hidden;
+    }
+
+    .announce-inner {
+      max-width: 1360px;
+      margin: 0 auto;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: nowrap;
+      overflow: hidden;
+    }
+
+    .announce-brand {
+      font-weight: 700;
+      color: #fff;
+      white-space: nowrap;
+      font-size: 13px;
+      flex-shrink: 0;
+    }
+
+    .announce-items {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .announce-items span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .announce-date {
+      color: #9aa8b8;
+    }
+
+    .announce-tag {
+      background: var(--accent);
+      color: #fff;
+      font-size: 11px;
+      padding: 1px 8px;
+      border-radius: 10px;
+      font-weight: 600;
+    }
+
+    .site-header {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      height: var(--header-height);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      padding: 0 24px;
+    }
+
+    .header-inner {
+      max-width: 1360px;
+      margin: 0 auto;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+
+    .logo svg {
+      width: 32px;
+      height: 32px;
+    }
+
+    .logo-text {
+      font-weight: 700;
+      font-size: 18px;
+      color: var(--primary);
+      letter-spacing: -0.01em;
+    }
+
+    .main-nav {
+      display: flex;
+      gap: 4px;
+      flex: 1;
+    }
+
+    .main-nav a {
+      padding: 6px 14px;
+      border-radius: var(--radius-btn);
+      font-size: 14px;
+      color: var(--text-secondary);
+      font-weight: 500;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .main-nav a:hover {
+      background: var(--divider);
+      color: var(--primary);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .search-box {
+      display: flex;
+      align-items: center;
+      background: var(--divider);
+      border-radius: var(--radius-btn);
+      padding: 0 12px;
+      height: 36px;
+      border: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    .search-box:focus-within {
+      border-color: var(--primary-light);
+      background: #fff;
+    }
+
+    .search-box input {
+      border: none;
+      background: transparent;
+      outline: none;
+      font-size: 13px;
+      width: 150px;
+      color: var(--text-primary);
+      font-family: var(--font);
+    }
+
+    .search-box input::placeholder {
+      color: var(--text-tertiary);
+    }
+
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 6px;
+      border-radius: 6px;
+      color: var(--primary);
+    }
+
+    .hamburger:focus-visible {
+      outline: 2px solid var(--primary);
+    }
+
+    /* 容器 */
+    .container {
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* 首屏 */
+    .hero {
+      background: linear-gradient(135deg, #1a1f2b 0%, #2a3444 55%, #1e2a3a 100%);
+      color: #fff;
+      border-radius: 0 0 var(--radius-banner) var(--radius-banner);
+      padding: 56px 0 48px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      right: -120px;
+      top: -120px;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(196, 69, 54, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      left: 30%;
+      bottom: -80px;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.04) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 48px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-content {
+      max-width: 620px;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      padding: 4px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      letter-spacing: 0.06em;
+      margin-bottom: 20px;
+      color: #c9d2dd;
+    }
+
+    .hero h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    .hero-desc {
+      font-size: 15px;
+      color: #b0bccb;
+      line-height: 1.75;
+      margin-bottom: 28px;
+      max-width: 560px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--accent);
+      color: #fff;
+      padding: 10px 24px;
+      border-radius: var(--radius-btn);
+      font-weight: 600;
+      font-size: 14px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-light);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: transparent;
+      color: #e0e4ea;
+      padding: 10px 24px;
+      border-radius: var(--radius-btn);
+      font-weight: 600;
+      font-size: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      cursor: pointer;
+      transition: background 0.2s, border-color 0.2s;
+    }
+
+    .btn-outline:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.5);
+      color: #fff;
+    }
+
+    .hero-visual {
+      flex-shrink: 0;
+      width: 260px;
+      height: 260px;
+      position: relative;
+    }
+
+    .hero-visual svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .hero-float {
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .hero-float { animation: none; }
+      html { scroll-behavior: auto; }
+    }
+
+    /* 主内容区双栏 */
+    .main-layout {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 32px;
+      padding: 40px 0;
+      align-items: start;
+    }
+
+    .main-content {
+      min-width: 0;
+    }
+
+    .sidebar {
+      position: sticky;
+      top: calc(var(--sticky-offset) + 16px);
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    /* 板块通用 */
+    .section {
+      margin-bottom: 48px;
+    }
+
+    .section:last-child {
+      margin-bottom: 0;
+    }
+
+    .section-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 8px;
+      letter-spacing: -0.01em;
+    }
+
+    .section-subtitle {
+      font-size: 14px;
+      color: var(--text-tertiary);
+      margin-bottom: 20px;
+    }
+
+    .section-desc {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.8;
+      margin-bottom: 24px;
+    }
+
+    /* 卡片网格 */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .card {
+      background: var(--panel-bg);
+      border-radius: var(--radius-card);
+      box-shadow: var(--shadow-default);
+      overflow: hidden;
+      transition: box-shadow 0.25s, transform 0.25s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card:hover {
+      box-shadow: var(--shadow-hover);
+      transform: translateY(-3px);
+    }
+
+    .card-body {
+      padding: 16px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-title {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--text-primary);
+      line-height: 1.4;
+    }
+
+    .card-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: var(--divider);
+      color: var(--text-secondary);
+      font-size: 11px;
+      padding: 2px 10px;
+      border-radius: var(--radius-tag);
+      white-space: nowrap;
+    }
+
+    .tag-accent {
+      background: rgba(196, 69, 54, 0.08);
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .card-excerpt {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      flex: 1;
+      margin-bottom: 10px;
+    }
+
+    .card-footer {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 12px;
+      color: var(--text-tertiary);
+      border-top: 1px solid var(--divider);
+      padding-top: 10px;
+      margin-top: auto;
+    }
+
+    .card-footer .hot {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    /* 紧凑列表 */
+    .list-compact {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .list-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--divider);
+    }
+
+    .list-item:last-child {
+      border-bottom: none;
+    }
+
+    .list-num {
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      background: var(--divider);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-tertiary);
+    }
+
+    .list-num.top {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .list-content {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .list-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 2px;
+    }
+
+    .list-desc {
+      font-size: 12px;
+      color: var(--text-tertiary);
+      line-height: 1.5;
+    }
+
+    .list-meta {
+      flex-shrink: 0;
+      font-size: 12px;
+      color: var(--text-tertiary);
+    }
+
+    /* 分类入口 */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .category-item {
+      background: var(--panel-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-card);
+      padding: 14px 12px;
+      text-align: center;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      cursor: default;
+    }
+
+    .category-item:hover {
+      border-color: var(--primary-light);
+      box-shadow: var(--shadow-default);
+    }
+
+    .category-name {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    .category-count {
+      font-size: 11px;
+      color: var(--text-tertiary);
+      margin-top: 2px;
+    }
+
+    /* 深度解析 */
+    .deep-dive {
+      background: var(--panel-bg);
+      border-radius: var(--radius-card);
+      padding: 32px;
+      box-shadow: var(--shadow-default);
+    }
+
+    .deep-dive h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--primary);
+      margin: 28px 0 10px;
+    }
+
+    .deep-dive h3:first-child {
+      margin-top: 0;
+    }
+
+    .deep-dive p {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.85;
+      margin-bottom: 14px;
+    }
+
+    .deep-dive ul {
+      margin: 12px 0 18px 20px;
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.8;
+    }
+
+    .deep-dive li {
+      margin-bottom: 6px;
+    }
+
+    .deep-dive .highlight-box {
+      background: #faf8f6;
+      border-left: 3px solid var(--accent);
+      padding: 14px 18px;
+      border-radius: 0 var(--radius-btn) var(--radius-btn) 0;
+      margin: 18px 0;
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+    }
+
+    .deep-dive table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 13px;
+    }
+
+    .deep-dive th {
+      background: var(--divider);
+      padding: 10px 12px;
+      text-align: left;
+      font-weight: 600;
+      color: var(--text-primary);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .deep-dive td {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--divider);
+      color: var(--text-secondary);
+    }
+
+    /* FAQ */
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .faq-item {
+      background: var(--panel-bg);
+      border-radius: var(--radius-card);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+
+    .faq-item[open] {
+      border-color: var(--primary-light);
+    }
+
+    .faq-item summary {
+      padding: 14px 18px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-primary);
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-item summary::after {
+      content: '+';
+      font-size: 18px;
+      color: var(--text-tertiary);
+      flex-shrink: 0;
+      transition: transform 0.2s;
+    }
+
+    .faq-item[open] summary::after {
+      content: '−';
+    }
+
+    .faq-item .faq-answer {
+      padding: 0 18px 16px;
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.8;
+    }
+
+    /* 评论 */
+    .comment-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .comment-item {
+      background: var(--panel-bg);
+      border-radius: var(--radius-card);
+      padding: 14px 18px;
+      box-shadow: var(--shadow-default);
+    }
+
+    .comment-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 6px;
+    }
+
+    .comment-avatar {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--primary-light);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .comment-nickname {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    .comment-time {
+      font-size: 11px;
+      color: var(--text-tertiary);
+      margin-left: auto;
+    }
+
+    .comment-text {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    /* 相关资讯 */
+    .news-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .news-item {
+      background: var(--panel-bg);
+      border-radius: var(--radius-card);
+      padding: 16px 20px;
+      box-shadow: var(--shadow-default);
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      transition: box-shadow 0.2s;
+    }
+
+    .news-item:hover {
+      box-shadow: var(--shadow-hover);
+    }
+
+    .news-date {
+      flex-shrink: 0;
+      font-size: 12px;
+      color: var(--text-tertiary);
+      font-weight: 600;
+      min-width: 70px;
+      padding-top: 2px;
+    }
+
+    .news-body {
+      flex: 1;
+    }
+
+    .news-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+      line-height: 1.4;
+    }
+
+    .news-excerpt {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.65;
+    }
+
+    /* 相关推荐 */
+    .tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tag-cloud a {
+      background: var(--panel-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-tag);
+      padding: 6px 16px;
+      font-size: 13px;
+      color: var(--text-secondary);
+      transition: background 0.2s, border-color 0.2s, color 0.2s;
+    }
+
+    .tag-cloud a:hover {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+    }
+
+    /* 侧栏卡片 */
+    .sidebar-card {
+      background: var(--panel-bg);
+      border-radius: var(--radius-card);
+      box-shadow: var(--shadow-default);
+      padding: 20px;
+    }
+
+    .sidebar-card h4 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--divider);
+    }
+
+    .sidebar-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .sidebar-list-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 13px;
+    }
+
+    .sidebar-list-num {
+      flex-shrink: 0;
+      width: 18px;
+      height: 18px;
+      background: var(--divider);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--text-tertiary);
+      margin-top: 2px;
+    }
+
+    .sidebar-list-num.top {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .sidebar-list-title {
+      color: var(--text-primary);
+      font-weight: 500;
+      line-height: 1.4;
+    }
+
+    .sidebar-list-meta {
+      font-size: 11px;
+      color: var(--text-tertiary);
+    }
+
+    /* 投稿互动 */
+    .contribute-panel {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      border-radius: var(--radius-card);
+      padding: 24px;
+      color: #fff;
+      text-align: center;
+    }
+
+    .contribute-panel h4 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .contribute-panel p {
+      font-size: 12px;
+      color: #b0bccb;
+      margin-bottom: 14px;
+      line-height: 1.6;
+    }
+
+    .contribute-btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      padding: 8px 20px;
+      border-radius: var(--radius-btn);
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      transition: background 0.2s;
+    }
+
+    .contribute-btn:hover {
+      background: var(--accent-light);
+      color: #fff;
+    }
+
+    /* 页尾 */
+    .site-footer {
+      background: var(--primary-dark);
+      color: #9aa8b8;
+      padding: 48px 0 28px;
+      margin-top: 48px;
+    }
+
+    .footer-inner {
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .footer-brand {
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .footer-desc {
+      font-size: 13px;
+      color: #8a98a8;
+      line-height: 1.75;
+      max-width: 320px;
+    }
+
+    .footer-col h5 {
+      font-size: 14px;
+      font-weight: 600;
+      color: #d0d8e2;
+      margin-bottom: 14px;
+    }
+
+    .footer-col a {
+      display: block;
+      color: #8a98a8;
+      font-size: 13px;
+      margin-bottom: 8px;
+      transition: color 0.2s;
+    }
+
+    .footer-col a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 20px;
+      font-size: 12px;
+      color: #6b7888;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    /* 返回顶部 */
+    .back-to-top {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      width: 42px;
+      height: 42px;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+      transition: background 0.2s, opacity 0.2s;
+      z-index: 900;
+      font-size: 18px;
+    }
+
+    .back-to-top:hover {
+      background: var(--accent);
+    }
+
+    .back-to-top.visible {
+      display: flex;
+    }
+
+    .back-to-top:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    /* 搜索无结果 */
+    .no-results {
+      display: none;
+      padding: 24px;
+      text-align: center;
+      color: var(--text-tertiary);
+      font-size: 14px;
+      background: var(--panel-bg);
+      border-radius: var(--radius-card);
+    }
+
+    /* 响应式 */
+    @media (max-width: 1024px) {
+      .main-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        position: static;
+      }
+
+      .footer-top {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .hero-inner {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-content {
+        max-width: 100%;
+      }
+
+      .hero-desc {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero-actions {
+        justify-content: center;
+      }
+
+      .hero-visual {
+        width: 200px;
+        height: 200px;
+      }
+
+      .main-nav {
+        display: none;
+      }
+
+      .main-nav.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: var(--sticky-offset);
+        left: 0;
+        right: 0;
+        background: #fff;
+        padding: 16px 24px;
+        border-bottom: 1px solid var(--border);
+        box-shadow: var(--shadow-hover);
+        z-index: 999;
+        gap: 2px;
+      }
+
+      .main-nav.open a {
+        padding: 10px 14px;
+      }
+
+      .hamburger {
+        display: block;
+      }
+
+      .header-inner {
+        gap: 16px;
+      }
+    }
+
+    @media (max-width: 740px) {
+      .container {
+        padding: 0 16px;
+      }
+
+      .announce-inner {
+        gap: 8px;
+      }
+
+      .announce-items {
+        gap: 12px;
+        font-size: 12px;
+      }
+
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .hero {
+        padding: 40px 0 32px;
+      }
+
+      .hero h1 {
+        font-size: 26px;
+      }
+
+      .deep-dive {
+        padding: 20px;
+      }
+
+      .footer-top {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .search-box input {
+        width: 100px;
+      }
+
+      .news-item {
+        flex-direction: column;
+        gap: 6px;
+      }
+
+      .news-date {
+        min-width: auto;
+      }
+
+      .main-layout {
+        gap: 24px;
+      }
+
+      .list-item {
+        flex-wrap: wrap;
+      }
+
+      .list-meta {
+        width: 100%;
+        margin-left: 38px;
+      }
+    }
+
+    /* 焦点可见 */
+    :focus-visible {
+      outline: 2px solid var(--primary-light);
+      outline-offset: 2px;
+    }
+
+    a:focus-visible,
+    button:focus-visible,
+    summary:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    /* 筛选隐藏 */
+    .hidden-by-search {
+      display: none !important;
+    }
+  </style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告 + 页头 -->
+<div class="sticky-header">
+  <div class="announce-bar" id="announce-bar">
+    <div class="announce-inner">
+      <span class="announce-brand">藤原Yuki黑料</span>
+      <div class="announce-items">
+        <span><span class="announce-date">11月7日</span><span class="announce-tag">新增</span>直播回放切片第3段争议发言整理</span>
+        <span><span class="announce-date">11月5日</span>粉丝群聊天记录截图32张归档</span>
+      </div>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="32" height="32" rx="8" fill="#1e2a3a"/>
+          <path d="M8 10h16v2H8zM8 15h10v2H8zM8 20h14v2H8z" fill="#c44536"/>
+          <circle cx="24" cy="21" r="3" fill="#e05a4a"/>
+        </svg>
+        <span class="logo-text">藤原Yuki黑料</span>
+      </div>
+      <nav class="main-nav" id="main-nav" aria-label="主导航">
+        <a href="/#overview">争议概览</a>
+        <a href="/#featured">精选条目</a>
+        <a href="/#updates">最新动态</a>
+        <a href="/#categories">分类入口</a>
+        <a href="/#analysis">深度解析</a>
+        <a href="/#faq">常见问答</a>
+        <a href="/#comments">用户评论</a>
+      </nav>
+      <div class="header-actions">
+        <div class="search-box">
+          <input type="search" id="search-input" placeholder="搜索条目…" aria-label="搜索页面内条目">
+        </div>
+        <button class="hamburger" id="hamburger-btn" aria-label="打开导航菜单" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <path d="M3 6h18M3 12h18M3 18h18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<!-- 首屏 -->
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <span class="hero-badge">争议资料聚合 · 2026年10月—11月</span>
+        <h1>藤原Yuki黑料</h1>
+        <p class="hero-desc">汇集2026年10月下旬至11月上旬网络流传的直播切片争议、粉丝群聊天记录、合作方声明及网友讨论帖，按事件时间线、来源可信度和回应主体分层整理，覆盖12个具体争议条目与5类原始素材。</p>
+        <div class="hero-actions">
+          <a href="/#featured" class="btn-primary">查看精选条目</a>
+          <a href="/#updates" class="btn-outline">最新动态</a>
+        </div>
+      </div>
+      <div class="hero-visual hero-float">
+        <svg viewBox="0 0 260 260" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="130" cy="130" r="110" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+          <circle cx="130" cy="130" r="80" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+          <circle cx="130" cy="130" r="50" stroke="rgba(196,69,54,0.2)" stroke-width="1.5"/>
+          <rect x="85" y="95" width="90" height="70" rx="8" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+          <path d="M100 115h30M100 128h50M100 141h40" stroke="rgba(255,255,255,0.25)" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="175" cy="150" r="8" fill="#c44536" opacity="0.8"/>
+          <path d="M172 150l2 2 4-4" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="85" cy="80" r="4" fill="rgba(196,69,54,0.4)"/>
+          <circle cx="200" cy="90" r="3" fill="rgba(255,255,255,0.15)"/>
+          <circle cx="55" cy="160" r="3" fill="rgba(255,255,255,0.1)"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 主内容区 -->
+<main class="container">
+  <div class="main-layout">
+    <!-- 左主内容 -->
+    <div class="main-content">
+
+      <!-- 板块1：主题领域概览 -->
+      <section class="section" id="overview">
+        <h2 class="section-title">网络争议内容生态概览</h2>
+        <p class="section-desc">围绕主播藤原Yuki的争议内容在2026年10月中旬至11月上旬集中出现，素材形态包括直播回放切片、粉丝群聊天记录、合作品牌公告和匿名论坛长帖。从已公开信息看，争议集中在三个方向：直播中涉及其他主播的言论、粉丝群管理方式的截图证据、以及个人账号过往帖子的重新解读。B站、贴吧、NGA三个平台的相关讨论帖在10月28日前后达到峰值，单日新增回复量最高出现在10月29日，约4200条。原始素材中，直播切片时长从17秒到4分12秒不等，粉丝群截图共流出三批合计84张，其中11月5日归档的32张为最新一批。合作方“星月社”于11月3日发布声明终止联动企划，是首个明确表态的商业合作方。目前已有12个具体条目被反复引用，4条被当事人或相关方回应，3条仍处于来源不明状态。</p>
+      </section>
+
+      <!-- 板块2：精选内容推荐 -->
+      <section class="section" id="featured">
+        <h2 class="section-title">精选争议条目</h2>
+        <p class="section-subtitle">按素材完整度和讨论热度筛选的12个具体条目</p>
+        <div class="card-grid">
+          <!-- 卡片1 -->
+          <div class="card">
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="tag tag-accent">直播切片</span>
+                <span class="tag">17秒</span>
+                <span class="tag">涉及其他主播</span>
+              </div>
+              <h3 class="card-title">10月19日直播“某些人别太蹭”片段</h3>
+              <p class="card-excerpt">原直播02:17:34处，藤原Yuki谈及联动安排时说“有些主播别太蹭了”，未点名。切片在B站播放量47.2万，评论区指向另一位主播“阿茶”。当事人未回应。</p>
+              <div class="card-footer">
+                <span class="hot">🔥 47.2万播放</span>
+                <span>10月20日切片</span>
+              </div>
+            </div>
+          </div>
+          <!-- 卡片2 -->
+          <div class="card">
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="tag tag-accent">聊天记录</span>
+                <span class="tag">粉丝群</span>
+                <span class="tag">32张</span>
+              </div>
+              <h3 class="card-title">粉丝群管理对话截图第三批</h3>
+              <p class="card-excerpt">11月5日流出的32张截图显示，群管理要求成员“对外统一口径”，涉及10月22日直播事故的解释方式。截图中账号“Yuki_小助手”发言12次，内容与公开回应存在时间差。</p>
+              <div class="card-footer">
+                <span class="hot">🔥 讨论帖680回复</span>
+                <span>11月5日归档</span>
+              </div>
+            </div>
+          </div>
+          <!-- 卡片3 -->
+          <div class="card">
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="tag tag-accent">合作方</span>
+                <span class="tag">声明</span>
+                <span class="tag">星月社</span>
+              </div>
+              <h3 class="card-title">星月社终止联动企划公告</h3>
+              <p class="card-excerpt">11月3日14:22，品牌方星月社在官网发布声明，称“经评估决定终止原定11月15日的联动直播”，未说明具体原因。公告全文247字，提及“双方协商”3次。</p>
+              <div class="card-footer">
+                <span class="hot">🔥 转发1.1万</span>
+                <span>11月3日</span>
+              </div>
+            </div>
+          </div>
+          <!-- 卡片4 -->
+          <div class="card">
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="tag tag-accent">旧帖重读</span>
+                <span class="tag">2024年</span>
+                <span class="tag">微博</span>
+              </div>
+              <h3 class="card-title">2024年3月微博“同行评价”被翻出</h3>
+              <p class="card-excerpt">一条2024年3月发布的微博被截图转发，内容为“有些同行数据造假还装清高”，当时未引发注意。10月26日起在贴吧被重新讨论，转评中引用该条微博的帖子超过200个。</p>
+              <div class="card-footer">
+                <span class="hot">🔥 转载2300次</span>
+                <span>10月26日翻出</span>
+              </div>
+            </div>
+          </div>
+          <!-- 卡片5 -->
+          <div class="card">
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="tag tag-accent">直播事故</span>
+                <span class="tag">10月22日</span>
+                <span class="tag">设备问题</span>
+              </div>
+              <h3 class="card-title">10月22日直播中断的两种说法</h3>
+              <p class="card-excerpt">当晚直播中断23分钟。账号动态称“设备故障”，但粉丝群截图显示管理提到“需要等那边确认”。两种说法的时间差为41分钟，贴吧用户“@老猫不睡”整理了两条时间线。</p>
+              <div class="card-footer">
+                <span class="hot">🔥 时间线帖1.2万阅读</span>
+                <span>10月23日整理</span>
+              </div>
+            </div>
+          </div>
+          <!-- 卡片6 -->
+          <div class="card">
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="tag tag-accent">匿名帖</span>
+                <span class="tag">NGA</span>
+                <span class="tag">来源不明</span>
+              </div>
+              <h3 class="card-title">NGA匿名帖“前运营爆料”</h3>
+              <p class="card-excerpt">10月30日NGA出现匿名帖，自称前运营人员，描述“数据维护”流程。帖中无具体截图，仅文字叙述，涉及3个时间节点。跟帖中有人质疑发帖IP与已知账号重合。</p>
+              <div class="card-footer">
+                <span class="hot">🔥 浏览9.8万</span>
+                <span>10月30日</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 板块3：最新更新/动态 -->
+      <section class="section" id="updates">
+        <h2 class="section-title">10月28日—11月7日动态时间线</h2>
+        <div class="list-compact">
+          <div class="list-item">
+            <span class="list-num top">1</span>
+            <div class="list-content">
+              <div class="list-title">11月7日 直播回放切片第3段发布</div>
+              <div class="list-desc">UP主“切片机_07”上传10月19日直播未公开片段，时长2分08秒，内容涉及联动安排讨论。两小时内播放量破8万。</div>
+            </div>
+            <span class="list-meta">11月7日</span>
+          </div>
+          <div class="list-item">
+            <span class="list-num top">2</span>
+            <div class="list-content">
+              <div class="list-title">11月6日 合作品牌“轻语”删除联动预告</div>
+              <div class="list-desc">原定11月10日的联动预告从品牌微博消失，但未发布正式声明。客服回复用户询问时称“以官方公告为准”。</div>
+            </div>
+            <span class="list-meta">11月6日</span>
+          </div>
+          <div class="list-item">
+            <span class="list-num">3</span>
+            <div class="list-content">
+              <div class="list-title">11月5日 粉丝群截图第三批32张流出</div>
+              <div class="list-desc">截图涵盖10月20日至11月2日群内管理对话，关键账号“Yuki_小助手”发言集中在10月23日和10月29日。</div>
+            </div>
+            <span class="list-meta">11月5日</span>
+          </div>
+          <div class="list-item">
+            <span class="list-num">4</span>
+            <div class="list-content">
+              <div class="list-title">11月3日 星月社发布终止联动声明</div>
+              <div class="list-desc">声明在官网和微博同步发出，微博转发1.1万，评论区关闭。合作方未接听媒体电话。</div>
+            </div>
+            <span class="list-meta">11月3日</span>
+          </div>
+          <div class="list-item">
+            <span class="list-num">5</span>
+            <div class="list-content">
+              <div class="list-title">11月1日 藤原Yuki账号发布“暂停直播”动态</div>
+              <div class="list-desc">动态全文68字，称“调整状态”，未提及具体争议。评论区开启精选，前排留言均为支持类内容。</div>
+            </div>
+            <span class="list-meta">11月1日</span>
+          </div>
+          <div class="list-item">
+            <span class="list-num">6</span>
+            <div class="list-content">
+              <div class="list-title">10月30日 NGA匿名帖引发跨平台搬运</div>
+              <div class="list-desc">原帖在3小时内被搬运至贴吧和微博，搬运帖标题添加了“前运营”标签，原帖随后编辑删除部分段落。</div>
+            </div>
+            <span class="list-meta">10月30日</span>
+          </div>
+          <div class="list-item">
+            <span class="list-num">7</span>
+            <div class="list-content">
+              <div class="list-title">10月28日 贴吧“时间线整理”帖加精</div>
+              <div class="list-desc">用户“@老猫不睡”发布6条事件时间线整理，贴吧吧主加精，截至11月7日回复数634条。</div>
+            </div>
+            <span class="list-meta">10月28日</span>
+          </div>
+          <div class="list-item">
+            <span class="list-num">8</span>
+            <div class="list-content">
+              <div class="list-title">10月26日 2024年3月微博截图开始传播</div>
+              <div class="list-desc">截图在贴吧首发，12小时内被转至微博超话，初始转发账号多为小号，次日出现大号转发。</div>
+            </div>
+            <span class="list-meta">10月26日</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 板块4：分类入口 -->
+      <section class="section" id="categories">
+        <h2 class="section-title">争议素材分类索引</h2>
+        <div class="category-grid">
+          <div class="category-item">
+            <div class="category-name">直播切片争议</div>
+            <div class="category-count">4条素材</div>
+          </div>
+          <div class="category-item">
+            <div class="category-name">粉丝群截图</div>
+            <div class="category-count">3批84张</div>
+          </div>
+          <div class="category-item">
+            <div class="category-name">合作方声明</div>
+            <div class="category-count">2份公告</div>
+          </div>
+          <div class="category-item">
+            <div class="category-name">旧帖重读</div>
+            <div class="category-count">3条微博</div>
+          </div>
+          <div class="category-item">
+            <div class="category-name">匿名爆料帖</div>
+            <div class="category-count">2篇长文</div>
+          </div>
+          <div class="category-item">
+            <div class="category-name">当事人回应</div>
+            <div class="category-count">2次动态</div>
+          </div>
+          <div class="category-item">
+            <div class="category-name">第三方时间线</div>
+            <div class="category-count">5份整理</div>
+          </div>
+          <div class="category-item">
+            <div class="category-name">来源存疑素材</div>
+            <div class="category-count">3个条目</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 板块5：深度解析 -->
+      <section class="section" id="analysis">
+        <h2 class="section-title">争议素材可信度分层与判断方法</h2>
+        <div class="deep-dive">
+          <h3>直播切片的完整度决定讨论走向</h3>
+          <p>10月19日直播切片现有三个版本：17秒版、2分08秒版和4分12秒版。17秒版只包含“有些主播别太蹭了”这一句，播放量最高，47.2万。2分08秒版增加了前后文语境——藤原Yuki在说这句话之前提到了“平台活动排期太密”，之后接了一句“我这边联动都推了两个”。4分12秒版包含更早的排期讨论，但只在11月7日由一个低粉丝量账号上传。同一句话在三个版本中的含义差异明显：短版指向明确，长版更像对平台安排的情绪表达。讨论热度与切片长度成反比——播放量最高的版本信息最少。</p>
+          <div class="highlight-box">
+            <strong>可核对项：</strong>三个切片版本的发布时间分别为10月20日（17秒）、10月21日（2分08秒）、11月7日（4分12秒）。前两个版本的UP主在同一MCN机构有备案记录，第三个版本无。传播速度来自三个环节——首发账号的粉丝量（17秒版首发账号3.2万粉）、跨平台搬运的时差（贴吧比B站晚6小时）、以及大V转发的节点（10月21日出现首个百万粉账号转发）。
+          </div>
+
+          <h3>粉丝群截图的时间戳与内容矛盾</h3>
+          <p>三批截图共84张，时间跨度从10月20日到11月2日。核心矛盾出现在10月22日直播事故的解释上。账号“Yuki_小助手”在10月22日22:17发言“等那边确认再统一说”，而藤原Yuki的账号动态在22:58发布“设备故障”。两个时间点相差41分钟。截图本身带有群聊界面特征——顶部群名、成员等级标识、消息时间戳，但第三批中有7张截图的成员列表顺序与前两批不一致。技术论坛“酷安”有用户指出，该差异可能来自不同客户端版本，也可能来自拼合。目前没有独立第三方对截图做哈希校验。</p>
+
+          <h3>合作方声明的措辞差异</h3>
+          <p>星月社11月3日公告全文247字，关键句是“经评估决定终止原定11月15日的联动直播”。另一家品牌“轻语”的处理方式不同——11月6日删除预告，但未发声明，客服口径统一为“以官方公告为准”。对比来看，星月社选择主动公开，轻语选择静默处理。两种做法对讨论热度的影响不同：星月社声明后24小时内新增讨论帖约180个，轻语删除预告后新增讨论帖约40个，但后者在11月7日出现“轻语是否已内部终止”的猜测帖。公告中“双方协商”出现3次，未提及违约条款或后续安排。</p>
+
+          <h3>匿名爆料的验证缺口</h3>
+          <p>10月30日NGA匿名帖自称前运营人员，描述了三个时间节点：2025年6月数据维护、2026年3月内容排期调整、2026年9月账号交接。帖中未附任何截图或文件。跟帖用户“@tieba_9527”指出发帖IP与2025年一个已知小号重合，但该判断未被证实。原帖在3小时后编辑，删除了“数据维护”相关的两段。目前该帖在NGA已不可见，仅存于贴吧和微博的搬运版本。搬运版本中，有一段关于“账号交接”的描述被加粗，但原帖中该段并无加粗格式。</p>
+
+          <h3>判断素材可信度的四个检查点</h3>
+          <table>
+            <thead>
+              <tr><th>检查项</th><th>具体标准</th><th>对应条目举例</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>原始文件是否存在</td><td>有完整录播或截图原图，非二次截取</td><td>10月19日直播回放原档仍在B站</td></tr>
+              <tr><td>时间戳是否自洽</td><td>多个素材的发布时间与内容时间不矛盾</td><td>10月22日动态与群聊截图存在41分钟差</td></tr>
+              <tr><td>来源账号是否有历史记录</td><td>爆料账号在相关领域有持续发言记录</td><td>“@老猫不睡”有2024年起的整理帖</td></tr>
+              <tr><td>相关方是否直接回应</td><td>当事人或合作方的公开表态与素材内容对应</td><td>星月社声明终止联动，未提及具体原因</td></tr>
+            </tbody>
+          </table>
+          <p>按照这四个检查点，12个精选条目中6个满足三项以上，3个仅满足一项，3个无法核对。满足项最少的条目集中在匿名爆料和第三批截图中。一个容易被忽略的细节：第三批32张截图的文件创建时间显示为10月28日，但内容时间戳最晚到11月2日。文件创建时间早于内容时间，说明截图可能在传阅中被重新保存，原始截图已不可得。</p>
+        </div>
+      </section>
+
+      <!-- 板块6：体验指南/消费路径 -->
+      <section class="section" id="guide">
+        <h2 class="section-title">争议内容消费顺序建议</h2>
+        <p class="section-desc">面对同一事件的多个素材，按信息层级依次查看可以避免被单一版本带偏。以下顺序基于12个条目的素材完整度排列。</p>
+        <div class="list-compact">
+          <div class="list-item">
+            <span class="list-num top">1</span>
+            <div class="list-content">
+              <div class="list-title">先看完整版录播/长切片，再看短切片</div>
+              <div class="list-desc">10月19日直播有4分12秒完整切片，包含前后语境。17秒版传播最广但信息最少。先看长版能判断“有些主播别太蹭了”是否被断章取义。</div>
+            </div>
+          </div>
+          <div class="list-item">
+            <span class="list-num top">2</span>
+            <div class="list-content">
+              <div class="list-title">对比合作方声明原文与客服口径</div>
+              <div class="list-desc">星月社公告全文247字可直接在官网查看；轻语未发声明，仅客服回复“以官方公告为准”。两者对讨论热度的推动量级不同，声明原文比二次转述可靠。</div>
+            </div>
+          </div>
+          <div class="list-item">
+            <span class="list-num">3</span>
+            <div class="list-content">
+              <div class="list-title">粉丝群截图先核对时间戳再判断内容</div>
+              <div class="list-desc">第三批截图中7张成员列表顺序不一致，建议以10月22日22:17和22:58两个明确时间点为锚，只采信时间戳连续的对话段。</div>
+            </div>
+          </div>
+          <div class="list-item">
+            <span class="list-num">4</span>
+            <div class="list-content">
+              <div class="list-title">匿名帖放在最后看，且只看搬运存档</div>
+              <div class="list-desc">NGA原帖已编辑，仅存搬运版本。搬运版本中加粗的“账号交接”段落原帖并无加粗。先看原始讨论结构再看搬运，减少格式误导。</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 板块7：FAQ -->
+      <section class="section" id="faq">
+        <h2 class="section-title">常见问题</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>10月19日直播切片里“有些主播别太蹭了”具体指谁？</summary>
+            <div class="faq-answer">藤原Yuki在直播中未点名。评论区大量指向主播“阿茶”，依据是10月17日阿茶在直播中提到“最近有人联动排期撞了”。阿茶在10月21日直播中被问及此事时回应“不关我事”，未展开。切片完整版中，藤原Yuki说完这句话后紧接着提到“我这边联动都推了两个”，未出现具体人名。</div>
+          </details>
+          <details class="faq-item">
+            <summary>星月社为什么终止联动？公告里有没有写具体原因？</summary>
+            <div class="faq-answer">公告全文247字，未写具体原因，关键句是“经评估决定终止原定11月15日的联动直播”。公告中“双方协商”出现3次，未提及违约条款。星月社客服在11月4日回复用户时称“以公告为准”，未补充。同日，星月社官网撤下了联动预约页面。</div>
+          </details>
+          <details class="faq-item">
+            <summary>粉丝群截图第三批是真的吗？有没有技术分析？</summary>
+            <div class="faq-answer">第三批32张截图在11月5日流出，内容时间戳最晚到11月2日，但文件创建时间显示为10月28日。酷安用户“@文件考古”指出，同一群聊界面在10月28日截图不可能包含11月2日消息，除非文件被重新保存或编辑。目前没有第三方哈希校验。7张截图的成员列表顺序与前两批不一致，这一点在贴吧整理帖中有标注。</div>
+          </details>
+          <details class="faq-item">
+            <summary>2024年3月那条微博原文到底是什么？为什么现在才被翻出来？</summary>
+            <div class="faq-answer">原文为“有些同行数据造假还装清高”，发布于2024年3月12日，当时转发量不足50。10月26日被贴吧用户截图转发，12小时内转至微博超话。初始转发账号多为注册不足半年的小号，10月27日出现百万粉账号转发。该微博目前仍可见，未删除。</div>
+          </details>
+          <details class="faq-item">
+            <summary>NGA匿名帖里说的“前运营”身份被证实了吗？</summary>
+            <div class="faq-answer">未证实。原帖10月30日发布，自称前运营人员，帖中无截图或文件。跟帖用户“@tieba_9527”称发帖IP与2025年一个已知小号重合，但该判断未被证实。原帖在3小时后编辑删除两段，随后不可见。目前仅存贴吧和微博搬运版本，搬运版中“账号交接”段落被加粗，原帖该段无加粗格式。</div>
+          </details>
+          <details class="faq-item">
+            <summary>藤原Yuki本人对哪几条争议做过直接回应？</summary>
+            <div class="faq-answer">直接回应有两次：11月1日账号动态“暂停直播，调整状态”，全文68字，未提及具体争议；10月22日直播事故后账号动态称“设备故障”，但粉丝群截图显示管理在41分钟前提到“等那边确认”。其余条目均未见本人公开发言。合作方星月社的声明是唯一来自商业机构的正式表态。</div>
+          </details>
+        </div>
+      </section>
+
+      <!-- 板块8：用户评论 -->
+      <section class="section" id="comments">
+        <h2 class="section-title">用户讨论</h2>
+        <div class="comment-list">
+          <div class="comment-item">
+            <div class="comment-header">
+              <span class="comment-avatar">路</span>
+              <span class="comment-nickname">路过的切片机</span>
+              <span class="comment-time">11月7日 21:14</span>
+            </div>
+            <div class="comment-text">4分12秒版我看了三遍，那句“别太蹭了”前面在聊平台排期太密，后面接的是“我这边联动都推了两个”。17秒版真的挺误导的。</div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-header">
+              <span class="comment-avatar">茶</span>
+              <span class="comment-nickname">茶茶不喝茶</span>
+              <span class="comment-time">11月7日 18:30</span>
+            </div>
+            <div class="comment-text">阿茶回应了又好像没回应，“不关我事”四个字还不如不说。不过她直播间弹幕倒是刷了一波“蹭”，场面挺尴尬。</div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-header">
+              <span class="comment-avatar">老</span>
+              <span class="comment-nickname">老猫不睡</span>
+              <span class="comment-time">11月6日 23:02</span>
+            </div>
+            <div class="comment-text">我整理的时间线被加精了，但说实话第三批截图我越看越不对劲。文件创建时间10月28日，里面却有11月2日的消息，这怎么做到？我写的时候把7张顺序不一致的图单独列出来了。</div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-header">
+              <span class="comment-avatar">Y</span>
+              <span class="comment-nickname">Yuki_小助手</span>
+              <span class="comment-time">11月6日 15:47</span>
+            </div>
+            <div class="comment-text">截图里那个账号不是我。我10月22日根本没在群里说过“等那边确认”。群记录可以查。</div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-header">
+              <span class="comment-avatar">星</span>
+              <span class="comment-nickname">星月社客服bot</span>
+              <span class="comment-time">11月5日 09:12</span>
+            </div>
+            <div class="comment-text">已终止，以公告为准。其他问题暂不回复。</div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-header">
+              <span class="comment-avatar">看</span>
+              <span class="comment-nickname">看热闹不嫌事大</span>
+              <span class="comment-time">11月4日 22:33</span>
+            </div>
+            <div class="comment-text">星月社那个公告我数了一下，“双方协商”真的出现了3次，写了跟没写一样。轻语那边更离谱，预告删了装没事人。</div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-header">
+              <span class="comment-avatar">数</span>
+              <span class="comment-nickname">数据维护中</span>
+              <span class="comment-time">11月4日 14:20</span>
+            </div>
+            <div class="comment-text">NGA那个匿名帖我第一时间看了，当时就觉得没图没真相。果然编辑了。搬运版加粗那段我在原帖里没看到加粗。</div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-header">
+              <span class="comment-avatar">阿</span>
+              <span class="comment-nickname">阿茶的小话筒</span>
+              <span class="comment-time">11月3日 20:08</span>
+            </div>
+            <div class="comment-text">说真的，17秒版本传播的时候我就觉得怪。完整版出来之后风向变了一点，但很多人根本没看完整版。</div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-header">
+              <span class="comment-avatar">路</span>
+              <span class="comment-nickname">路过的老哥</span>
+              <span class="comment-time">11月3日 11:56</span>
+            </div>
+            <div class="comment-text">直播事故那个41分钟差，我仔细看了截图。22:17小助手说“等那边确认”，22:58动态说“设备故障”。中间发生了什么只有他们自己知道。</div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-header">
+              <span class="comment-avatar">前</span>
+              <span class="comment-nickname">前运营不背锅</span>
+              <span class="comment-time">11月2日 19:44</span>
+            </div>
+            <div class="comment-text">匿名帖里说的2025年6月数据维护，时间对不上。我2025年5月就离职了，那时候根本没有什么维护。</div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-header">
+              <span class="comment-avatar">无</span>
+              <span class="comment-nickname">无聊的周一</span>
+              <span class="comment-time">11月2日 08:15</span>
+            </div>
+            <div class="comment-text">今天天气不错。这些瓜吃不动了，来点新料吧。</div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-header">
+              <span class="comment-avatar">酷</span>
+              <span class="comment-nickname">酷安老用户</span>
+              <span class="comment-time">11月1日 17:29</span>
+            </div>
+            <div class="comment-text">截图的客户端版本差异我看了，确实可能是不同版本导致的。但文件创建时间那个事解释不了。除非有人把整个文件夹重新保存了。</div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-header">
+              <span class="comment-avatar">吃</span>
+              <span class="comment-nickname">吃瓜专用号</span>
+              <span class="comment-time">11月1日 10:02</span>
+            </div>
+            <div class="comment-text">暂停直播那个动态68个字，我逐字看了，确实没提任何争议。评论区精选全是“好好休息”。</div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-header">
+              <span class="comment-avatar">阿</span>
+              <span class="comment-nickname">阿茶的小话筒</span>
+              <span class="comment-time">10月31日 22:17</span>
+            </div>
+            <div class="comment-text">补一句，阿茶10月21日直播回应的时候，弹幕里刷“蹭”的很多，但她没再展开。那场直播回放现在还能看到。</div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-header">
+              <span class="comment-avatar">路</span>
+              <span class="comment-nickname">路过的切片机</span>
+              <span class="comment-time">10月30日 14:50</span>
+            </div>
+            <div class="comment-text">NGA那帖子我截图了，编辑之前有“数据维护”两段，现在是没了。谁有完整存档？</div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-header">
+              <span class="comment-avatar">不</span>
+              <span class="comment-nickname">不是这行的</span>
+              <span class="comment-time">10月29日 09:33</span>
+            </div>
+            <div class="comment-text">我就看看不说话。这些事真真假假分不清，等一个官方回应吧。</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 板块9：相关资讯 -->
+      <section class="section" id="news">
+        <h2 class="section-title">相关资讯</h2>
+        <div class="news-list">
+          <div class="news-item">
+            <div class="news-date">2026-11-07</div>
+            <div class="news-body">
+              <div class="news-title">直播切片第3段发布：4分12秒版新增平台排期讨论</div>
+              <div class="news-excerpt">UP主“切片机_07”11月7日上传10月19日直播未公开片段，时长4分12秒。前2分钟涉及平台活动排期密集的讨论，藤原Yuki提到“我这边联动都推了两个”。该账号此前未发布过相关切片。</div>
+            </div>
+          </div>
+          <div class="news-item">
+            <div class="news-date">2026-11-06</div>
+            <div class="news-body">
+              <div class="news-title">轻语品牌删除联动预告，客服称“以官方公告为准”</div>
+              <div class="news-excerpt">原定11月10日的联动预告从轻语微博消失。客服在回复用户询问时统一口径，未确认是否终止合作。该品牌此前未发布任何与藤原Yuki相关的正式声明。</div>
+            </div>
+          </div>
+          <div class="news-item">
+            <div class="news-date">2026-11-05</div>
+            <div class="news-body">
+              <div class="news-title">粉丝群截图第三批32张流出，含10月22日事故前后对话</div>
+              <div class="news-excerpt">截图涵盖10月20日至11月2日群内管理对话。账号“Yuki_小助手”在10月22日22:17发言“等那边确认再统一说”，与后续“设备故障”动态间隔41分钟。第三批文件创建时间早于部分内容时间戳。</div>
+            </div>
+          </div>
+          <div class="news-item">
+            <div class="news-date">2026-11-03</div>
+            <div class="news-body">
+              <div class="news-title">星月社公告终止11月15日联动，声明全文247字</div>
+              <div class="news-excerpt">星月社11月3日14:22在官网发布声明。“双方协商”出现3次，未提及违约或后续安排。公告发布后24小时内，贴吧新增讨论帖约180个。合作方未接听媒体电话。</div>
+            </div>
+          </div>
+          <div class="news-item">
+            <div class="news-date">2026-10-30</div>
+            <div class="news-body">
+              <div class="news-title">NGA匿名帖编辑前后对比：删除两段“数据维护”描述</div>
+              <div class="news-excerpt">原帖10月30日发布，3小时内被搬运至贴吧和微博。原帖编辑后不可见。搬运版本中“账号交接”段落被加粗，原帖该段无加粗格式。发帖IP与2025年小号重合的说法未被证实。</div>
+            </div>
+          </div>
+          <div class="news-item">
+            <div class="news-date">2026-10-28</div>
+            <div class="news-body">
+              <div class="news-title">贴吧“6条事件时间线”帖加精，634条回复</div>
+              <div class="news-excerpt">用户“@老猫不睡”整理10月19日至28日事件时间线，标注了17秒切片和2分08秒切片的发布时间差。吧主加精后，跟帖中有人补充了10月22日直播事故的截图时间戳。</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 板块10：相关推荐 -->
+      <section class="section" id="related">
+        <h2 class="section-title">相关推荐标签</h2>
+        <div class="tag-cloud">
+          <a href="/#featured">10月19日直播切片完整版</a>
+          <a href="/#analysis">粉丝群截图时间戳分析</a>
+          <a href="/#news">星月社公告原文</a>
+          <a href="/#updates">10月22日直播事故时间线</a>
+          <a href="/#featured">阿茶10月21日回应</a>
+          <a href="/#analysis">匿名帖编辑前后对比</a>
+          <a href="/#guide">素材可信度检查点</a>
+        </div>
+      </section>
+
+      <!-- 板块11：补充板块-热门榜单 -->
+      <section class="section" id="ranking">
+        <h2 class="section-title">争议条目讨论热度榜</h2>
+        <div class="list-compact">
+          <div class="list-item">
+            <span class="list-num top">1</span>
+            <div class="list-content">
+              <div class="list-title">10月19日直播“别太蹭了”17秒切片</div>
+              <div class="list-desc">B站播放47.2万 · 贴吧引用帖2300+ · 微博话题阅读量约180万</div>
+            </div>
+            <span class="list-meta">综合热度最高</span>
+          </div>
+          <div class="list-item">
+            <span class="list-num top">2</span>
+            <div class="list-content">
+              <div class="list-title">星月社终止联动公告</div>
+              <div class="list-desc">微博转发1.1万 · 评论关闭 · 24小时新增讨论帖180个</div>
+            </div>
+            <span class="list-meta">商业机构首表态</span>
+          </div>
+          <div class="list-item">
+            <span class="list-num top">3</span>
+            <div class="list-content">
+              <div class="list-title">粉丝群截图第三批32张</div>
+              <div class="list-desc">贴吧整理帖回复634条 · 酷安技术分析帖阅读2.4万</div>
+            </div>
+            <span class="list-meta">11月5日归档</span>
+          </div>
+          <div class="list-item">
+            <span class="list-num">4</span>
+            <div class="list-content">
+              <div class="list-title">10月22日直播事故41分钟时间差</div>
+              <div class="list-desc">贴吧时间线帖1.2万阅读 · 微博讨论串约400条</div>
+            </div>
+            <span class="list-meta">两种说法并存</span>
+          </div>
+          <div class="list-item">
+            <span class="list-num">5</span>
+            <div class="list-content">
+              <div class="list-title">NGA匿名帖“前运营爆料”</div>
+              <div class="list-desc">原帖浏览9.8万 · 搬运帖3小时跨平台 · 编辑后不可见</div>
+            </div>
+            <span class="list-meta">来源存疑</span>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- 右侧辅助栏 -->
+    <aside class="sidebar" aria-label="辅助信息">
+      <!-- 互动板块 -->
+      <div class="sidebar-card">
+        <h4>投稿与互动</h4>
+        <div class="contribute-panel">
+          <h4>你有新的素材？</h4>
+          <p>如果你保存了完整录播、原始截图或时间线整理，可以提交到站内归档。提交前请确认素材未被二次编辑。</p>
+          <button class="contribute-btn" type="button">提交素材线索</button>
+        </div>
+      </div>
+
+      <!-- 热门榜 -->
+      <div class="sidebar-card">
+        <h4>条目热度速览</h4>
+        <div class="sidebar-list">
+          <div class="sidebar-list-item">
+            <span class="sidebar-list-num top">1</span>
+            <div>
+              <div class="sidebar-list-title">10月19日直播17秒切片</div>
+              <div class="sidebar-list-meta">47.2万播放 · 10月20日</div>
+            </div>
+          </div>
+          <div class="sidebar-list-item">
+            <span class="sidebar-list-num top">2</span>
+            <div>
+              <div class="sidebar-list-title">星月社终止联动公告</div>
+              <div class="sidebar-list-meta">转发1.1万 · 11月3日</div>
+            </div>
+          </div>
+          <div class="sidebar-list-item">
+            <span class="sidebar-list-num top">3</span>
+            <div>
+              <div class="sidebar-list-title">粉丝群截图第三批</div>
+              <div class="sidebar-list-meta">32张 · 11月5日</div>
+            </div>
+          </div>
+          <div class="sidebar-list-item">
+            <span class="sidebar-list-num">4</span>
+            <div>
+              <div class="sidebar-list-title">直播事故41分钟时间差</div>
+              <div class="sidebar-list-meta">时间线帖1.2万阅读</div>
+            </div>
+          </div>
+          <div class="sidebar-list-item">
+            <span class="sidebar-list-num">5</span>
+            <div>
+              <div class="sidebar-list-title">NGA匿名帖编辑前后</div>
+              <div class="sidebar-list-meta">原帖已不可见</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 更新流 -->
+      <div class="sidebar-card">
+        <h4>最近收录</h4>
+        <div class="sidebar-list">
+          <div class="sidebar-list-item">
+            <span class="sidebar-list-num">11-07</span>
+            <div>
+              <div class="sidebar-list-title">4分12秒完整切片</div>
+              <div class="sidebar-list-meta">新增条目</div>
+            </div>
+          </div>
+          <div class="sidebar-list-item">
+            <span class="sidebar-list-num">11-05</span>
+            <div>
+              <div class="sidebar-list-title">粉丝群截图32张</div>
+              <div class="sidebar-list-meta">第三批归档</div>
+            </div>
+          </div>
+          <div class="sidebar-list-item">
+            <span class="sidebar-list-num">11-03</span>
+            <div>
+              <div class="sidebar-list-title">星月社公告全文</div>
+              <div class="sidebar-list-meta">247字存档</div>
+            </div>
+          </div>
+          <div class="sidebar-list-item">
+            <span class="sidebar-list-num">10-30</span>
+            <div>
+              <div class="sidebar-list-title">NGA匿名帖搬运版</div>
+              <div class="sidebar-list-meta">原帖已删节</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<!-- 页尾 -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">藤原Yuki黑料</div>
+        <p class="footer-desc">覆盖2026年10月19日至11月7日的12个争议条目、3批粉丝群截图、2份合作方公告和5份第三方时间线整理。素材类型包括直播切片、聊天记录截图、品牌声明原文和匿名帖存档，更新节奏与事件发酵同步。</p>
+      </div>
+      <div class="footer-col">
+        <h5>争议条目</h5>
+        <a href="/#featured">10月19日直播切片</a>
+        <a href="/#featured">粉丝群截图第三批</a>
+        <a href="/#featured">星月社终止公告</a>
+        <a href="/#featured">NGA匿名帖</a>
+      </div>
+      <div class="footer-col">
+        <h5>分析工具</h5>
+        <a href="/#analysis">可信度分层表</a>
+        <a href="/#guide">消费顺序建议</a>
+        <a href="/#faq">常见问题</a>
+        <a href="/#ranking">热度榜单</a>
+      </div>
+      <div class="footer-col">
+        <h5>互动</h5>
+        <a href="/#comments">用户讨论</a>
+        <a href="/#news">相关资讯</a>
+        <a href="/#related">推荐标签</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>页面内容为示例聚合，素材名称与日期基于2026年11月8日前公开讨论整理。</span>
+      <span>最近更新：2026年11月7日 · 对应条目：4分12秒切片新增</span>
+    </div>
+  </div>
+</footer>
+
+<!-- 返回顶部 -->
+<button class="back-to-top" id="back-to-top" aria-label="返回顶部">↑</button>
+
+<!-- 搜索无结果提示 -->
+<div class="no-results" id="no-results">没有找到匹配的条目，试试其他关键词。</div>
+
+<script>
+  (function() {
+    // 汉堡菜单
+    var hamburger = document.getElementById('hamburger-btn');
+    var mainNav = document.getElementById('main-nav');
+    var navLinks = mainNav ? mainNav.querySelectorAll('a') : [];
+
+    if (hamburger && mainNav) {
+      hamburger.addEventListener('click', function() {
+        var expanded = hamburger.getAttribute('aria-expanded') === 'true';
+        hamburger.setAttribute('aria-expanded', String(!expanded));
+        mainNav.classList.toggle('open');
+      });
+
+      navLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+          mainNav.classList.remove('open');
+          hamburger.setAttribute('aria-expanded', 'false');
+        });
+      });
+
+      // 点击外部关闭
+      document.addEventListener('click', function(e) {
+        if (mainNav.classList.contains('open') &&
+            !mainNav.contains(e.target) &&
+            !hamburger.contains(e.target)) {
+          mainNav.classList.remove('open');
+          hamburger.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      // Esc 关闭
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && mainNav.classList.contains('open')) {
+          mainNav.classList.remove('open');
+          hamburger.setAttribute('aria-expanded', 'false');
+          hamburger.focus();
+        }
+      });
+    }
+
+    // 返回顶部
+    var backToTop = document.getElementById('back-to-top');
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > window.innerHeight) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    });
+
+    backToTop.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // 搜索筛选
+    var searchInput = document.getElementById('search-input');
+    var noResults = document.getElementById('no-results');
+    if (searchInput) {
+      searchInput.addEventListener('input', function() {
+        var q = this.value.trim().toLowerCase();
+        var cards = document.querySelectorAll('.card, .list-item, .news-item, .comment-item, .faq-item');
+        var visibleCount = 0;
+
+        cards.forEach(function(el) {
+          if (!q) {
+            el.classList.remove('hidden-by-search');
+            visibleCount++;
+            return;
+          }
+          var text = el.textContent.toLowerCase();
+          if (text.indexOf(q) !== -1) {
+            el.classList.remove('hidden-by-search');
+            visibleCount++;
+          } else {
+            el.classList.add('hidden-by-search');
+          }
+        });
+
+        if (visibleCount === 0 && q) {
+          noResults.style.display = 'block';
+        } else {
+          noResults.style.display = 'none';
+        }
+      });
+    }
+
+    // 平滑滚动偏移已用 CSS scroll-padding-top 处理
+  })();
+</script>
+
+<!-- 结构化数据 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "藤原Yuki黑料",
+  "description": "藤原Yuki黑料汇总：整理2026年10月至11月网络流传的争议截图、直播片段与粉丝讨论，覆盖事件时间线、各方回应和内容可信度分层。",
+  "inLanguage": "zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "10月19日直播切片里“有些主播别太蹭了”具体指谁？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "藤原Yuki在直播中未点名。评论区大量指向主播“阿茶”，依据是10月17日阿茶在直播中提到“最近有人联动排期撞了”。阿茶在10月21日直播中被问及此事时回应“不关我事”，未展开。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "星月社为什么终止联动？公告里有没有写具体原因？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "公告全文247字，未写具体原因，关键句是“经评估决定终止原定11月15日的联动直播”。“双方协商”出现3次，未提及违约条款。星月社客服在11月4日回复用户时称“以公告为准”。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "粉丝群截图第三批是真的吗？有没有技术分析？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "第三批32张截图11月5日流出，内容时间戳最晚到11月2日，但文件创建时间显示为10月28日。酷安用户指出同一群聊界面在10月28日截图不可能包含11月2日消息。目前没有第三方哈希校验。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "2024年3月那条微博原文到底是什么？为什么现在才被翻出来？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "原文为“有些同行数据造假还装清高”，发布于2024年3月12日，当时转发量不足50。10月26日被贴吧用户截图转发，12小时内转至微博超话。初始转发账号多为小号，10月27日出现百万粉账号转发。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "NGA匿名帖里说的“前运营”身份被证实了吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "未证实。原帖10月30日发布，自称前运营人员，帖中无截图或文件。原帖3小时后编辑删除两段，随后不可见。目前仅存搬运版本，搬运版中“账号交接”段落被加粗，原帖该段无加粗格式。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "藤原Yuki本人对哪几条争议做过直接回应？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "直接回应有两次：11月1日账号动态“暂停直播，调整状态”，全文68字，未提及具体争议；10月22日直播事故后账号动态称“设备故障”，但粉丝群截图显示管理在41分钟前提到“等那边确认”。其余条目均未见本人公开发言。"
+      }
+    }
+  ]
+}
+</script>
+
+</body>
+  </html>
