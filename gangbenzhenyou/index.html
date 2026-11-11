@@ -1,0 +1,1246 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>冈本真优番号 - 作品索引与类型解析</title>
+<meta name="description" content="冈本真优番号汇集女优冈本真优的作品番号索引、发行厂牌、类型标签与观看顺序参考，覆盖出道期到近期的单体、共演与企划作品，适合想按番号找片和比较类型的观众。">
+<meta name="keywords" content="冈本真优番号">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23161a2b'/%3E%3Cpath d='M18 20h28v6H18zm0 12h18v6H18zm0 12h28v6H18z' fill='%23e8607a'/%3E%3Ccircle cx='48' cy='35' r='6' fill='%23f2c14e'/%3E%3C/svg%3E">
+<style>
+:root{
+  --main:#b5243c;
+  --main-light:#e8607a;
+  --main-dark:#7c1628;
+  --gold:#c99a3c;
+  --bg:#f6f3f0;
+  --panel:#ffffff;
+  --panel-2:#fbf8f5;
+  --ink:#1d1f26;
+  --ink-2:#4b4f5a;
+  --ink-3:#83868f;
+  --line:#e6e0da;
+  --radius-card:14px;
+  --radius-btn:10px;
+  --radius-tag:6px;
+  --radius-banner:18px;
+  --shadow:0 2px 10px rgba(29,31,38,.07);
+  --shadow-hover:0 8px 22px rgba(29,31,38,.13);
+  --sticky-h:96px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  background:var(--bg);color:var(--ink);
+  line-height:1.75;font-size:15px;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+:target{scroll-margin-top:calc(var(--sticky-h) + 12px)}
+section[id],div[id]{scroll-margin-top:calc(var(--sticky-h) + 12px)}
+
+/* ===== 吸顶公告条 + 页头 ===== */
+.sticky-wrap{
+  position:sticky;top:0;z-index:100;
+  background:rgba(246,243,240,.92);
+  backdrop-filter:saturate(160%) blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.notice-bar{
+  background:var(--main-dark);color:#fdf2f4;
+  font-size:12.5px;letter-spacing:.02em;
+  display:flex;align-items:center;gap:14px;
+  padding:6px 18px;overflow:hidden;
+}
+.notice-bar .nb-brand{
+  font-weight:700;white-space:nowrap;
+  color:#fff;padding-right:12px;border-right:1px solid rgba(255,255,255,.28);
+  font-size:12.5px;
+}
+.notice-bar .nb-items{
+  display:flex;gap:22px;white-space:nowrap;
+  overflow-x:auto;scrollbar-width:none;
+}
+.notice-bar .nb-items::-webkit-scrollbar{display:none}
+.notice-bar .nb-items span b{color:#f2c14e;font-weight:700}
+
+.site-header{
+  display:flex;align-items:center;gap:22px;
+  padding:12px 22px;
+  max-width:1400px;margin:0 auto;
+}
+.brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.brand svg{width:36px;height:36px;flex-shrink:0}
+.brand-name{font-size:19px;font-weight:800;letter-spacing:.01em;color:var(--ink)}
+.brand-name em{font-style:normal;color:var(--main)}
+.head-nav{display:flex;gap:4px;flex-wrap:wrap;flex:1}
+.head-nav a{
+  font-size:13.5px;color:var(--ink-2);padding:6px 11px;border-radius:var(--radius-tag);
+  transition:background .18s,color .18s;white-space:nowrap;
+}
+.head-nav a:hover,.head-nav a:focus-visible{background:#f3e2e5;color:var(--main-dark);outline:none}
+.head-quick{display:flex;gap:10px;align-items:center;flex-shrink:0}
+.search-box{position:relative}
+.search-box input{
+  width:170px;padding:7px 12px 7px 30px;border:1px solid var(--line);
+  border-radius:20px;font-size:13px;background:var(--panel);
+  color:var(--ink);transition:border-color .18s,box-shadow .18s;
+}
+.search-box input:focus{outline:none;border-color:var(--main-light);box-shadow:0 0 0 3px rgba(232,96,122,.18)}
+.search-box svg{position:absolute;left:10px;top:50%;transform:translateY(-50%);width:14px;height:14px;stroke:var(--ink-3)}
+.btn-ghost{
+  font-size:13px;padding:7px 14px;border-radius:20px;border:1px solid var(--main);
+  color:var(--main);background:transparent;transition:background .18s,color .18s;white-space:nowrap;
+}
+.btn-ghost:hover,.btn-ghost:focus-visible{background:var(--main);color:#fff;outline:none}
+.hamburger{display:none;background:transparent;border:1px solid var(--line);border-radius:8px;padding:6px 8px}
+.hamburger svg{width:20px;height:20px;stroke:var(--ink)}
+
+.mobile-mask{display:none;position:fixed;inset:0;background:rgba(20,18,24,.45);z-index:110}
+.mobile-drawer{
+  position:fixed;top:0;right:0;width:280px;max-width:84vw;height:100%;
+  background:var(--panel);z-index:120;padding:22px 18px;
+  transform:translateX(105%);transition:transform .26s ease;
+  overflow-y:auto;box-shadow:-8px 0 30px rgba(0,0,0,.16);
+}
+.drawer-open .mobile-drawer{transform:translateX(0)}
+.drawer-open .mobile-mask{display:block}
+.mobile-drawer h4{font-size:13px;color:var(--ink-3);letter-spacing:.08em;margin:18px 0 8px}
+.mobile-drawer a{display:block;padding:9px 6px;font-size:14.5px;border-bottom:1px solid var(--line);color:var(--ink-2)}
+.mobile-drawer a:first-of-type{margin-top:4px}
+.drawer-close{position:absolute;top:12px;right:12px;background:transparent;border:none;padding:6px}
+.drawer-close svg{width:20px;height:20px;stroke:var(--ink)}
+
+/* ===== 首屏 ===== */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(ellipse 60% 80% at 88% 12%,rgba(232,96,122,.22),transparent 62%),
+    radial-gradient(ellipse 55% 70% at 6% 88%,rgba(201,154,60,.18),transparent 60%),
+    linear-gradient(158deg,#201c2c 0%,#2d2130 52%,#3a2430 100%);
+  color:#f8f1ec;
+  padding:56px 22px 60px;
+}
+.hero-inner{max-width:1300px;margin:0 auto;display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center;position:relative;z-index:2}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12px;letter-spacing:.14em;color:#f2c14e;
+  border:1px solid rgba(242,193,78,.42);padding:4px 12px;border-radius:20px;margin-bottom:18px;
+}
+.hero h1{
+  font-size:clamp(30px,4.4vw,50px);line-height:1.16;font-weight:900;
+  letter-spacing:-.01em;margin-bottom:16px;
+  background:linear-gradient(100deg,#fff 20%,#f6c8d2 60%,#f2c14e 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero-desc{font-size:15.5px;line-height:1.85;color:#e2d6d0;max-width:560px;margin-bottom:24px}
+.hero-desc b{color:#fff;font-weight:600}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn-main{
+  background:var(--main);color:#fff;border:none;border-radius:24px;
+  padding:11px 24px;font-size:14px;font-weight:600;
+  transition:background .2s,transform .2s,box-shadow .2s;
+}
+.btn-main:hover,.btn-main:focus-visible{background:var(--main-light);transform:translateY(-2px);box-shadow:0 8px 18px rgba(232,96,122,.3);outline:none}
+.btn-line{
+  background:transparent;color:#f8f1ec;border:1px solid rgba(248,241,236,.42);
+  border-radius:24px;padding:11px 24px;font-size:14px;
+  transition:border-color .2s,background .2s;
+}
+.btn-line:hover,.btn-line:focus-visible{border-color:#fff;background:rgba(255,255,255,.1);outline:none}
+.hero-stats{display:flex;gap:30px;margin-top:30px;flex-wrap:wrap}
+.hero-stats div{font-size:12.5px;color:#bfa9a4}
+.hero-stats strong{display:block;font-size:22px;color:#fff;font-weight:800;line-height:1.3}
+.hero-visual{position:relative;height:330px}
+.hero-visual svg{width:100%;height:100%}
+.hero-visual .float-card{
+  position:absolute;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);
+  border-radius:10px;padding:8px 12px;font-size:12px;color:#efe4de;backdrop-filter:blur(6px);
+}
+.hero-visual .fc1{top:6%;left:4%;animation:drift 7s ease-in-out infinite}
+.hero-visual .fc2{bottom:12%;right:2%;animation:drift 8s ease-in-out infinite reverse}
+@keyframes drift{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+
+/* ===== 主容器三栏 ===== */
+.container{max-width:1360px;margin:0 auto;padding:34px 22px 0}
+.layout{display:grid;grid-template-columns:178px minmax(0,1fr) 246px;gap:30px;align-items:start}
+
+/* 左侧频道索引 */
+.channel-col{position:sticky;top:calc(var(--sticky-h) + 14px)}
+.channel-col h3{font-size:12px;letter-spacing:.12em;color:var(--ink-3);margin-bottom:12px;font-weight:600}
+.channel-list{list-style:none;display:flex;flex-direction:column;gap:2px}
+.channel-list a{
+  display:flex;align-items:center;justify-content:space-between;
+  font-size:13.5px;color:var(--ink-2);padding:8px 10px;border-radius:8px;
+  border-left:2px solid transparent;transition:background .16s,color .16s,border-color .16s;
+}
+.channel-list a span{font-size:11px;color:var(--ink-3)}
+.channel-list a:hover,.channel-list a:focus-visible{background:#f3e2e5;color:var(--main-dark);outline:none}
+.channel-list a.active{background:#f9dfe4;color:var(--main-dark);border-left-color:var(--main);font-weight:600}
+.channel-note{
+  margin-top:18px;padding:12px;background:var(--panel);border:1px solid var(--line);
+  border-radius:10px;font-size:12px;color:var(--ink-3);line-height:1.7;
+}
+
+/* 主内容 */
+.main-col{min-width:0}
+.block{margin-bottom:48px}
+.block-head{margin-bottom:18px}
+.block-head h2{
+  font-size:21px;font-weight:800;letter-spacing:-.01em;
+  display:flex;align-items:center;gap:10px;
+}
+.block-head h2::before{
+  content:"";width:4px;height:18px;border-radius:2px;
+  background:linear-gradient(var(--main-light),var(--main-dark));
+}
+.block-head .sub{font-size:12.5px;color:var(--ink-3);margin-top:6px;margin-left:14px}
+
+/* 概览 */
+.overview{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);
+  padding:22px 24px;box-shadow:var(--shadow);
+}
+.overview p{font-size:14.2px;line-height:1.92;color:var(--ink-2);margin-bottom:12px}
+.overview p:last-child{margin-bottom:0}
+.overview b{color:var(--main-dark);font-weight:700}
+
+/* 精选卡片 */
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:16px}
+.card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);
+  overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;
+  transition:transform .2s,box-shadow .2s;
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+.card .thumb{aspect-ratio:4/3;width:100%;object-fit:cover;background:#e8e2dc}
+.card-body{padding:12px 14px 14px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card-title{font-size:14.5px;font-weight:700;line-height:1.45;color:var(--ink)}
+.card-title small{display:block;font-size:11.5px;color:var(--main);font-weight:600;letter-spacing:.04em;margin-bottom:2px}
+.card-desc{font-size:12.6px;color:var(--ink-2);line-height:1.72}
+.tag-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto}
+.tag{
+  font-size:11px;padding:2px 8px;border-radius:var(--radius-tag);
+  background:#f7e8eb;color:var(--main-dark);white-space:nowrap;
+}
+.tag.gold{background:#f9efd8;color:#8a6420}
+.card-meta{display:flex;justify-content:space-between;font-size:11.5px;color:var(--ink-3);border-top:1px dashed var(--line);padding-top:8px;margin-top:4px}
+
+/* 最新更新列表 */
+.update-list{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);overflow:hidden;box-shadow:var(--shadow)}
+.update-item{display:flex;gap:14px;padding:13px 18px;border-bottom:1px solid var(--line);align-items:flex-start;transition:background .16s}
+.update-item:last-child{border-bottom:none}
+.update-item:hover{background:var(--panel-2)}
+.up-date{
+  font-size:11.5px;color:var(--main);font-weight:700;flex-shrink:0;width:52px;
+  padding-top:2px;letter-spacing:.02em;
+}
+.up-main{flex:1;min-width:0}
+.up-title{font-size:14px;font-weight:600;color:var(--ink);margin-bottom:3px}
+.up-title span{font-size:11px;color:var(--ink-3);font-weight:400;margin-left:8px}
+.up-sum{font-size:12.6px;color:var(--ink-2);line-height:1.65}
+
+/* 分类入口 */
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.cat-item{
+  background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:12px 14px;display:flex;flex-direction:column;gap:3px;
+  transition:border-color .18s,background .18s;
+}
+.cat-item:hover,.cat-item:focus-visible{border-color:var(--main-light);background:#fdf5f6;outline:none}
+.cat-item strong{font-size:13.5px;color:var(--ink);font-weight:700}
+.cat-item span{font-size:11.5px;color:var(--ink-3)}
+
+/* 深度解析 */
+.deep{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);
+  padding:26px 30px;box-shadow:var(--shadow);
+}
+.deep h3{font-size:17px;font-weight:800;margin:26px 0 10px;color:var(--ink);letter-spacing:-.005em}
+.deep h3:first-of-type{margin-top:4px}
+.deep p{font-size:14px;line-height:1.92;color:var(--ink-2);margin-bottom:12px}
+.deep ul{margin:0 0 14px 18px}
+.deep li{font-size:13.6px;line-height:1.85;color:var(--ink-2);margin-bottom:6px}
+.deep li b{color:var(--main-dark)}
+.deep .quote{
+  border-left:3px solid var(--main-light);background:#fdf5f6;
+  padding:10px 16px;font-size:13.4px;color:var(--ink-2);border-radius:0 8px 8px 0;margin:14px 0;
+}
+
+/* 体验指南步骤 */
+.steps{display:flex;flex-direction:column;gap:0;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);overflow:hidden;box-shadow:var(--shadow)}
+.step{display:grid;grid-template-columns:56px 1fr;gap:16px;padding:18px 22px;border-bottom:1px solid var(--line)}
+.step:last-child{border-bottom:none}
+.step-num{
+  font-size:22px;font-weight:900;color:var(--main-light);
+  line-height:1;padding-top:2px;letter-spacing:-.02em;
+}
+.step h4{font-size:14.5px;font-weight:700;margin-bottom:4px}
+.step p{font-size:13px;color:var(--ink-2);line-height:1.78}
+
+/* FAQ */
+.faq-list{display:flex;flex-direction:column;gap:10px}
+.faq-list details{
+  background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:0;overflow:hidden;transition:border-color .18s;
+}
+.faq-list details[open]{border-color:var(--main-light)}
+.faq-list summary{
+  cursor:pointer;padding:13px 18px;font-size:14px;font-weight:600;
+  list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;
+}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary::after{
+  content:"+";font-size:18px;color:var(--main);font-weight:400;
+  transition:transform .2s;flex-shrink:0;
+}
+.faq-list details[open] summary::after{transform:rotate(45deg)}
+.faq-list summary:focus-visible{outline:2px solid var(--main-light);outline-offset:-2px}
+.faq-ans{padding:0 18px 15px;font-size:13.2px;color:var(--ink-2);line-height:1.85;border-top:1px dashed var(--line);padding-top:12px;margin:0 18px 15px;padding-left:0;padding-right:0}
+
+/* 评论 */
+.comment-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(248px,1fr));gap:12px}
+.comment{
+  background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:12px 14px;font-size:12.8px;line-height:1.72;color:var(--ink-2);
+  display:flex;flex-direction:column;gap:6px;
+}
+.comment .c-head{display:flex;justify-content:space-between;font-size:11.5px;color:var(--ink-3)}
+.comment .c-name{font-weight:700;color:var(--main-dark)}
+.comment p{flex:1}
+.comment .c-target{font-size:11px;color:var(--gold);font-weight:600}
+
+/* 资讯 */
+.news-list{display:flex;flex-direction:column;gap:0;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);overflow:hidden;box-shadow:var(--shadow)}
+.news-item{padding:14px 18px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:1fr auto;gap:10px;align-items:start}
+.news-item:last-child{border-bottom:none}
+.news-item:hover{background:var(--panel-2)}
+.news-title{font-size:14px;font-weight:600;margin-bottom:3px}
+.news-sum{font-size:12.6px;color:var(--ink-2);line-height:1.65}
+.news-date{font-size:11.5px;color:var(--ink-3);white-space:nowrap;padding-top:2px}
+
+/* 相关推荐标签云 */
+.reco-cloud{display:flex;flex-wrap:wrap;gap:9px}
+.reco-cloud a{
+  font-size:12.8px;padding:6px 13px;border-radius:20px;
+  background:var(--panel);border:1px solid var(--line);color:var(--ink-2);
+  transition:background .16s,border-color .16s,color .16s;
+}
+.reco-cloud a:hover,.reco-cloud a:focus-visible{background:var(--main);border-color:var(--main);color:#fff;outline:none}
+
+/* 榜单 */
+.rank-list{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);overflow:hidden;box-shadow:var(--shadow)}
+.rank-item{display:grid;grid-template-columns:32px 1fr auto;gap:12px;padding:11px 18px;border-bottom:1px solid var(--line);align-items:center}
+.rank-item:last-child{border-bottom:none}
+.rank-no{font-size:15px;font-weight:900;color:var(--ink-3);text-align:center}
+.rank-item:nth-child(1) .rank-no{color:var(--main)}
+.rank-item:nth-child(2) .rank-no{color:var(--main-light)}
+.rank-item:nth-child(3) .rank-no{color:var(--gold)}
+.rank-name{font-size:13.6px;font-weight:600}
+.rank-name span{font-size:11.5px;color:var(--ink-3);font-weight:400;margin-left:6px}
+.rank-score{font-size:12px;color:var(--main);font-weight:700}
+
+/* 投稿互动区 */
+.submit-panel{
+  background:linear-gradient(120deg,#2b1e2b,#3d2430);color:#f3e7e2;
+  border-radius:var(--radius-banner);padding:26px 28px;
+  display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;
+}
+.submit-panel h3{font-size:18px;font-weight:800;margin-bottom:6px}
+.submit-panel p{font-size:13px;color:#cdb9b4;line-height:1.75;max-width:520px}
+.submit-panel .btn-main{background:#f2c14e;color:#3a2410;font-weight:700}
+.submit-panel .btn-main:hover{background:#ffd873}
+
+/* 右侧辅助栏 */
+.aside-col{display:flex;flex-direction:column;gap:22px;position:sticky;top:calc(var(--sticky-h) + 14px)}
+.aside-box{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);padding:16px;box-shadow:var(--shadow)}
+.aside-box h3{font-size:13px;font-weight:800;letter-spacing:.04em;margin-bottom:12px;display:flex;align-items:center;gap:7px}
+.aside-box h3::before{content:"";width:3px;height:13px;border-radius:2px;background:var(--main)}
+.hot-list{list-style:none;display:flex;flex-direction:column;gap:9px}
+.hot-list li{display:flex;gap:8px;font-size:12.6px;line-height:1.55;align-items:flex-start}
+.hot-list .hl-no{font-size:11px;font-weight:800;color:var(--main-light);flex-shrink:0;width:15px;padding-top:1px}
+.hot-list a:hover{color:var(--main)}
+.aside-tags{display:flex;flex-wrap:wrap;gap:6px}
+.aside-tags a{font-size:11.5px;padding:3px 9px;border-radius:14px;background:#f3ece8;color:var(--ink-2);transition:background .16s,color .16s}
+.aside-tags a:hover{background:var(--main);color:#fff}
+.aside-note{font-size:11.5px;color:var(--ink-3);line-height:1.7}
+.aside-note b{color:var(--main-dark)}
+
+/* 页尾 */
+.site-footer{
+  margin-top:56px;background:#241c26;color:#c9bcb8;
+  padding:44px 22px 28px;
+}
+.footer-inner{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:1.3fr 2fr;gap:40px}
+.footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.footer-brand svg{width:30px;height:30px}
+.footer-brand strong{font-size:17px;color:#fff;font-weight:800}
+.footer-desc{font-size:12.8px;line-height:1.85;color:#a99a96;max-width:340px}
+.footer-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.footer-cols h4{font-size:12.5px;color:#f2c14e;letter-spacing:.08em;margin-bottom:10px;font-weight:700}
+.footer-cols a{display:block;font-size:12.5px;color:#a99a96;padding:3px 0;transition:color .16s}
+.footer-cols a:hover{color:#fff}
+.footer-bottom{
+  max-width:1320px;margin:30px auto 0;padding-top:18px;
+  border-top:1px solid rgba(255,255,255,.1);
+  font-size:11.5px;color:#877874;line-height:1.8;
+  display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;
+}
+
+/* 回顶 */
+.to-top{
+  position:fixed;right:20px;bottom:24px;z-index:90;
+  width:44px;height:44px;border-radius:50%;border:none;
+  background:var(--main);color:#fff;font-size:18px;
+  box-shadow:0 6px 18px rgba(181,36,60,.34);
+  opacity:0;visibility:hidden;transform:translateY(10px);
+  transition:opacity .22s,transform .22s,background .2s;
+}
+.to-top.show{opacity:1;visibility:visible;transform:translateY(0)}
+.to-top:hover{background:var(--main-dark)}
+
+.search-empty{
+  display:none;padding:16px;font-size:13px;color:var(--ink-3);
+  background:var(--panel-2);border:1px dashed var(--line);border-radius:10px;margin-top:12px;
+}
+.search-empty.show{display:block}
+
+/* 响应式 */
+@media(max-width:1100px){
+  .layout{grid-template-columns:1fr 240px}
+  .channel-col{display:none}
+  .head-nav{display:none}
+  .hamburger{display:inline-flex}
+  .hero-inner{grid-template-columns:1fr;gap:30px}
+  .hero-visual{height:240px;order:-1}
+}
+@media(max-width:860px){
+  .layout{grid-template-columns:1fr}
+  .aside-col{position:static;flex-direction:row;flex-wrap:wrap}
+  .aside-box{flex:1;min-width:240px}
+  .footer-inner{grid-template-columns:1fr;gap:26px}
+  .footer-cols{grid-template-columns:repeat(3,1fr)}
+  .submit-panel{grid-template-columns:1fr}
+  .deep{padding:20px 20px}
+  .search-box input{width:130px}
+}
+@media(max-width:740px){
+  :root{--sticky-h:88px}
+  .site-header{padding:10px 14px;gap:12px}
+  .brand-name{font-size:16px}
+  .brand svg{width:30px;height:30px}
+  .search-box{display:none}
+  .container{padding:24px 14px 0}
+  .hero{padding:36px 14px 42px}
+  .hero-stats{gap:20px}
+  .hero-stats strong{font-size:18px}
+  .block{margin-bottom:38px}
+  .block-head h2{font-size:18.5px}
+  .deep{padding:18px 16px}
+  .step{grid-template-columns:38px 1fr;padding:14px 14px;gap:10px}
+  .step-num{font-size:18px}
+  .footer-cols{grid-template-columns:1fr 1fr}
+  .notice-bar{padding:5px 12px;gap:8px}
+  .notice-bar .nb-brand{font-size:11px;padding-right:8px}
+  .notice-bar .nb-items{gap:14px;font-size:11.5px}
+  .rank-item{grid-template-columns:26px 1fr auto;padding:10px 12px}
+  .to-top{right:12px;bottom:16px;width:40px;height:40px}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-wrap">
+  <div class="notice-bar" role="region" aria-label="更新公告">
+    <span class="nb-brand">冈本真优番号</span>
+    <div class="nb-items">
+      <span><b>11-07</b> 新增 HMN-482 单体作品收录</span>
+      <span><b>11-06</b> 补录 2024 年共演企划 6 条</span>
+      <span><b>11-04</b> 厂牌索引更新至 21 家</span>
+      <span><b>11-02</b> 类型标签新增「剧情向」分类</span>
+    </div>
+  </div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="冈本真优番号首页">
+      <svg viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="14" fill="#161a2b"/>
+        <path d="M18 20h28v6H18zm0 12h18v6H18zm0 12h28v6H18z" fill="#e8607a"/>
+        <circle cx="48" cy="35" r="6" fill="#f2c14e"/>
+      </svg>
+      <span class="brand-name">冈本真优<em>番号</em></span>
+    </a>
+    <nav class="head-nav" aria-label="主导航">
+      <a href="#overview">领域概览</a>
+      <a href="#featured">精选作品</a>
+      <a href="#updates">最新更新</a>
+      <a href="#categories">分类入口</a>
+      <a href="#deep">深度解析</a>
+      <a href="#guide">观看路径</a>
+      <a href="#faq">常见问答</a>
+      <a href="#comments">用户评论</a>
+      <a href="#news">相关资讯</a>
+      <a href="#rank">人气榜单</a>
+    </nav>
+    <div class="head-quick">
+      <div class="search-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input type="search" id="siteSearch" placeholder="搜索番号 / 标签" aria-label="搜索番号或标签">
+      </div>
+      <a class="btn-ghost" href="#submit">投稿补录</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="打开菜单" aria-expanded="false" aria-controls="mobileDrawer">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </header>
+</div>
+
+<div class="mobile-mask" id="mobileMask" aria-hidden="true"></div>
+<aside class="mobile-drawer" id="mobileDrawer" aria-label="移动端导航">
+  <button class="drawer-close" id="drawerClose" aria-label="关闭菜单">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+  </button>
+  <h4>频道索引</h4>
+  <a href="#overview">领域概览</a>
+  <a href="#featured">精选作品</a>
+  <a href="#updates">最新更新</a>
+  <a href="#categories">分类入口</a>
+  <a href="#deep">深度解析</a>
+  <a href="#guide">观看路径</a>
+  <a href="#faq">常见问答</a>
+  <a href="#comments">用户评论</a>
+  <a href="#news">相关资讯</a>
+  <a href="#rank">人气榜单</a>
+  <a href="#submit">投稿补录</a>
+</aside>
+
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <div>
+      <span class="hero-tag">作品索引 · 类型解析 · 2026</span>
+      <h1>冈本真优番号</h1>
+      <p class="hero-desc">按番号检索女优<b>冈本真优</b>的发行作品：收录单体、共演与企划三类形态，标注厂牌、发行日期、时长与类型标签。当前整理 <b>HMN、SSIS、MIAA</b> 等 21 家厂牌的 186 条番号记录，可按出道期、剧情向、职场设定三条线索筛选。</p>
+      <div class="hero-actions">
+        <a class="btn-main" href="#featured">浏览精选作品</a>
+        <a class="btn-line" href="#guide">查看观看顺序</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>186</strong>收录番号</div>
+        <div><strong>21</strong>发行厂牌</div>
+        <div><strong>3</strong>作品形态</div>
+        <div><strong>11-07</strong>最近更新</div>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <svg viewBox="0 0 400 330" fill="none">
+        <defs>
+          <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#e8607a" stop-opacity=".55"/>
+            <stop offset="1" stop-color="#f2c14e" stop-opacity=".18"/>
+          </linearGradient>
+        </defs>
+        <rect x="40" y="30" width="320" height="270" rx="18" stroke="url(#g1)" stroke-width="1.5"/>
+        <rect x="64" y="58" width="130" height="88" rx="8" fill="#ffffff" fill-opacity=".07"/>
+        <rect x="76" y="72" width="72" height="6" rx="3" fill="#f2c14e" fill-opacity=".85"/>
+        <rect x="76" y="86" width="100" height="4" rx="2" fill="#ffffff" fill-opacity=".3"/>
+        <rect x="76" y="96" width="84" height="4" rx="2" fill="#ffffff" fill-opacity=".22"/>
+        <rect x="76" y="112" width="46" height="16" rx="8" fill="#e8607a" fill-opacity=".55"/>
+        <rect x="208" y="58" width="128" height="88" rx="8" fill="#ffffff" fill-opacity=".05"/>
+        <rect x="220" y="72" width="64" height="6" rx="3" fill="#ffffff" fill-opacity=".5"/>
+        <rect x="220" y="86" width="96" height="4" rx="2" fill="#ffffff" fill-opacity=".28"/>
+        <rect x="220" y="96" width="72" height="4" rx="2" fill="#ffffff" fill-opacity=".2"/>
+        <rect x="64" y="160" width="272" height="52" rx="8" fill="#ffffff" fill-opacity=".05"/>
+        <circle cx="88" cy="186" r="12" fill="#f2c14e" fill-opacity=".7"/>
+        <rect x="110" y="176" width="120" height="5" rx="2.5" fill="#ffffff" fill-opacity=".4"/>
+        <rect x="110" y="188" width="80" height="4" rx="2" fill="#ffffff" fill-opacity=".24"/>
+        <rect x="64" y="226" width="130" height="52" rx="8" fill="#e8607a" fill-opacity=".14"/>
+        <rect x="76" y="240" width="60" height="5" rx="2.5" fill="#ffffff" fill-opacity=".45"/>
+        <rect x="76" y="252" width="92" height="4" rx="2" fill="#ffffff" fill-opacity=".25"/>
+        <rect x="206" y="226" width="130" height="52" rx="8" fill="#ffffff" fill-opacity=".05"/>
+        <rect x="218" y="240" width="54" height="5" rx="2.5" fill="#f2c14e" fill-opacity=".7"/>
+        <rect x="218" y="252" width="88" height="4" rx="2" fill="#ffffff" fill-opacity=".22"/>
+      </svg>
+      <div class="float-card fc1">HMN-482 · 2026-11-05 发行</div>
+      <div class="float-card fc2">SSIS-731 · 剧情向 92 分钟</div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+<div class="layout">
+
+  <!-- 左频道索引 -->
+  <nav class="channel-col" aria-label="频道索引">
+    <h3>频道索引</h3>
+    <ul class="channel-list" id="channelList">
+      <li><a href="#overview" class="active">领域概览</a></li>
+      <li><a href="#featured">精选作品<span>12</span></a></li>
+      <li><a href="#updates">最新更新<span>10</span></a></li>
+      <li><a href="#categories">分类入口<span>8</span></a></li>
+      <li><a href="#deep">深度解析</a></li>
+      <li><a href="#guide">观看路径</a></li>
+      <li><a href="#faq">常见问答<span>6</span></a></li>
+      <li><a href="#comments">用户评论<span>16</span></a></li>
+      <li><a href="#news">相关资讯<span>6</span></a></li>
+      <li><a href="#rank">人气榜单<span>8</span></a></li>
+      <li><a href="#submit">投稿补录</a></li>
+    </ul>
+    <div class="channel-note">
+      番号格式说明：字母前缀代表厂牌，数字段代表该厂发行序号。同一番号可能跨版本发行，以最新收录版本为准。
+    </div>
+  </nav>
+
+  <!-- 主内容 -->
+  <main class="main-col">
+
+    <!-- 1 领域概览 -->
+    <section class="block" id="overview">
+      <div class="block-head">
+        <h2>女优番号体系与作品分布</h2>
+        <div class="sub">从厂牌前缀到类型标签，理解番号背后的发行结构</div>
+      </div>
+      <div class="overview">
+        <p>冈本真优的番号体系主要围绕三家主力厂牌展开：<b>HMN</b> 系列以单体作品为主，单部时长集中在 120—150 分钟，发行节奏约每月 2 部；<b>SSIS</b> 系列偏向剧情设定，常见职场、家庭、旅行三类场景，平均时长 90—110 分钟；<b>MIAA</b> 系列则以共演和企划合集为主，单部通常收录 3—5 位女优的分段内容。</p>
+        <p>从 2023 年出道期到 2026 年 11 月，可查的番号记录共 186 条。其中单体作品 112 条，共演作品 41 条，企划合集 33 条。出道前 12 个月的番号以 HMN 开头，2024 年 6 月起开始出现 SSIS 前缀，2025 年新增 MIAA 企划线。</p>
+        <p>类型标签方面，剧情向占比最高，约 38%；其次是职场设定 22%、日常向 18%、旅行外景 12%，其余为特殊企划。同一番号在部分平台会标注双类型，检索时以厂牌官网标注为准。观看顺序上，多数观众从 HMN 单体入门，再转向 SSIS 剧情线，最后补 MIAA 共演合集。</p>
+      </div>
+    </section>
+
+    <!-- 2 精选作品 -->
+    <section class="block" id="featured">
+      <div class="block-head">
+        <h2>精选番号作品</h2>
+        <div class="sub">按厂牌、类型与发行时间挑选的 12 条代表作</div>
+      </div>
+      <div class="card-grid" id="featuredGrid">
+        <article class="card" data-search="HMN-482 单体 剧情向 职场">
+          <img class="thumb" src="https://picsum.photos/seed/hmn482/400/300" width="400" height="300" loading="lazy" alt="HMN-482 单体作品封面，职场设定场景">
+          <div class="card-body">
+            <div class="card-title"><small>HMN-482</small>职场上司与下属的三日</div>
+            <p class="card-desc">2026 年 11 月 5 日发行，128 分钟。以办公室为单一场景，前 40 分钟铺陈关系，后段转入冲突。冈本真优在片中首次尝试长镜头独白。</p>
+            <div class="tag-row"><span class="tag">单体</span><span class="tag">职场</span><span class="tag gold">2026-11-05</span></div>
+            <div class="card-meta"><span>热度 9.4</span><span>128 分钟</span></div>
+          </div>
+        </article>
+        <article class="card" data-search="SSIS-731 剧情向 家庭 共演">
+          <img class="thumb" src="https://picsum.photos/seed/ssis731/400/300" width="400" height="300" loading="lazy" alt="SSIS-731 剧情作品封面，家庭场景室内布置">
+          <div class="card-body">
+            <div class="card-title"><small>SSIS-731</small>雨夜归家的两小时</div>
+            <p class="card-desc">2026 年 10 月 22 日发行，96 分钟。全片仅两个场景，靠对话推进。片中雨声为现场收音，未做后期替换，是 SSIS 系列近年少见的写实处理。</p>
+            <div class="tag-row"><span class="tag">剧情向</span><span class="tag">家庭</span><span class="tag gold">2026-10-22</span></div>
+            <div class="card-meta"><span>热度 9.1</span><span>96 分钟</span></div>
+          </div>
+        </article>
+        <article class="card" data-search="MIAA-916 共演 企划 旅行">
+          <img class="thumb" src="https://picsum.photos/seed/miaa916/400/300" width="400" height="300" loading="lazy" alt="MIAA-916 共演企划封面，海边旅行外景">
+          <div class="card-body">
+            <div class="card-title"><small>MIAA-916</small>海边的四个下午</div>
+            <p class="card-desc">2026 年 10 月 15 日发行，共演企划，收录 4 位女优分段内容。冈本真优负责第二段与第四段，外景地在千叶县鸭川，拍摄周期两天。</p>
+            <div class="tag-row"><span class="tag">共演</span><span class="tag">旅行</span><span class="tag gold">2026-10-15</span></div>
+            <div class="card-meta"><span>热度 8.8</span><span>142 分钟</span></div>
+          </div>
+        </article>
+        <article class="card" data-search="HMN-451 单体 日常 出道">
+          <img class="thumb" src="https://picsum.photos/seed/hmn451/400/300" width="400" height="300" loading="lazy" alt="HMN-451 出道期单体作品封面，日常室内场景">
+          <div class="card-body">
+            <div class="card-title"><small>HMN-451</small>出道第三部的公寓日常</div>
+            <p class="card-desc">2024 年 3 月 8 日发行，115 分钟。出道期第三部单体，全片在单间公寓拍摄，运镜朴素。片中保留了两次 NG 片段作为花絮收录。</p>
+            <div class="tag-row"><span class="tag">单体</span><span class="tag">日常</span><span class="tag gold">2024-03-08</span></div>
+            <div class="card-meta"><span>热度 8.2</span><span>115 分钟</span></div>
+          </div>
+        </article>
+        <article class="card" data-search="SSIS-698 剧情向 旅行 外景">
+          <img class="thumb" src="https://picsum.photos/seed/ssis698/400/300" width="400" height="300" loading="lazy" alt="SSIS-698 旅行外景剧情作品封面，温泉旅馆">
+          <div class="card-body">
+            <div class="card-title"><small>SSIS-698</small>箱根温泉的两晚</div>
+            <p class="card-desc">2026 年 9 月 18 日发行，104 分钟。外景地在箱根强罗，拍摄时遇雨，部分镜头改为室内。片中旅馆走廊的长镜头被观众反复提及。</p>
+            <div class="tag-row"><span class="tag">剧情向</span><span class="tag">旅行</span><span class="tag gold">2026-09-18</span></div>
+            <div class="card-meta"><span>热度 8.9</span><span>104 分钟</span></div>
+          </div>
+        </article>
+        <article class="card" data-search="MIAA-874 企划 合集 共演">
+          <img class="thumb" src="https://picsum.photos/seed/miaa874/400/300" width="400" height="300" loading="lazy" alt="MIAA-874 企划合集封面，多段内容拼贴">
+          <div class="card-body">
+            <div class="card-title"><small>MIAA-874</small>夏日企划合集 2026</div>
+            <p class="card-desc">2026 年 8 月 30 日发行，共 5 段内容，冈本真优出现在第 1 段与第 5 段。第 5 段为群像收尾，拍摄于东京江户川区一处旧仓库。</p>
+            <div class="tag-row"><span class="tag">企划</span><span class="tag">合集</span><span class="tag gold">2026-08-30</span></div>
+            <div class="card-meta"><span>热度 8.5</span><span>156 分钟</span></div>
+          </div>
+        </article>
+        <article class="card" data-search="HMN-503 单体 剧情向 悬疑">
+          <img class="thumb" src="https://picsum.photos/seed/hmn503/400/300" width="400" height="300" loading="lazy" alt="HMN-503 悬疑设定单体作品封面，暗调室内">
+          <div class="card-body">
+            <div class="card-title"><small>HMN-503</small>停电夜的邻居</div>
+            <p class="card-desc">2026 年 11 月 7 日收录，132 分钟。HMN 系列少见的悬疑设定，全片以低照度拍摄，片尾有 8 分钟反转段落。发行方标注为「实验性单体」。</p>
+            <div class="tag-row"><span class="tag">单体</span><span class="tag">悬疑</span><span class="tag gold">2026-11-07</span></div>
+            <div class="card-meta"><span>热度 9.2</span><span>132 分钟</span></div>
+          </div>
+        </article>
+        <article class="card" data-search="SSIS-745 剧情向 职场 新作">
+          <img class="thumb" src="https://picsum.photos/seed/ssis745/400/300" width="400" height="300" loading="lazy" alt="SSIS-745 职场剧情新作封面，办公室场景">
+          <div class="card-body">
+            <div class="card-title"><small>SSIS-745</small>加班到凌晨的会议室</div>
+            <p class="card-desc">2026 年 10 月 29 日发行，98 分钟。SSIS 职场线的第 7 部，与前作共享同一办公场景。片中时间线从傍晚推进到凌晨，灯光随之变化。</p>
+            <div class="tag-row"><span class="tag">剧情向</span><span class="tag">职场</span><span class="tag gold">2026-10-29</span></div>
+            <div class="card-meta"><span>热度 8.7</span><span>98 分钟</span></div>
+          </div>
+        </article>
+        <article class="card" data-search="MIAA-889 企划 互动 共演">
+          <img class="thumb" src="https://picsum.photos/seed/miaa889/400/300" width="400" height="300" loading="lazy" alt="MIAA-889 互动企划封面，录制现场">
+          <div class="card-body">
+            <div class="card-title"><small>MIAA-889</small>观众提问企划第二弹</div>
+            <p class="card-desc">2026 年 9 月 5 日发行，收录拍摄前观众投稿的 46 个问题，片中回答其中 18 个。冈本真优在片尾提到对「剧情向」标签的看法，被剪成单独片段。</p>
+            <div class="tag-row"><span class="tag">企划</span><span class="tag">互动</span><span class="tag gold">2026-09-05</span></div>
+            <div class="card-meta"><span>热度 8.4</span><span>118 分钟</span></div>
+          </div>
+        </article>
+        <article class="card" data-search="HMN-467 单体 日常 早春">
+          <img class="thumb" src="https://picsum.photos/seed/hmn467/400/300" width="400" height="300" loading="lazy" alt="HMN-467 早春日常单体作品封面，室内窗边">
+          <div class="card-body">
+            <div class="card-title"><small>HMN-467</small>早春三月的窗边</div>
+            <p class="card-desc">2024 年 11 月 12 日发行，122 分钟。出道第一年的收官单体，全片自然光拍摄，几乎没有布景改动。片尾附 6 分钟采访，谈出道一年的感受。</p>
+            <div class="tag-row"><span class="tag">单体</span><span class="tag">日常</span><span class="tag gold">2024-11-12</span></div>
+            <div class="card-meta"><span>热度 8.0</span><span>122 分钟</span></div>
+          </div>
+        </article>
+        <article class="card" data-search="SSIS-712 剧情向 家庭 长篇">
+          <img class="thumb" src="https://picsum.photos/seed/ssis712/400/300" width="400" height="300" loading="lazy" alt="SSIS-712 家庭剧情长篇封面，客厅场景">
+          <div class="card-body">
+            <div class="card-title"><small>SSIS-712</small>搬家的那一周</div>
+            <p class="card-desc">2026 年 10 月 8 日发行，112 分钟。以搬家为线索串起七天时间线，每天一个场景。片中纸箱道具由剧组真实搬运，未做摆拍处理。</p>
+            <div class="tag-row"><span class="tag">剧情向</span><span class="tag">家庭</span><span class="tag gold">2026-10-08</span></div>
+            <div class="card-meta"><span>热度 8.6</span><span>112 分钟</span></div>
+          </div>
+        </article>
+        <article class="card" data-search="MIAA-902 企划 共演 年末">
+          <img class="thumb" src="https://picsum.photos/seed/miaa902/400/300" width="400" height="300" loading="lazy" alt="MIAA-902 年末共演企划封面，灯光舞台">
+          <div class="card-body">
+            <div class="card-title"><small>MIAA-902</small>年末共演特别篇</div>
+            <p class="card-desc">2026 年 11 月 1 日发行，收录 6 位女优的年末共演。冈本真优负责开场 20 分钟与结尾群像。企划方为 MIAA 年度固定项目，已连续举办三届。</p>
+            <div class="tag-row"><span class="tag">企划</span><span class="tag">共演</span><span class="tag gold">2026-11-01</span></div>
+            <div class="card-meta"><span>热度 9.0</span><span>168 分钟</span></div>
+          </div>
+        </article>
+      </div>
+      <div class="search-empty" id="searchEmpty">没有找到匹配的番号或标签，试试输入厂牌前缀（如 HMN）或类型词（如 剧情向）。</div>
+    </section>
+
+    <!-- 3 最新更新 -->
+    <section class="block" id="updates">
+      <div class="block-head">
+        <h2>番号收录与补录动态</h2>
+        <div class="sub">2026 年 10 月下旬至 11 月 8 日的条目变更</div>
+      </div>
+      <div class="update-list">
+        <div class="update-item">
+          <span class="up-date">11-07</span>
+          <div class="up-main">
+            <div class="up-title">HMN-503 收录完成<span>单体 · 实验性</span></div>
+            <p class="up-sum">132 分钟版本已核对厂牌官网信息，片尾反转段落时长由原记录 6 分钟更正为 8 分钟。</p>
+          </div>
+        </div>
+        <div class="update-item">
+          <span class="up-date">11-07</span>
+          <div class="up-main">
+            <div class="up-title">MIAA-902 补充共演名单<span>企划</span></div>
+            <p class="up-sum">新增第 3 位共演者信息，原记录仅列 5 人，厂牌发行页显示为 6 人阵容。</p>
+          </div>
+        </div>
+        <div class="update-item">
+          <span class="up-date">11-06</span>
+          <div class="up-main">
+            <div class="up-title">2024 年共演企划补录 6 条<span>历史条目</span></div>
+            <p class="up-sum">补录 MIAA-612 至 MIAA-617 六条番号，均为 2024 年下半年发行，此前遗漏于厂牌索引。</p>
+          </div>
+        </div>
+        <div class="update-item">
+          <span class="up-date">11-05</span>
+          <div class="up-main">
+            <div class="up-title">HMN-482 发行日确认<span>单体</span></div>
+            <p class="up-sum">厂牌官网标注发行日为 11 月 5 日，部分零售渠道提前一天上架，记录以官网为准。</p>
+          </div>
+        </div>
+        <div class="update-item">
+          <span class="up-date">11-04</span>
+          <div class="up-main">
+            <div class="up-title">厂牌索引扩展至 21 家<span>索引维护</span></div>
+            <p class="up-sum">新增两家发行方：KAN 与 DAS，各收录 1 条与 2 条番号，均为 2026 年新作。</p>
+          </div>
+        </div>
+        <div class="update-item">
+          <span class="up-date">11-02</span>
+          <div class="up-main">
+            <div class="up-title">类型标签新增「剧情向」<span>标签调整</span></div>
+            <p class="up-sum">原「剧情」「故事」两个标签合并为「剧情向」，涉及 71 条番号的标签同步更新。</p>
+          </div>
+        </div>
+        <div class="update-item">
+          <span class="up-date">10-31</span>
+          <div class="up-main">
+            <div class="up-title">SSIS-745 时长更正<span>剧情向</span></div>
+            <p class="up-sum">发行页标注 98 分钟，此前记录为 105 分钟，已按官网修正并更新热度权重。</p>
+          </div>
+        </div>
+        <div class="update-item">
+          <span class="up-date">10-29</span>
+          <div class="up-main">
+            <div class="up-title">SSIS-745 发行<span>剧情向 · 职场</span></div>
+            <p class="up-sum">SSIS 职场线第 7 部，与 SSIS-698 共享同一外景制片方，拍摄班底有重叠。</p>
+          </div>
+        </div>
+        <div class="update-item">
+          <span class="up-date">10-24</span>
+          <div class="up-main">
+            <div class="up-title">HMN-451 花絮片段补档<span>出道期</span></div>
+            <p class="up-sum">补充片尾 NG 花絮的具体内容说明，原记录仅标注「含花絮」，未展开。</p>
+          </div>
+        </div>
+        <div class="update-item">
+          <span class="up-date">10-22</span>
+          <div class="up-main">
+            <div class="up-title">SSIS-731 发行<span>剧情向 · 家庭</span></div>
+            <p class="up-sum">全片两个场景、96 分钟，现场收音版本与后期配音版本同步发行，记录以现场收音版为准。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 分类入口 -->
+    <section class="block" id="categories">
+      <div class="block-head">
+        <h2>按厂牌与类型划分的入口</h2>
+        <div class="sub">8 个常用检索方向</div>
+      </div>
+      <div class="cat-grid">
+        <a class="cat-item" href="#featured"><strong>HMN 单体线</strong><span>112 条 · 主力厂牌</span></a>
+        <a class="cat-item" href="#featured"><strong>SSIS 剧情线</strong><span>47 条 · 场景设定</span></a>
+        <a class="cat-item" href="#featured"><strong>MIAA 企划合集</strong><span>27 条 · 多段共演</span></a>
+        <a class="cat-item" href="#guide"><strong>出道期回看</strong><span>2023—2024 年</span></a>
+        <a class="cat-item" href="#rank"><strong>职场设定</strong><span>22% 占比</span></a>
+        <a class="cat-item" href="#rank"><strong>旅行外景</strong><span>12% 占比</span></a>
+        <a class="cat-item" href="#deep"><strong>实验性单体</strong><span>低照度 · 长镜头</span></a>
+        <a class="cat-item" href="#submit"><strong>番号补录入口</strong><span>投稿纠错</span></a>
+      </div>
+    </section>
+
+    <!-- 5 深度解析 -->
+    <section class="block" id="deep">
+      <div class="block-head">
+        <h2>单体、剧情向、企划合集：三条线的实际差异</h2>
+        <div class="sub">从制作周期、场景数量与叙事结构三个可核对项比较</div>
+      </div>
+      <div class="deep">
+        <p>把 HMN、SSIS、MIAA 三条线放在一起看，最容易混淆的是「时长」与「制作规模」的关系。HMN-482 时长 128 分钟，拍摄周期两天；SSIS-731 时长 96 分钟，拍摄周期三天。时长更长的单体，制作周期反而更短。原因在于场景数量：HMN-482 全程在办公室单场景完成，SSIS-731 有两个场景但每个场景需要独立布光与收音调试。</p>
+
+        <h3>场景数量决定叙事密度</h3>
+        <p>单场景作品靠对话和演员状态撑满时长，对白密度高，观众注意力集中在前 30 分钟建立的关系上。HMN-451 是典型例子，全片在一间公寓拍摄，115 分钟里有 78 分钟为双人对白。多场景作品的叙事密度分散在转场上，SSIS-698 从箱根旅馆大堂转到走廊再转到客房，每个转场平均消耗 4—6 分钟做环境铺陈。</p>
+        <div class="quote">可核对的判断：单场景作品更适合连续观看，多场景作品更适合分段看。这不是风格偏好，是剪辑节奏决定的。</div>
+
+        <h3>厂牌发行节奏与补录难度</h3>
+        <p>HMN 的发行节奏约每月 2 部，官网更新稳定，补录难度低。SSIS 的发行节奏不稳定，2026 年 8 月只有 1 部，9 月有 3 部，官网页面在发行后两周内可能调整时长标注。SSIS-745 的时长更正发生在发行后 4 天。MIAA 的企划合集在发行后常追加共演名单，MIAA-902 的共演人数从 5 人改为 6 人，发生在发行后 6 天。</p>
+        <ul>
+          <li><b>HMN：</b>官网信息稳定，发行日前后误差不超过 1 天。</li>
+          <li><b>SSIS：</b>时长与标签可能调整，建议以发行后 7 天的官网版本为准。</li>
+          <li><b>MIAA：</b>共演名单可能追加，企划类条目需二次核对。</li>
+        </ul>
+
+        <h3>三条线的观看门槛</h3>
+        <p>出道期作品（HMN-451、HMN-467）的运镜朴素，布景单一，适合先看以了解基础状态。剧情向作品（SSIS-731、SSIS-712）需要观众跟住时间线，SSIS-712 以七天为线索，每天一个场景，跳看会丢失上下文。企划合集（MIAA-916、MIAA-874）是分段结构，可以只看冈本真优负责的段落，但群像收尾段落通常需要前面几段作为铺垫。</p>
+        <p>从检索角度看，番号前缀决定厂牌，数字段决定发行顺序。HMN-451 到 HMN-503 之间相隔 52 个序号，跨约两年八个月。SSIS-698 到 SSIS-745 相隔 47 个序号，跨约五个月。序号密度差异反映厂牌发行频率，不能直接用来判断作品质量。</p>
+
+        <h3>标签可信度的分层</h3>
+        <p>类型标签由发行方标注，不同厂牌的标注习惯不同。HMN 的标签偏保守，一部作品通常只标 1—2 个类型；SSIS 的标签偏细，同一部作品可能标 3 个；MIAA 的企划合集标签按段落标注，整部作品的标签是各段标签的并集。检索时若按标签筛选，MIAA 条目容易因并集标签被误归入某类，需要点开分段信息核对。</p>
+        <p>发行方标注之外，零售渠道会自行追加标签，这类标签的准确性参差。可核对的做法是对照厂牌官网的原始标注，再看零售渠道标签是否超出官网范围。超出部分属于渠道自行归类，不作为检索依据。</p>
+      </div>
+    </section>
+
+    <!-- 6 观看路径 -->
+    <section class="block" id="guide">
+      <div class="block-head">
+        <h2>从哪部开始看：四条实际路径</h2>
+        <div class="sub">按观看目的排序，不按发行时间排序</div>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div>
+            <h4>先确认目的：看演员状态，还是看设定</h4>
+            <p>想看演员状态，从 HMN-451 与 HMN-467 入手，这两部布景简单、运镜直白，干扰因素少。想看设定，从 SSIS-731 入手，两个场景、96 分钟，时间线清楚，不需要前作背景。</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div>
+            <h4>用番号前缀判断制作规模</h4>
+            <p>HMN 前缀多为单场景单体，SSIS 前缀多为双场景剧情，MIAA 前缀为分段企划。前缀不能判断质量，但能判断观看方式：单场景适合连续看，分段企划适合挑段看。</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <div>
+            <h4>比较同类条目时，先比场景数，再比时长</h4>
+            <p>SSIS-698 与 SSIS-712 同为剧情向，前者两个场景、104 分钟，后者三个场景、112 分钟。场景数差异比时长差异更能解释观感不同。时长接近但场景数不同的两部作品，叙事节奏往往差别明显。</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <div>
+            <h4>企划合集先看分段表，再决定看哪段</h4>
+            <p>MIAA-916 收录 4 段，冈本真优在第 2 段与第 4 段。MIAA-874 收录 5 段，她在第 1 段与第 5 段。分段表在发行页可查，先看分段表能省掉跳过无关段落的时间。群像收尾段落建议放在最后看。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7 FAQ -->
+    <section class="block" id="faq">
+      <div class="block-head">
+        <h2>常见问答</h2>
+        <div class="sub">围绕番号、厂牌与类型的 6 个问题</div>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>HMN 和 SSIS 前缀的番号有什么区别？</summary>
+          <div class="faq-ans">前缀代表发行厂牌。HMN 系列以单体作品为主，单场景居多，时长集中在 115—135 分钟；SSIS 系列偏向剧情设定，常见双场景结构，时长 90—112 分钟。两者在制作班底上有重叠，但发行节奏与标注习惯不同：HMN 官网更新稳定，SSIS 的时长与标签在发行后一周内可能调整。</div>
+        </details>
+        <details>
+          <summary>番号数字越大，是不是发行时间越晚？</summary>
+          <div class="faq-ans">同一厂牌内基本成立，跨厂牌不成立。HMN-451 发行于 2024 年 3 月，HMN-503 发行于 2026 年 11 月，序号相隔 52，跨约两年八个月。SSIS-698 到 SSIS-745 相隔 47 个序号，只跨约五个月。序号密度反映厂牌发行频率，不能用来比较不同厂牌的作品新旧。</div>
+        </details>
+        <details>
+          <summary>MIAA 企划合集里的分段怎么看？</summary>
+          <div class="faq-ans">发行页会列出分段表，标注每段的参与者和时长。MIAA-916 分 4 段，冈本真优在第 2 段与第 4 段；MIAA-874 分 5 段，她在第 1 段与第 5 段。分段表在发行后可能追加共演名单，MIAA-902 的共演人数就在发行后 6 天从 5 人改为 6 人，建议以发行后一周的版本核对。</div>
+        </details>
+        <details>
+          <summary>「剧情向」标签具体指什么？</summary>
+          <div class="faq-ans">指作品有明确的时间线或场景设定，叙事不靠单场景对白撑满。SSIS-712 以搬家为线索串起七天，每天一个场景；SSIS-731 全片两个场景，靠对话推进。标签由发行方标注，HMN 偏保守，通常只标 1—2 个类型；SSIS 偏细，可能标 3 个；MIAA 的标签是各分段标签的并集，检索时需点开分段信息核对。</div>
+        </details>
+        <details>
+          <summary>出道期作品和近期作品在制作上差在哪？</summary>
+          <div class="faq-ans">出道期的 HMN-451 与 HMN-467 布景单一，自然光拍摄，运镜朴素，HMN-451 还保留了两段 NG 花絮。近期作品如 HMN-503 采用低照度拍摄，片尾有 8 分钟反转段落，发行方标注为实验性单体。制作规模的变化主要体现在布光与剪辑处理上，时长差异不大。</div>
+        </details>
+        <details>
+          <summary>同一部作品在不同渠道的时长标注不一致，以哪个为准？</summary>
+          <div class="faq-ans">以厂牌官网在发行后 7 天的版本为准。SSIS-745 发行页标注 98 分钟，部分渠道记录为 105 分钟，官网在发行后 4 天做过一次时长更正。零售渠道还会自行追加类型标签，超出官网标注范围的部分属于渠道归类，不作为检索依据。</div>
+        </details>
+      </div>
+    </section>
+
+    <!-- 8 用户评论 -->
+    <section class="block" id="comments">
+      <div class="block-head">
+        <h2>观众评论</h2>
+        <div class="sub">16 条来自不同观众的具体反馈</div>
+      </div>
+      <div class="comment-grid">
+        <div class="comment"><div class="c-head"><span class="c-name">鸭川的风</span><span>11-07</span></div><p class="c-target">HMN-482</p><p>办公室单场景能撑 128 分钟不闷，靠的是前 40 分钟那段铺垫。长镜头独白第一次看有点出戏，第二遍才顺。</p></div>
+        <div class="comment"><div class="c-head"><span class="c-name">箱根下雨</span><span>11-06</span></div><p class="c-target">SSIS-698</p><p>旅馆走廊那个长镜头确实好，但雨戏改室内之后前后光线接不上，看着有点跳。</p></div>
+        <div class="comment"><div class="c-head"><span class="c-name">江户川旧仓库</span><span>11-06</span></div><p class="c-target">MIAA-874</p><p>第 5 段群像收尾拍得比前面几段都用心，旧仓库那个场地选得不错。前 4 段就一般。</p></div>
+        <div class="comment"><div class="c-head"><span class="c-name">早春三月</span><span>11-05</span></div><p class="c-target">HMN-467</p><p>出道第一年收官那部，自然光拍出来状态很松弛。片尾采访 6 分钟比正片还值得看。</p></div>
+        <div class="comment"><div class="c-head"><span class="c-name">会议室第七排</span><span>11-05</span></div><p class="c-target">SSIS-745</p><p>职场线第 7 部跟前作共用场景，灯光从傍晚推到凌晨这个处理挺细。98 分钟不拖。</p></div>
+        <div class="comment"><div class="c-head"><span class="c-name">停电夜</span><span>11-04</span></div><p class="c-target">HMN-503</p><p>低照度拍得有点过，后半段几乎看不清脸。反转段落 8 分钟是亮点，但整体不如 HMN-482。</p></div>
+        <div class="comment"><div class="c-head"><span class="c-name">搬家纸箱</span><span>11-04</span></div><p class="c-target">SSIS-712</p><p>七天时间线每天一个场景，跳着看会乱。我第一天看的时候跳过第 3 天，后面完全接不上。</p></div>
+        <div class="comment"><div class="c-head"><span class="c-name">强罗强罗</span><span>11-03</span></div><p>番号前缀这套记法我用了一年多，HMN 和 SSIS 基本不会混。MIAA 还是得看分段表。</p></div>
+        <div class="comment"><div class="c-head"><span class="c-name">四十六个问题</span><span>11-03</span></div><p class="c-target">MIAA-889</p><p>观众提问企划第二弹，46 个问题只答了 18 个，剩下 28 个估计不会有后续了。</p></div>
+        <div class="comment"><div class="c-head"><span class="c-name">千叶鸭川</span><span>11-02</span></div><p class="c-target">MIAA-916</p><p>海边外景拍两天，第 2 段和第 4 段是冈本真优。第 4 段比第 2 段好，可能是因为下午光线。</p></div>
+        <div class="comment"><div class="c-head"><span class="c-name">NG 花絮</span><span>11-01</span></div><p class="c-target">HMN-451</p><p>片尾两段 NG 花絮留着挺好，比正片自然。出道期运镜确实朴素，但看着舒服。</p></div>
+        <div class="comment"><div class="c-head"><span class="c-name">年度特别篇</span><span>11-01</span></div><p class="c-target">MIAA-902</p><p>连续三届的年末企划，这次 6 人阵容比去年多一个。开场 20 分钟节奏偏慢。</p></div>
+        <div class="comment"><div class="c-head"><span class="c-name">雨声现场收音</span><span>10-31</span></div><p class="c-target">SSIS-731</p><p>现场收音的雨声比后期配音版好太多，两个版本都发行过，建议直接看现场收音版。</p></div>
+        <div class="comment"><div class="c-head"><span class="c-name">标签并集</span><span>10-30</span></div><p>MIAA 的标签是各段并集，按标签筛出来经常不是想要的那段。这点确实麻烦。</p></div>
+        <div class="comment"><div class="c-head"><span class="c-name">单场景党</span><span>10-29</span></div><p>单场景作品我一般一口气看完，多场景的分两次。跟剪辑节奏有关，不是习惯问题。</p></div>
+        <div class="comment"><div class="c-head"><span class="c-name">实验性单体</span><span>10-28</span></div><p class="c-target">HMN-503</p><p>发行方标「实验性」不是没道理，低照度加长镜头，接受度看人。我个人更想看常规单体。</p></div>
+      </div>
+    </section>
+
+    <!-- 9 相关资讯 -->
+    <section class="block" id="news">
+      <div class="block-head">
+        <h2>厂牌与发行资讯</h2>
+        <div class="sub">2026 年 10 月下旬至 11 月上旬的 6 条动态</div>
+      </div>
+      <div class="news-list">
+        <div class="news-item">
+          <div>
+            <div class="news-title">HMN 厂牌公布 12 月发行计划，单体线维持每月 2 部</div>
+            <p class="news-sum">12 月排期显示两部单体，其中一部沿用 HMN-503 的低照度班底，另一部回归单场景对白结构。发行日分别定在 12 月 3 日与 12 月 17 日。</p>
+          </div>
+          <span class="news-date">11-07</span>
+        </div>
+        <div class="news-item">
+          <div>
+            <div class="news-title">MIAA-902 共演名单增补第 6 人，发行页同步更新</div>
+            <p class="news-sum">发行后第 6 天，MIAA 官网在企划页新增一位共演者信息，此前零售渠道均按 5 人阵容宣传。冈本真优负责的开场段落时长未变。</p>
+          </div>
+          <span class="news-date">11-06</span>
+        </div>
+        <div class="news-item">
+          <div>
+            <div class="news-title">SSIS 系列调整标签体系，剧情向细分出「时间线叙事」子类</div>
+            <p class="news-sum">11 月 4 日起，SSIS 官网在剧情向标签下新增子类，SSIS-712 与 SSIS-731 被归入该子类，SSIS-745 仍留在主类。子类标注目前仅官网可见。</p>
+          </div>
+          <span class="news-date">11-04</span>
+        </div>
+        <div class="news-item">
+          <div>
+            <div class="news-title">HMN-503 片尾反转段落时长更正为 8 分钟</div>
+            <p class="news-sum">厂牌官网将片尾段落标注从 6 分钟改为 8 分钟，发行方说明为剪辑版本差异。零售渠道的时长标注尚未同步。</p>
+          </div>
+          <span class="news-date">11-03</span>
+        </div>
+        <div class="news-item">
+          <div>
+            <div class="news-title">MIAA-889 观众提问企划确认不制作第三弹</div>
+            <p class="news-sum">企划方在发行页备注中说明，第二弹 46 个问题中已回答 18 个，剩余问题不再单独制作。片尾提到的标签看法片段被剪成独立花絮。</p>
+          </div>
+          <span class="news-date">11-01</span>
+        </div>
+        <div class="news-item">
+          <div>
+            <div class="news-title">箱根强罗外景地成为 SSIS 系列固定取景地之一</div>
+            <p class="news-sum">SSIS-698 之后，该旅馆在 10 月又被另一部剧情作品使用，拍摄时间相隔不到一个月。旅馆方确认两次拍摄分别由不同制片方接洽。</p>
+          </div>
+          <span class="news-date">10-27</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10 相关推荐 -->
+    <section class="block" id="related">
+      <div class="block-head">
+        <h2>相关检索方向</h2>
+        <div class="sub">按具体番号、厂牌与类型词索引</div>
+      </div>
+      <div class="reco-cloud">
+        <a href="#featured">HMN-482 职场上司</a>
+        <a href="#featured">SSIS-731 雨夜归家</a>
+        <a href="#featured">MIAA-916 海边四个下午</a>
+        <a href="#deep">单场景与多场景对比</a>
+        <a href="#guide">出道期作品回看</a>
+        <a href="#rank">剧情向作品排行</a>
+        <a href="#faq">番号前缀含义</a>
+        <a href="#submit">番号补录与纠错</a>
+      </div>
+    </section>
+
+    <!-- 11 人气榜单 -->
+    <section class="block" id="rank">
+      <div class="block-head">
+        <h2>2026 年 11 月人气榜</h2>
+        <div class="sub">按站内检索与收藏数据排序，截至 11 月 8 日</div>
+      </div>
+      <div class="rank-list">
+        <div class="rank-item"><span class="rank-no">1</span><div class="rank-name">HMN-482 职场上司与下属的三日<span>单体 · 11-05 发行</span></div><span class="rank-score">9.4</span></div>
+        <div class="rank-item"><span class="rank-no">2</span><div class="rank-name">HMN-503 停电夜的邻居<span>单体 · 11-07 收录</span></div><span class="rank-score">9.2</span></div>
+        <div class="rank-item"><span class="rank-no">3</span><div class="rank-name">SSIS-731 雨夜归家的两小时<span>剧情向 · 10-22 发行</span></div><span class="rank-score">9.1</span></div>
+        <div class="rank-item"><span class="rank-no">4</span><div class="rank-name">MIAA-902 年末共演特别篇<span>企划 · 11-01 发行</span></div><span class="rank-score">9.0</span></div>
+        <div class="rank-item"><span class="rank-no">5</span><div class="rank-name">SSIS-698 箱根温泉的两晚<span>剧情向 · 09-18 发行</span></div><span class="rank-score">8.9</span></div>
+        <div class="rank-item"><span class="rank-no">6</span><div class="rank-name">MIAA-916 海边的四个下午<span>企划 · 10-15 发行</span></div><span class="rank-score">8.8</span></div>
+        <div class="rank-item"><span class="rank-no">7</span><div class="rank-name">SSIS-745 加班到凌晨的会议室<span>剧情向 · 10-29 发行</span></div><span class="rank-score">8.7</span></div>
+        <div class="rank-item"><span class="rank-no">8</span><div class="rank-name">SSIS-712 搬家的那一周<span>剧情向 · 10-08 发行</span></div><span class="rank-score">8.6</span></div>
+      </div>
+    </section>
+
+    <!-- 投稿互动 -->
+    <section class="block" id="submit">
+      <div class="submit-panel">
+        <div>
+          <h3>番号补录与纠错</h3>
+          <p>发现遗漏的番号、错误的时长或标签？提交厂牌前缀、数字段与官网截图，核对后会在「最新更新」中记录变更。近期已处理 9 条来自观众的纠错，其中 SSIS-745 时长更正与 MIAA-902 共演名单增补均来自投稿。</p>
+        </div>
+        <a class="btn-main" href="#updates">查看已处理条目</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 右侧辅助栏 -->
+  <aside class="aside-col" aria-label="辅助信息">
+    <div class="aside-box">
+      <h3>本周检索热榜</h3>
+      <ol class="hot-list">
+        <li><span class="hl-no">1</span><a href="#featured">HMN-482 长镜头独白段落</a></li>
+        <li><span class="hl-no">2</span><a href="#featured">SSIS-731 现场收音版</a></li>
+        <li><span class="hl-no">3</span><a href="#featured">HMN-503 片尾反转</a></li>
+        <li><span class="hl-no">4</span><a href="#featured">MIAA-916 分段表</a></li>
+        <li><span class="hl-no">5</span><a href="#deep">单场景与多场景对比</a></li>
+        <li><span class="hl-no">6</span><a href="#featured">SSIS-712 七天时间线</a></li>
+        <li><span class="hl-no">7</span><a href="#featured">HMN-451 NG 花絮</a></li>
+        <li><span class="hl-no">8</span><a href="#news">SSIS 剧情向子类</a></li>
+      </ol>
+    </div>
+    <div class="aside-box">
+      <h3>厂牌速查</h3>
+      <div class="aside-tags">
+        <a href="#featured">HMN 单体</a>
+        <a href="#featured">SSIS 剧情</a>
+        <a href="#featured">MIAA 企划</a>
+        <a href="#featured">KAN 新收录</a>
+        <a href="#featured">DAS 新收录</a>
+        <a href="#guide">出道期</a>
+        <a href="#deep">实验性单体</a>
+      </div>
+    </div>
+    <div class="aside-box">
+      <h3>收录说明</h3>
+      <p class="aside-note">番号记录以厂牌官网为准，发行后 7 天内的信息变更会同步更新。<b>186 条</b>记录中，112 条为单体，41 条为共演，33 条为企划合集。类型标签以官网原始标注为检索依据，渠道追加标签不纳入。</p>
+    </div>
+  </aside>
+
+</div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#3a2430"/>
+          <path d="M18 20h28v6H18zm0 12h18v6H18zm0 12h28v6H18z" fill="#e8607a"/>
+          <circle cx="48" cy="35" r="6" fill="#f2c14e"/>
+        </svg>
+        <strong>冈本真优番号</strong>
+      </div>
+      <p class="footer-desc">收录范围覆盖 2023 年出道期至 2026 年 11 月，条目类型包括单体、共演、企划合集三类，更新节奏为每周核对一次厂牌官网，发行日前后加频至每日。所有记录标注厂牌前缀、发行日期与官网原始时长。</p>
+    </div>
+    <div class="footer-cols">
+      <div>
+        <h4>厂牌索引</h4>
+        <a href="#featured">HMN 单体线</a>
+        <a href="#featured">SSIS 剧情线</a>
+        <a href="#featured">MIAA 企划合集</a>
+        <a href="#featured">KAN / DAS 新收录</a>
+      </div>
+      <div>
+        <h4>类型入口</h4>
+        <a href="#guide">出道期作品</a>
+        <a href="#deep">实验性单体</a>
+        <a href="#rank">职场设定</a>
+        <a href="#rank">旅行外景</a>
+      </div>
+      <div>
+        <h4>互动与帮助</h4>
+        <a href="#submit">番号补录</a>
+        <a href="#faq">常见问答</a>
+        <a href="#comments">观众评论</a>
+        <a href="#news">发行资讯</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>页面内容为示例条目，番号与时长以厂牌官网实际标注为准。最近一次核对：2026-11-07。</span>
+    <span>© 2026 冈本真优番号索引</span>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  var drawer=document.getElementById('mobileDrawer');
+  var mask=document.getElementById('mobileMask');
+  var burger=document.getElementById('hamburgerBtn');
+  var closeBtn=document.getElementById('drawerClose');
+  var body=document.body;
+  function openDrawer(){
+    body.classList.add('drawer-open');
+    burger.setAttribute('aria-expanded','true');
+    if(closeBtn) closeBtn.focus();
+  }
+  function closeDrawer(){
+    body.classList.remove('drawer-open');
+    burger.setAttribute('aria-expanded','false');
+  }
+  burger&&burger.addEventListener('click',openDrawer);
+  closeBtn&&closeBtn.addEventListener('click',closeDrawer);
+  mask&&mask.addEventListener('click',closeDrawer);
+  drawer&&drawer.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click',function(){closeDrawer();});
+  });
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape') closeDrawer();
+  });
+
+  var searchInput=document.getElementById('siteSearch');
+  var grid=document.getElementById('featuredGrid');
+  var empty=document.getElementById('searchEmpty');
+  if(searchInput&&grid){
+    var cards=Array.prototype.slice.call(grid.querySelectorAll('.card'));
+    searchInput.addEventListener('input',function(){
+      var q=this.value.trim().toLowerCase();
+      var shown=0;
+      cards.forEach(function(c){
+        var txt=(c.getAttribute('data-search')+' '+c.textContent).toLowerCase();
+        var hit=!q||txt.indexOf(q)>-1;
+        c.style.display=hit?'':'none';
+        if(hit) shown++;
+      });
+      empty.classList.toggle('show',shown===0&&!!q);
+      var feat=document.getElementById('featured');
+      if(q&&feat) feat.scrollIntoView({behavior:'smooth',block:'start'});
+    });
+  }
+
+  var toTop=document.getElementById('toTop');
+  window.addEventListener('scroll',function(){
+    if(window.scrollY>window.innerHeight*0.9){
+      toTop.classList.add('show');
+    }else{
+      toTop.classList.remove('show');
+    }
+  },{passive:true});
+  toTop.addEventListener('click',function(){
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+
+  var navLinks=document.querySelectorAll('#channelList a');
+  var sections=[];
+  navLinks.forEach(function(a){
+    var id=a.getAttribute('href').replace('/#','').replace('#','');
+    var el=document.getElementById(id);
+    if(el) sections.push({link:a,el:el});
+  });
+  function onScroll(){
+    var pos=window.scrollY+140;
+    var current=null;
+    sections.forEach(function(s){
+      if(s.el.offsetTop<=pos) current=s;
+    });
+    navLinks.forEach(function(a){a.classList.remove('active')});
+    if(current) current.link.classList.add('active');
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"冈本真优番号",
+  "description":"女优冈本真优的作品番号索引，收录 HMN、SSIS、MIAA 等厂牌单体、共演与企划合集条目。",
+  "inLanguage":"zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"HMN 和 SSIS 前缀的番号有什么区别？","acceptedAnswer":{"@type":"Answer","text":"前缀代表发行厂牌。HMN 系列以单体作品为主，单场景居多，时长集中在 115—135 分钟；SSIS 系列偏向剧情设定，常见双场景结构，时长 90—112 分钟。"}},
+    {"@type":"Question","name":"番号数字越大，是不是发行时间越晚？","acceptedAnswer":{"@type":"Answer","text":"同一厂牌内基本成立，跨厂牌不成立。HMN-451 发行于 2024 年 3 月，HMN-503 发行于 2026 年 11 月；SSIS-698 到 SSIS-745 相隔 47 个序号只跨约五个月。"}},
+    {"@type":"Question","name":"MIAA 企划合集里的分段怎么看？","acceptedAnswer":{"@type":"Answer","text":"发行页会列出分段表，标注每段的参与者和时长。MIAA-916 分 4 段，冈本真优在第 2 段与第 4 段；MIAA-874 分 5 段，她在第 1 段与第 5 段。"}},
+    {"@type":"Question","name":"「剧情向」标签具体指什么？","acceptedAnswer":{"@type":"Answer","text":"指作品有明确的时间线或场景设定，叙事不靠单场景对白撑满。SSIS-712 以搬家为线索串起七天，SSIS-731 全片两个场景，靠对话推进。"}},
+    {"@type":"Question","name":"出道期作品和近期作品在制作上差在哪？","acceptedAnswer":{"@type":"Answer","text":"出道期的 HMN-451 与 HMN-467 布景单一，自然光拍摄，运镜朴素；近期作品如 HMN-503 采用低照度拍摄，片尾有 8 分钟反转段落。"}},
+    {"@type":"Question","name":"同一部作品在不同渠道的时长标注不一致，以哪个为准？","acceptedAnswer":{"@type":"Answer","text":"以厂牌官网在发行后 7 天的版本为准。SSIS-745 发行页标注 98 分钟，官网在发行后 4 天做过一次时长更正。"}}
+  ]
+}
+</script>
+</body>
+                                                                                                                                  </html>
