@@ -1,0 +1,1900 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>圣华女子学院公认叔叔动漫漫画 - 校园题材与角色关系解析</title>
+  <meta name="description" content="圣华女子学院公认叔叔动漫漫画是聚焦校园题材中“公认叔叔”角色设定的内容聚合页，收录漫画章节、动画片段、角色关系解读、同人投稿与读者评论，适合喜欢校园日常与年龄差设定的读者浏览。">
+  <meta name="keywords" content="圣华女子学院公认叔叔动漫漫画">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #8b5a7c;
+      --primary-light: #b88ba6;
+      --primary-dark: #5e3a4f;
+      --bg: #fdf8f5;
+      --panel: #ffffff;
+      --text-primary: #2e1f28;
+      --text-secondary: #6b5563;
+      --text-tertiary: #9a8290;
+      --border: #edd9e2;
+      --radius-card: 16px;
+      --radius-btn: 24px;
+      --radius-tag: 6px;
+      --radius-banner: 12px;
+      --shadow-default: 0 4px 12px rgba(0, 0, 0, 0.04);
+      --shadow-hover: 0 8px 24px rgba(139, 90, 124, 0.12);
+      --font-stack: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+      --sticky-height: 96px;
+    }
+
+    body {
+      font-family: var(--font-stack);
+      background-color: var(--bg);
+      color: var(--text-primary);
+      line-height: 1.6;
+      padding-top: var(--sticky-height);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+
+    .container {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ---- 吸顶公告 + 页头 ---- */
+    .sticky-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .announce-bar {
+      background: var(--primary-dark);
+      color: #f5e6ed;
+      font-size: 13px;
+      padding: 6px 0;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+    .announce-bar .container {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .announce-bar .brand-mark {
+      font-weight: 700;
+      color: #f5e6ed;
+      letter-spacing: 0.5px;
+      font-size: 13px;
+      flex-shrink: 0;
+    }
+
+    .announce-bar span {
+      flex-shrink: 0;
+    }
+
+    .announce-bar .date {
+      font-weight: 600;
+      margin-right: 6px;
+      color: #e7c9d8;
+    }
+
+    .header {
+      padding: 12px 0;
+    }
+
+    .header .container {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+
+    .logo-svg {
+      width: 40px;
+      height: 40px;
+    }
+
+    .logo-text {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary-dark);
+      letter-spacing: 1px;
+      line-height: 1.2;
+    }
+
+    .logo-text small {
+      display: block;
+      font-size: 11px;
+      font-weight: 400;
+      color: var(--text-tertiary);
+      letter-spacing: 2px;
+    }
+
+    .main-nav {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-left: auto;
+    }
+
+    .main-nav a {
+      padding: 6px 12px;
+      border-radius: var(--radius-btn);
+      font-size: 14px;
+      color: var(--text-secondary);
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .main-nav a:hover,
+    .main-nav a:focus-visible {
+      background: var(--primary-light);
+      color: #fff;
+      outline: none;
+    }
+
+    .header-actions {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
+    .search-box {
+      display: flex;
+      align-items: center;
+      border: 1px solid var(--border);
+      border-radius: 40px;
+      padding: 4px 4px 4px 14px;
+      background: #fff;
+    }
+
+    .search-box input {
+      border: none;
+      outline: none;
+      font-size: 13px;
+      width: 140px;
+      background: transparent;
+      color: var(--text-primary);
+    }
+
+    .search-box input::placeholder {
+      color: var(--text-tertiary);
+    }
+
+    .search-box button {
+      background: var(--primary);
+      border: none;
+      color: #fff;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s;
+    }
+
+    .search-box button:hover {
+      background: var(--primary-dark);
+    }
+
+    .hamburger {
+      display: none;
+      background: none;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 6px 10px;
+      font-size: 20px;
+      cursor: pointer;
+      color: var(--primary-dark);
+    }
+
+    /* ---- 首屏 ---- */
+    .hero {
+      padding: 40px 0 32px;
+      background: linear-gradient(135deg, #f5e6ed 0%, #fdf8f5 100%);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero .container {
+      display: flex;
+      align-items: center;
+      gap: 48px;
+    }
+
+    .hero-content {
+      flex: 1;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      line-height: 1.3;
+      color: var(--primary-dark);
+      margin-bottom: 16px;
+      letter-spacing: 1px;
+    }
+
+    .hero-desc {
+      font-size: 16px;
+      color: var(--text-secondary);
+      max-width: 560px;
+      margin-bottom: 24px;
+      line-height: 1.8;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+      padding: 10px 24px;
+      border-radius: var(--radius-btn);
+      font-size: 15px;
+      font-weight: 600;
+      transition: background 0.2s, transform 0.2s;
+      display: inline-block;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border: 2px solid var(--primary);
+      color: var(--primary);
+      padding: 10px 24px;
+      border-radius: var(--radius-btn);
+      font-size: 15px;
+      font-weight: 600;
+      transition: background 0.2s, color 0.2s;
+      display: inline-block;
+    }
+
+    .btn-outline:hover {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    .hero-visual {
+      flex: 0 0 320px;
+      position: relative;
+    }
+
+    .hero-visual svg {
+      width: 100%;
+      height: auto;
+    }
+
+    /* ---- 主体三栏布局 ---- */
+    .main-layout {
+      display: grid;
+      grid-template-columns: 180px 1fr 240px;
+      gap: 32px;
+      padding: 40px 0;
+    }
+
+    /* 左频道索引 */
+    .channel-sidebar {
+      position: sticky;
+      top: calc(var(--sticky-height) + 20px);
+      align-self: start;
+    }
+
+    .channel-sidebar h3 {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--text-tertiary);
+      margin-bottom: 12px;
+    }
+
+    .channel-list li {
+      margin-bottom: 4px;
+    }
+
+    .channel-list a {
+      display: block;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 14px;
+      color: var(--text-secondary);
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .channel-list a:hover,
+    .channel-list a:focus-visible {
+      background: #f5e6ed;
+      color: var(--primary-dark);
+      outline: none;
+    }
+
+    /* 主内容区 */
+    .main-content section {
+      margin-bottom: 48px;
+      scroll-margin-top: calc(var(--sticky-height) + 16px);
+    }
+
+    .section-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 20px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--primary-light);
+      display: inline-block;
+    }
+
+    .section-intro {
+      color: var(--text-secondary);
+      font-size: 15px;
+      margin-bottom: 20px;
+      line-height: 1.8;
+    }
+
+    /* 概览 */
+    .overview-text {
+      background: var(--panel);
+      padding: 24px;
+      border-radius: var(--radius-card);
+      box-shadow: var(--shadow-default);
+      font-size: 15px;
+      line-height: 1.9;
+      color: var(--text-secondary);
+    }
+
+    .overview-text p {
+      margin-bottom: 12px;
+    }
+
+    .overview-text p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* 精选卡片网格 */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--panel);
+      border-radius: var(--radius-card);
+      box-shadow: var(--shadow-default);
+      overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .card-img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 16px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-type {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--primary);
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .card-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 10px;
+    }
+
+    .tag {
+      background: #f5e6ed;
+      color: var(--primary-dark);
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: var(--radius-tag);
+      white-space: nowrap;
+    }
+
+    .card-desc {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      flex: 1;
+      margin-bottom: 12px;
+    }
+
+    .card-meta {
+      font-size: 12px;
+      color: var(--text-tertiary);
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid var(--border);
+      padding-top: 10px;
+    }
+
+    /* 最新更新列表 */
+    .update-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .update-item {
+      background: var(--panel);
+      border-radius: var(--radius-card);
+      padding: 16px 20px;
+      box-shadow: var(--shadow-default);
+      display: flex;
+      gap: 16px;
+      align-items: baseline;
+      transition: box-shadow 0.2s;
+    }
+
+    .update-item:hover {
+      box-shadow: var(--shadow-hover);
+    }
+
+    .update-date {
+      font-size: 13px;
+      color: var(--primary);
+      font-weight: 600;
+      flex-shrink: 0;
+      width: 70px;
+    }
+
+    .update-content {
+      flex: 1;
+    }
+
+    .update-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 2px;
+    }
+
+    .update-summary {
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+
+    /* 分类入口 */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    .category-item {
+      background: var(--panel);
+      border-radius: var(--radius-card);
+      padding: 16px 12px;
+      text-align: center;
+      box-shadow: var(--shadow-default);
+      transition: background 0.2s, transform 0.2s;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    .category-item:hover {
+      background: #f5e6ed;
+      transform: translateY(-2px);
+    }
+
+    .category-item span {
+      display: block;
+      font-size: 12px;
+      color: var(--text-tertiary);
+      font-weight: 400;
+      margin-top: 4px;
+    }
+
+    /* 深度解析 */
+    .deep-dive {
+      background: var(--panel);
+      border-radius: var(--radius-card);
+      padding: 28px;
+      box-shadow: var(--shadow-default);
+    }
+
+    .deep-dive h3 {
+      font-size: 18px;
+      color: var(--primary-dark);
+      margin: 24px 0 10px;
+    }
+
+    .deep-dive h3:first-of-type {
+      margin-top: 0;
+    }
+
+    .deep-dive p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.9;
+      margin-bottom: 12px;
+    }
+
+    .deep-dive ul {
+      margin: 12px 0 16px 20px;
+      list-style: disc;
+      color: var(--text-secondary);
+      font-size: 15px;
+      line-height: 1.9;
+    }
+
+    .deep-dive li {
+      margin-bottom: 6px;
+    }
+
+    /* 体验指南 */
+    .guide-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      counter-reset: step;
+    }
+
+    .guide-step {
+      background: var(--panel);
+      border-radius: var(--radius-card);
+      padding: 20px 24px 20px 64px;
+      box-shadow: var(--shadow-default);
+      position: relative;
+      counter-increment: step;
+    }
+
+    .guide-step::before {
+      content: counter(step);
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      width: 28px;
+      height: 28px;
+      background: var(--primary);
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .guide-step h4 {
+      font-size: 16px;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .guide-step p {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    /* FAQ */
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    details {
+      background: var(--panel);
+      border-radius: var(--radius-card);
+      box-shadow: var(--shadow-default);
+      overflow: hidden;
+    }
+
+    summary {
+      padding: 16px 20px;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-primary);
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::after {
+      content: '+';
+      font-size: 20px;
+      color: var(--primary);
+      font-weight: 400;
+      transition: transform 0.2s;
+    }
+
+    details[open] summary::after {
+      content: '−';
+    }
+
+    details .faq-answer {
+      padding: 0 20px 18px;
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.8;
+    }
+
+    /* 用户评论 */
+    .comment-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 14px;
+    }
+
+    .comment-card {
+      background: var(--panel);
+      border-radius: var(--radius-card);
+      padding: 16px;
+      box-shadow: var(--shadow-default);
+      font-size: 13px;
+      line-height: 1.6;
+      color: var(--text-secondary);
+    }
+
+    .comment-user {
+      font-weight: 700;
+      color: var(--primary-dark);
+      font-size: 13px;
+      margin-bottom: 6px;
+    }
+
+    .comment-text {
+      font-style: normal;
+    }
+
+    /* 相关资讯 */
+    .news-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .news-item {
+      background: var(--panel);
+      border-radius: var(--radius-card);
+      padding: 18px 20px;
+      box-shadow: var(--shadow-default);
+      transition: box-shadow 0.2s;
+    }
+
+    .news-item:hover {
+      box-shadow: var(--shadow-hover);
+    }
+
+    .news-date {
+      font-size: 12px;
+      color: var(--primary);
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .news-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .news-summary {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    /* 相关推荐 */
+    .rec-tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .rec-tag {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 40px;
+      padding: 8px 18px;
+      font-size: 13px;
+      color: var(--text-primary);
+      box-shadow: var(--shadow-default);
+      transition: background 0.2s, border-color 0.2s;
+      cursor: default;
+    }
+
+    .rec-tag:hover {
+      background: #f5e6ed;
+      border-color: var(--primary-light);
+    }
+
+    /* 补充板块：热门榜单 */
+    .ranking-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .ranking-item {
+      background: var(--panel);
+      border-radius: 10px;
+      padding: 12px 18px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      box-shadow: var(--shadow-default);
+    }
+
+    .ranking-num {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--primary-light);
+      width: 28px;
+      flex-shrink: 0;
+    }
+
+    .ranking-name {
+      font-size: 15px;
+      font-weight: 600;
+      flex: 1;
+      color: var(--text-primary);
+    }
+
+    .ranking-score {
+      font-size: 13px;
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    /* 右侧辅助栏 */
+    .aux-sidebar {
+      position: sticky;
+      top: calc(var(--sticky-height) + 20px);
+      align-self: start;
+    }
+
+    .aux-card {
+      background: var(--panel);
+      border-radius: var(--radius-card);
+      padding: 20px;
+      box-shadow: var(--shadow-default);
+      margin-bottom: 24px;
+    }
+
+    .aux-card h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hot-list li {
+      padding: 8px 0;
+      border-bottom: 1px dashed var(--border);
+      font-size: 14px;
+      color: var(--text-secondary);
+    }
+
+    .hot-list li:last-child {
+      border-bottom: none;
+    }
+
+    .hot-list .hot-title {
+      font-weight: 600;
+      color: var(--text-primary);
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .hot-list .hot-meta {
+      font-size: 12px;
+      color: var(--text-tertiary);
+    }
+
+    .interaction-box {
+      text-align: center;
+    }
+
+    .interaction-box p {
+      font-size: 13px;
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+    }
+
+    .interaction-box .btn-outline {
+      font-size: 13px;
+      padding: 8px 20px;
+    }
+
+    /* 页脚 */
+    footer {
+      background: var(--primary-dark);
+      color: #e7c9d8;
+      padding: 40px 0 24px;
+      margin-top: 40px;
+    }
+
+    footer .container {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+    }
+
+    .footer-brand h4 {
+      font-size: 20px;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    .footer-brand p {
+      font-size: 14px;
+      line-height: 1.8;
+      color: #d4b8c6;
+    }
+
+    .footer-links h5 {
+      font-size: 14px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+
+    .footer-links li {
+      margin-bottom: 6px;
+      font-size: 13px;
+    }
+
+    .footer-links a {
+      color: #d4b8c6;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      grid-column: 1 / -1;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      padding-top: 20px;
+      margin-top: 20px;
+      font-size: 12px;
+      color: #b89aaa;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    /* 回到顶部 */
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: var(--primary);
+      color: #fff;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      font-size: 20px;
+      box-shadow: var(--shadow-hover);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s, opacity 0.2s;
+      z-index: 200;
+    }
+
+    .back-to-top.visible {
+      display: flex;
+    }
+
+    .back-to-top:hover {
+      background: var(--primary-dark);
+    }
+
+    /* 移动端遮罩 */
+    .overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 90;
+    }
+
+    .overlay.active {
+      display: block;
+    }
+
+    /* 响应式 */
+    @media (max-width: 1024px) {
+      .main-layout {
+        grid-template-columns: 1fr 240px;
+      }
+
+      .channel-sidebar {
+        display: none;
+      }
+
+      .main-nav {
+        display: none;
+      }
+
+      .hamburger {
+        display: block;
+      }
+
+      .header .container {
+        justify-content: space-between;
+      }
+
+      .hero .container {
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      .hero-visual {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 280px;
+      }
+
+      .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      footer .container {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 740px) {
+      body {
+        padding-top: 84px;
+      }
+
+      .main-layout {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+
+      .aux-sidebar {
+        position: static;
+      }
+
+      .hero h1 {
+        font-size: 26px;
+      }
+
+      .hero-desc {
+        font-size: 14px;
+      }
+
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .comment-grid {
+        grid-template-columns: 1fr;
+      }
+
+      footer .container {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .update-item {
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .update-date {
+        width: auto;
+      }
+
+      .search-box input {
+        width: 100px;
+      }
+
+      .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 38px;
+        height: 38px;
+      }
+    }
+
+    /* 移动端菜单展开 */
+    .mobile-nav-panel {
+      display: none;
+      position: fixed;
+      top: var(--sticky-height);
+      left: 0;
+      right: 0;
+      background: var(--panel);
+      padding: 20px;
+      z-index: 95;
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    .mobile-nav-panel.active {
+      display: block;
+    }
+
+    .mobile-nav-panel a {
+      display: block;
+      padding: 10px 0;
+      font-size: 15px;
+      color: var(--text-primary);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .mobile-nav-panel a:last-child {
+      border-bottom: none;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+
+    .focus-visible:focus-visible {
+      outline: 2px solid var(--primary);
+      outline-offset: 2px;
+    }
+  </style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+  <!-- 吸顶公告 + 页头 -->
+  <div class="sticky-wrapper">
+    <div class="announce-bar">
+      <div class="container">
+        <span class="brand-mark">圣华女子学院公认叔叔动漫漫画</span>
+        <span><span class="date">11月7日</span> 漫画第48话「学园祭的叔叔」更新</span>
+        <span><span class="date">11月5日</span> 动画第8集「屋顶的便当」上线</span>
+        <span><span class="date">11月3日</span> 角色人气投票结果公开</span>
+      </div>
+    </div>
+    <header class="header">
+      <div class="container">
+        <div class="logo-area">
+          <svg class="logo-svg" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="18" stroke="#8b5a7c" stroke-width="2.5" fill="#f5e6ed"/>
+            <path d="M12 26c0-4 3.5-7 8-7s8 3 8 7" stroke="#5e3a4f" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="20" cy="14" r="5" stroke="#5e3a4f" stroke-width="2" fill="#fff"/>
+            <circle cx="20" cy="14" r="2" fill="#8b5a7c"/>
+          </svg>
+          <div class="logo-text">
+            圣华女子学院公认叔叔动漫漫画
+            <small>SEIKA GIRLS' ACADEMY</small>
+          </div>
+        </div>
+        <nav class="main-nav">
+          <a href="#overview">领域概览</a>
+          <a href="#featured">精选推荐</a>
+          <a href="#updates">最新更新</a>
+          <a href="#categories">分类入口</a>
+          <a href="#deep-dive">深度解析</a>
+          <a href="#guide">体验指南</a>
+          <a href="#faq">常见问题</a>
+          <a href="#comments">用户评论</a>
+          <a href="#news">相关资讯</a>
+          <a href="#recommendations">相关推荐</a>
+          <a href="#ranking">热门榜单</a>
+        </nav>
+        <div class="header-actions">
+          <div class="search-box">
+            <input type="text" id="searchInput" placeholder="搜索条目..." aria-label="搜索内容">
+            <button type="button" id="searchBtn" aria-label="搜索">🔍</button>
+          </div>
+          <button class="hamburger" id="hamburgerBtn" aria-label="打开菜单" aria-expanded="false">☰</button>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <!-- 移动端菜单 -->
+  <div class="mobile-nav-panel" id="mobileNav">
+    <a href="#overview">领域概览</a>
+    <a href="#featured">精选推荐</a>
+    <a href="#updates">最新更新</a>
+    <a href="#categories">分类入口</a>
+    <a href="#deep-dive">深度解析</a>
+    <a href="#guide">体验指南</a>
+    <a href="#faq">常见问题</a>
+    <a href="#comments">用户评论</a>
+    <a href="#news">相关资讯</a>
+    <a href="#recommendations">相关推荐</a>
+    <a href="#ranking">热门榜单</a>
+  </div>
+  <div class="overlay" id="overlay"></div>
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>圣华女子学院公认叔叔动漫漫画</h1>
+        <p class="hero-desc">
+          聚焦圣华女子学院系列中“公认叔叔”这一角色标签衍生的漫画章节、动画片段与同人创作。收录学园祭篇、修学旅行篇、屋顶便当篇等具体条目，整理角色关系时间线与读者讨论热点，适合关注校园日常与年龄差互动的读者查阅。
+        </p>
+        <div class="hero-actions">
+          <a href="#featured" class="btn-primary">浏览精选条目</a>
+          <a href="#deep-dive" class="btn-outline">阅读深度解析</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 320 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="20" y="40" width="130" height="180" rx="12" fill="#f5e6ed" stroke="#b88ba6" stroke-width="2"/>
+          <rect x="170" y="70" width="130" height="150" rx="12" fill="#fff" stroke="#b88ba6" stroke-width="2"/>
+          <circle cx="85" cy="100" r="22" fill="#e7c9d8" stroke="#8b5a7c" stroke-width="2"/>
+          <circle cx="235" cy="130" r="18" fill="#f5e6ed" stroke="#8b5a7c" stroke-width="2"/>
+          <path d="M50 160 L120 160" stroke="#b88ba6" stroke-width="3" stroke-linecap="round"/>
+          <path d="M50 175 L100 175" stroke="#b88ba6" stroke-width="3" stroke-linecap="round"/>
+          <path d="M200 170 L270 170" stroke="#b88ba6" stroke-width="3" stroke-linecap="round"/>
+          <path d="M200 185 L250 185" stroke="#b88ba6" stroke-width="3" stroke-linecap="round"/>
+          <path d="M85 145 L85 175" stroke="#8b5a7c" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="85" cy="140" r="4" fill="#8b5a7c"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- 主内容区 三栏 -->
+  <div class="container main-layout">
+    <!-- 左侧频道索引 -->
+    <aside class="channel-sidebar" aria-label="频道导航">
+      <h3>频道索引</h3>
+      <ul class="channel-list">
+        <li><a href="#overview">领域概览</a></li>
+        <li><a href="#featured">精选推荐</a></li>
+        <li><a href="#updates">最新更新</a></li>
+        <li><a href="#categories">分类入口</a></li>
+        <li><a href="#deep-dive">深度解析</a></li>
+        <li><a href="#guide">体验指南</a></li>
+        <li><a href="#faq">常见问题</a></li>
+        <li><a href="#comments">用户评论</a></li>
+        <li><a href="#news">相关资讯</a></li>
+        <li><a href="#recommendations">相关推荐</a></li>
+        <li><a href="#ranking">热门榜单</a></li>
+      </ul>
+    </aside>
+
+    <!-- 中间主内容 -->
+    <main class="main-content">
+
+      <!-- 1. 领域概览 -->
+      <section id="overview">
+        <h2 class="section-title">领域概览</h2>
+        <div class="overview-text">
+          <p>“圣华女子学院公认叔叔”是校园漫画《圣华女子学院》系列中衍生出的角色标签。原作围绕女子学院内几位性格各异的女生展开日常叙事，其中一位被学生们半开玩笑地称为“公认叔叔”的男性角色——身份是学院理事的远亲、负责设备维护的兼职员工——因频繁出现在社团活动、学园祭筹备和课后补习场景中，逐渐成为读者讨论的焦点。该角色并非传统意义上的长辈，年龄设定在26岁上下，与主要女生角色保持适度的距离感，这种微妙定位构成了系列的看点之一。</p>
+          <p>围绕这一标签产生的内容形态包括：漫画正篇中的特定话数（如第36话“叔叔的旧照片”、第42话“天台的道歉”）、动画改编后的对应集数、官方外传短篇《圣华女子学院日常篇》中叔叔视角的补充叙事，以及同人社团在Pixiv和Twitter上发布的角色关系图与短篇漫画。2026年10月至11月期间，因动画第8集播出“屋顶的便当”段落，该角色的搜索量在Niconico和Bilibili的对应标签下出现明显增长。</p>
+          <p>值得关注的具体方向有三个：一是学园祭篇中叔叔与执行委员长之间的互动细节，漫画第48话刚更新了后续；二是修学旅行篇里叔叔作为临时随行人员的安排是否合理，读者在评论区有持续争论；三是外传短篇第3卷收录的“叔叔的过去”一话，补充了角色背景，包括他曾是圣华女子学院毕业生的信息。这些条目在漫画平台“コミックシーモア”和动画平台“dアニメストア”上均有明确的分话索引。</p>
+        </div>
+      </section>
+
+      <!-- 2. 精选内容推荐 -->
+      <section id="featured">
+        <h2 class="section-title">精选内容推荐</h2>
+        <div class="card-grid">
+          <article class="card">
+            <img class="card-img" src="https://picsum.photos/seed/seika_uncle_01/400/300" alt="漫画第48话学园祭叔叔封面" width="400" height="300" loading="lazy">
+            <div class="card-body">
+              <div class="card-type">漫画章节</div>
+              <h3 class="card-title">第48话「学园祭的叔叔」</h3>
+              <div class="card-tags">
+                <span class="tag">学园祭篇</span>
+                <span class="tag">执行委员长</span>
+                <span class="tag">2026-11-07</span>
+              </div>
+              <p class="card-desc">学园祭筹备最后一天，叔叔被临时安排到执行委员会帮忙搬器材，与委员长在仓库独处时聊到去年的失败经历。这一话补充了叔叔在学院任职前的打工履历。</p>
+              <div class="card-meta">
+                <span>更新于11月7日</span>
+                <span>热度 9,240</span>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-img" src="https://picsum.photos/seed/seika_uncle_02/400/300" alt="动画第8集屋顶便当剧照" width="400" height="300" loading="lazy">
+            <div class="card-body">
+              <div class="card-type">动画片段</div>
+              <h3 class="card-title">第8集「屋顶的便当」</h3>
+              <div class="card-tags">
+                <span class="tag">动画改编</span>
+                <span class="tag">便当事件</span>
+                <span class="tag">2026-11-05</span>
+              </div>
+              <p class="card-desc">对应漫画第40话，叔叔发现有人把便当落在屋顶长椅上，追查过程中和三位不同年级的女生产生交集。动画版增加了原创的乌鸦抢食镜头，在Twitter上引发二创。</p>
+              <div class="card-meta">
+                <span>上线于11月5日</span>
+                <span>评分 8.7</span>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-img" src="https://picsum.photos/seed/seika_uncle_03/400/300" alt="外传短篇叔叔的过去封面" width="400" height="300" loading="lazy">
+            <div class="card-body">
+              <div class="card-type">外传短篇</div>
+              <h3 class="card-title">外传第3卷「叔叔的过去」</h3>
+              <div class="card-tags">
+                <span class="tag">角色背景</span>
+                <span class="tag">毕业生设定</span>
+                <span class="tag">2026-10-28</span>
+              </div>
+              <p class="card-desc">揭示叔叔本人也是圣华女子学院毕业生，但因家庭原因未升学而留校工作。短篇中用6页篇幅描绘了他学生时代在同一个天台吃便当的场景，与正篇第40话形成呼应。</p>
+              <div class="card-meta">
+                <span>发售于10月28日</span>
+                <span>收藏 1,760</span>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-img" src="https://picsum.photos/seed/seika_uncle_04/400/300" alt="漫画第42话天台的道歉封面" width="400" height="300" loading="lazy">
+            <div class="card-body">
+              <div class="card-type">漫画章节</div>
+              <h3 class="card-title">第42话「天台的道歉」</h3>
+              <div class="card-tags">
+                <span class="tag">关系转折</span>
+                <span class="tag">天台场景</span>
+                <span class="tag">2026-10-15</span>
+              </div>
+              <p class="card-desc">叔叔因误拆了学生的快递包裹而主动道歉。这一话首次明确了他与图书委员长之间的信任关系，也是后续学园祭篇合作的伏笔。单行本第7卷收录。</p>
+              <div class="card-meta">
+                <span>更新于10月15日</span>
+                <span>热度 7,890</span>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-img" src="https://picsum.photos/seed/seika_uncle_05/400/300" alt="角色关系图同人作品" width="400" height="300" loading="lazy">
+            <div class="card-body">
+              <div class="card-type">同人图</div>
+              <h3 class="card-title">「叔叔与执行委员长关系图」</h3>
+              <div class="card-tags">
+                <span class="tag">同人创作</span>
+                <span class="tag">Pixiv</span>
+                <span class="tag">2026-11-02</span>
+              </div>
+              <p class="card-desc">Pixiv用户“はるかぜ”发布的角色关系整理图，标注了叔叔与7位主要女生的互动频次和场景类型。收藏数在三天内突破2,400，评论区补充了修学旅行篇的座位安排分析。</p>
+              <div class="card-meta">
+                <span>发布11月2日</span>
+                <span>收藏 2,412</span>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-img" src="https://picsum.photos/seed/seika_uncle_06/400/300" alt="修学旅行篇座位争议截图" width="400" height="300" loading="lazy">
+            <div class="card-body">
+              <div class="card-type">争议讨论</div>
+              <h3 class="card-title">修学旅行篇的随行安排合理吗</h3>
+              <div class="card-tags">
+                <span class="tag">修学旅行篇</span>
+                <span class="tag">规则讨论</span>
+                <span class="tag">2026-10-22</span>
+              </div>
+              <p class="card-desc">漫画第44话中叔叔作为临时随行人员与女生们同乘新干线，部分读者在5ch和微博超话指出这不符合一般学校修学旅行的人员配置惯例。作者在单行本后记中解释为“理事长的特别许可”。</p>
+              <div class="card-meta">
+                <span>讨论于10月22日</span>
+                <span>评论 328</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 3. 最新更新 -->
+      <section id="updates">
+        <h2 class="section-title">最新更新</h2>
+        <div class="update-list">
+          <div class="update-item">
+            <span class="update-date">11月7日</span>
+            <div class="update-content">
+              <div class="update-title">漫画第48话「学园祭的叔叔」</div>
+              <div class="update-summary">执行委员会仓库对话，叔叔提到自己高中时也负责过器材搬运。</div>
+            </div>
+          </div>
+          <div class="update-item">
+            <span class="update-date">11月5日</span>
+            <div class="update-content">
+              <div class="update-title">动画第8集「屋顶的便当」</div>
+              <div class="update-summary">新增乌鸦抢食镜头，片尾ED卡由原作者绘制叔叔与三名女生的合照。</div>
+            </div>
+          </div>
+          <div class="update-item">
+            <span class="update-date">11月3日</span>
+            <div class="update-content">
+              <div class="update-title">角色人气投票结果公开</div>
+              <div class="update-summary">叔叔角色排名第4，落后于执行委员长、图书委员长和体育委员长。</div>
+            </div>
+          </div>
+          <div class="update-item">
+            <span class="update-date">10月30日</span>
+            <div class="update-content">
+              <div class="update-title">外传短篇第3卷电子版上架</div>
+              <div class="update-summary">追加收录了正篇未使用的4页分镜，内容是叔叔在毕业典礼当天的独白。</div>
+            </div>
+          </div>
+          <div class="update-item">
+            <span class="update-date">10月28日</span>
+            <div class="update-content">
+              <div class="update-title">「叔叔的过去」短篇发售</div>
+              <div class="update-summary">揭示角色毕业生身份，同时公开了学生时代与理事长的合影。</div>
+            </div>
+          </div>
+          <div class="update-item">
+            <span class="update-date">10月25日</span>
+            <div class="update-content">
+              <div class="update-title">官方Twitter发布第49话预告</div>
+              <div class="update-summary">预告文案提到“叔叔的旧同事登场”，配图为一只放在工具箱上的安全帽。</div>
+            </div>
+          </div>
+          <div class="update-item">
+            <span class="update-date">10月22日</span>
+            <div class="update-content">
+              <div class="update-title">修学旅行篇随行安排讨论</div>
+              <div class="update-summary">5ch动漫版出现长串讨论，部分网友整理出近五年同类作品中的临时随行设定作对比。</div>
+            </div>
+          </div>
+          <div class="update-item">
+            <span class="update-date">10月18日</span>
+            <div class="update-content">
+              <div class="update-title">单行本第7卷附录公开</div>
+              <div class="update-summary">收录了叔叔角色设计初稿，最初设定年龄为34岁，后调整为26岁。</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. 分类入口 -->
+      <section id="categories">
+        <h2 class="section-title">分类入口</h2>
+        <div class="category-grid">
+          <div class="category-item">学园祭篇<span>第46-48话</span></div>
+          <div class="category-item">修学旅行篇<span>第43-45话</span></div>
+          <div class="category-item">屋顶便当篇<span>第39-41话</span></div>
+          <div class="category-item">外传短篇<span>全3卷</span></div>
+          <div class="category-item">动画改编<span>第1-8集</span></div>
+          <div class="category-item">同人创作<span>Pixiv/Twitter</span></div>
+          <div class="category-item">角色关系图<span>读者整理</span></div>
+          <div class="category-item">读者讨论<span>5ch/微博</span></div>
+        </div>
+      </section>
+
+      <!-- 5. 深度解析 -->
+      <section id="deep-dive">
+        <h2 class="section-title">深度解析</h2>
+        <div class="deep-dive">
+          <h3>“公认叔叔”标签的成立条件</h3>
+          <p>该角色被读者称为“公认叔叔”而非“老师”或“管理员”，关键在于叙事中刻意维持的三条边界。第一，年龄差被明确设定在8至10岁区间：叔叔26岁，主要女生角色16至18岁，这个区间足够形成代际感，又不至于跨入父辈范畴。第二，称呼方式上，女生们使用“おじさん”而非“先生”，漫画第12话首次出现这个称呼时，图书委员长的台词是“那个人啊，叫他叔叔比较顺口吧”，后续单行本附录确认是编辑建议的定案。第三，互动场景限定在校园内和通学路上，没有出现单独外出或家访情节。三条边界中任何一条被打破，读者讨论的风向就会变化——第44话修学旅行篇打破第二条边界（同乘新干线），5ch讨论串在两天内积累了超过400条回复，其中约三成质疑设定合理性。</p>
+
+          <h3>漫画与动画在叔叔戏份上的处理差异</h3>
+          <p>动画第8集对应漫画第40话，但增加了约90秒的原创内容。漫画中叔叔发现便当后直接交给生活指导老师，动画版改为他先追查失主，过程中遇到三位女生，每人贡献一段对话。这个改动使叔叔的出场时间从漫画的4页扩展到动画的6分12秒。制作组在Niconico直播中解释，增加互动是为了让动画观众更快理解角色定位。实际效果是：动画版叔叔的台词量比漫画版多出约40%，其中新增的“我高中时也在这张长椅上吃过饭”一句，成为Twitter上被引用最多的台词，截至11月6日相关推文超过1,200条。漫画读者对这句话的反应分两派，一派认为补充了角色背景，另一派指出漫画第42话已经暗示过毕业生身份，动画提前揭示削弱了后续外传的冲击力。</p>
+
+          <h3>修学旅行篇随行争议的信息层级梳理</h3>
+          <p>围绕第44话的争议，可以把信息拆成四个层级来核对：</p>
+          <ul>
+            <li><strong>已公开事实：</strong>漫画第44话第3页至第5页显示叔叔持临时随行证登上新干线，证件由理事长签发。单行本第7卷附录收录了这张证件的设定草稿，签发日期为故事内时间线的三个月前。</li>
+            <li><strong>当事人回应：</strong>作者在单行本后记中写道“理事长认为设备负责人随行有助于处理突发故障”，没有进一步解释人员配置是否符合文部科学省的相关指引。</li>
+            <li><strong>媒体转述：</strong>动漫资讯站“アニメイトタイムズ”在10月24日的报道中引用了某私立女子高中教师的匿名评论，称“通常修学旅行随行人员中不会包含设备维护人员”。该报道未给出教师所属学校的具体信息。</li>
+            <li><strong>网友推测：</strong>5ch讨论串中有用户提出“叔叔可能是以毕业生志愿者身份随行”，但这个说法没有官方来源佐证，漫画第44话也未提及志愿者身份。</li>
+          </ul>
+          <p>四个层级中，只有第一层有漫画画面和设定草稿作为直接依据。第二层是作者单方面说明，第三层是媒体转述的匿名意见，第四层没有可追溯来源。判断这条争议时，可以核对的是：漫画第44话是否存在其他随行人员名单——答案是有，第6页出现了生活指导老师和两位年级主任的名字，叔叔不在名单上，但他持证上车。这个细节在设定上留下了未解释的空间。</p>
+
+          <h3>读者如何判断一条同人创作是否值得看</h3>
+          <p>同人创作的数量在动画开播后明显增加，Pixiv上“聖華女子学院 おじさん”标签的作品数从9月的约180件增至11月6日的约420件。判断优先级可以参考三个可核对指标：一是作者是否在简介中标注了参考的话数或卷数，标注了第40话至第48话的创作者通常对角色关系把握更准，Pixiv用户“はるかぜ”的关系图就逐条标注了出场话数；二是作品是否区分了漫画版和动画版设定，同时标注两个版本的创作者往往会处理差异，例如动画版新增的乌鸦镜头在同人图中被引用时，作者会注明“アニメ8話”；三是评论区是否有读者指出设定错误，点赞数较高的纠错评论通常比作品本身的赞数更能说明问题。三个指标中，第一个最容易核对，第二个需要读者对两个版本都有了解，第三个依赖社区活跃度。</p>
+        </div>
+      </section>
+
+      <!-- 6. 体验指南 -->
+      <section id="guide">
+        <h2 class="section-title">体验指南</h2>
+        <div class="guide-steps">
+          <div class="guide-step">
+            <h4>先看漫画第36话至第42话</h4>
+            <p>这七话是叔叔角色标签形成的关键段落：第36话「旧照片」首次交代他与学院的渊源，第39话至第41话的屋顶便当篇建立了日常互动模式，第42话「天台的道歉」确立了信任关系。跳过这几话直接看学园祭篇，会漏掉执行委员长为何在第48话主动找他帮忙的铺垫。</p>
+          </div>
+          <div class="guide-step">
+            <h4>动画第8集可以独立看，但要对照漫画第40话</h4>
+            <p>动画新增的乌鸦镜头和台词是原创内容，如果先看动画再看漫画，可能会把原创台词误当成原作设定。建议先读漫画第40话的4页内容，再看动画第8集，差异点会比较清楚。动画第8集片尾的ED卡是原作者绘制的，那张图里的角色站位和外传第3卷的封面构图一致。</p>
+          </div>
+          <div class="guide-step">
+            <h4>外传短篇放在正篇之后读</h4>
+            <p>外传第3卷「叔叔的过去」揭示的毕业生身份，在正篇第42话和第44话中都有暗示性台词。先读外传会削弱正篇的悬念；放在第44话之后读，能对照修学旅行篇的争议来看——叔叔对校园环境的熟悉程度在第44话里被部分读者质疑，外传恰好提供了合理解释。</p>
+          </div>
+          <div class="guide-step">
+            <h4>同人创作优先选标注话数的</h4>
+            <p>Pixiv和Twitter上的同人图数量已超过400件，筛选时先看作者是否在简介或标签中标注了参考话数。标注了第39话至第48话的作品，角色服装和场景细节通常更准确，例如学园祭期间叔叔穿的深蓝色工作服，在第46话才首次出现，未标注话数的同人图经常画成日常的灰色夹克。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. FAQ -->
+      <section id="faq">
+        <h2 class="section-title">常见问题</h2>
+        <div class="faq-list">
+          <details>
+            <summary>“公认叔叔”这个称呼是在哪一话出现的？</summary>
+            <div class="faq-answer">漫画第12话，图书委员长在整理书架时对另一位女生说“那个人啊，叫他叔叔比较顺口吧”。此前第8话有女生私下称呼他“管理员さん”，第12话之后“おじさん”成为统一称呼。单行本第3卷附录确认这个称呼是编辑在角色设定阶段提出的建议。</div>
+          </details>
+          <details>
+            <summary>叔叔角色在官方设定中的年龄和身份是什么？</summary>
+            <div class="faq-answer">26岁，圣华女子学院毕业生，因家庭原因未升学，目前在学院负责设备维护和部分事务工作。身份在漫画第42话通过旧照片暗示，外传第3卷「叔叔的过去」正式确认。单行本第7卷附录收录的角色设计初稿中，年龄最初设定为34岁，后来调整为26岁，设计稿上标注了修改日期为2025年3月。</div>
+          </details>
+          <details>
+            <summary>修学旅行篇里叔叔随行是否经过了理事长批准？</summary>
+            <div class="faq-answer">漫画第44话第3页显示叔叔持有理事长签发的临时随行证，证件在单行本第7卷附录中有草稿图。但第6页的随行人员名单上没有他的名字，名单包含生活指导老师和两位年级主任。作者在后记中只提到理事长认为设备负责人随行有助于处理突发故障，没有解释名单遗漏的原因。</div>
+          </details>
+          <details>
+            <summary>动画第8集和漫画第40话的主要区别在哪里？</summary>
+            <div class="faq-answer">动画增加了约90秒的原创内容：叔叔追查便当失主时依次遇到三位女生，每人有一段对话；漫画中他直接交给了生活指导老师。新增台词中“我高中时也在这张长椅上吃过饭”是动画独有，漫画第40话没有这句。片尾ED卡由原作者绘制，角色站位与外传第3卷封面一致。</div>
+          </details>
+          <details>
+            <summary>同人创作中哪些标签可以找到质量较高的作品？</summary>
+            <div class="faq-answer">Pixiv上“聖華女子学院 おじさん”标签下的作品，筛选时优先看标注了具体话数的，例如“第40話”“アニメ8話”。Twitter上搜索“#聖華おじさん”可以看到动画播出后的实时讨论和短篇漫画，其中转发量较高的作品通常会在评论区被读者指出设定细节。截至11月6日，Pixiv该标签作品约420件。</div>
+          </details>
+          <details>
+            <summary>外传短篇第3卷补充了哪些正篇没有的信息？</summary>
+            <div class="faq-answer">补充了三项内容：叔叔在圣华女子学院就读时的教室位置（旧校舍三楼东侧，与现在图书室同层）；毕业典礼当天他在天台独白的4页分镜；学生时代与现任理事长的合影，照片中理事长比他高两个年级。外传第3卷还收录了正篇未使用的4页分镜草稿。</div>
+          </details>
+        </div>
+      </section>
+
+      <!-- 8. 用户评论 -->
+      <section id="comments">
+        <h2 class="section-title">用户评论</h2>
+        <div class="comment-grid">
+          <div class="comment-card"><div class="comment-user">@天台的乌鸦</div><div class="comment-text">动画第8集那只乌鸦加得好，漫画里便当直接交给老师太顺了，有乌鸦抢食才像校园日常。</div></div>
+          <div class="comment-card"><div class="comment-user">@图书室第三排</div><div class="comment-text">第42话道歉那段看了三遍，叔叔拆快递拆出女生买的发圈，那个尴尬感画得真到位。</div></div>
+          <div class="comment-card"><div class="comment-user">@修学旅行委员</div><div class="comment-text">第44话名单上没叔叔名字这事，我倾向于作者画漏了，单行本附录还专门画了证件草稿，说明本来就想让他上车。</div></div>
+          <div class="comment-card"><div class="comment-user">@旧校舍三楼</div><div class="comment-text">外传第3卷那个天台独白，和正篇第40话呼应上了，时间线差了十年，同一个位置吃便当，这安排可以。</div></div>
+          <div class="comment-card"><div class="comment-user">@はるかぜ粉丝</div><div class="comment-text">Pixiv那张关系图确实好用，我按图上的话数索引补了第39到41话，省得从头翻。</div></div>
+          <div class="comment-card"><div class="comment-user">@今天也没睡</div><div class="comment-text">角色人气投票叔叔排第4，前面三个全是女生，这个排名挺合理，毕竟戏份就那么多。</div></div>
+          <div class="comment-card"><div class="comment-user">@器材搬运工</div><div class="comment-text">学园祭篇搬器材那段笑死，叔叔扛箱子的姿势和我打工时一模一样，作者肯定干过体力活。</div></div>
+          <div class="comment-card"><div class="comment-user">@匿名希望</div><div class="comment-text">第48话仓库对话里叔叔提到高中也搬过器材，这句和第44话修学旅行随行的事其实能连起来看，他对学校设备太熟了。</div></div>
+          <div class="comment-card"><div class="comment-user">@五年动画党</div><div class="comment-text">动画原创台词“长椅上吃过饭”提前把毕业生身份点出来了，漫画读者可能觉得少了个惊喜，但动画观众接受度挺高。</div></div>
+          <div class="comment-card"><div class="comment-user">@别翻我书架</div><div class="comment-text">说实话叔叔和图书委员长的互动比执行委员长那条线自然，第12话起称呼的由来就是她带头的。</div></div>
+          <div class="comment-card"><div class="comment-user">@乌鸦本鸦</div><div class="comment-text">今天下雨没出门，把第36话到第48话重新翻了一遍，旧照片那段叔叔的表情和外传封面完全能对上。</div></div>
+          <div class="comment-card"><div class="comment-user">@单行本收集者</div><div class="comment-text">第7卷附录的设计初稿有意思，34岁改成26岁，难怪正篇里有些台词像三十多岁的人说的。</div></div>
+          <div class="comment-card"><div class="comment-user">@不想上班</div><div class="comment-text">修学旅行那个争议5ch上吵了四百多条，我看了半天觉得两边说的都有道理，最后也没个定论。</div></div>
+          <div class="comment-card"><div class="comment-user">@动画第一集开始追</div><div class="comment-text">第8集片尾ED卡我截屏了，叔叔站最右边，左边三个女生，构图和外传第3卷封面几乎一样，原作者画的确实细。</div></div>
+          <div class="comment-card"><div class="comment-user">@便当盒</div><div class="comment-text">第40话便当里放的是炒面面包和玉子烧，动画第8集画成了饭团，这种小改动倒是无所谓。</div></div>
+          <div class="comment-card"><div class="comment-user">@同人筛选器</div><div class="comment-text">我按话数标注筛选同人图，发现标注“アニメ8話”的比标注“第40話”的多一倍，动画效应确实明显。</div></div>
+        </div>
+      </section>
+
+      <!-- 9. 相关资讯 -->
+      <section id="news">
+        <h2 class="section-title">相关资讯</h2>
+        <div class="news-list">
+          <div class="news-item">
+            <div class="news-date">2026年11月6日</div>
+            <div class="news-title">《圣华女子学院》漫画第48话更新 学园祭篇进入最终日</div>
+            <div class="news-summary">第48话结尾执行委员长将仓库钥匙交给叔叔保管，为第49话“叔叔的旧同事登场”埋下伏笔。官方Twitter同日发布预告，配图安全帽。</div>
+          </div>
+          <div class="news-item">
+            <div class="news-date">2026年11月5日</div>
+            <div class="news-title">动画第8集「屋顶的便当」播出 新增乌鸦抢食镜头</div>
+            <div class="news-summary">制作组在Niconico直播中说明原创镜头是为了让动画观众更快理解角色定位，片尾ED卡由原作者绘制，站位与外传第3卷封面一致。</div>
+          </div>
+          <div class="news-item">
+            <div class="news-date">2026年11月3日</div>
+            <div class="news-title">圣华女子学院角色人气投票结果公开 叔叔排第4</div>
+            <div class="news-summary">投票共收到12,840票，执行委员长以3,210票居首，图书委员长2,890票第二，体育委员长2,150票第三，叔叔角色得票1,760票。官方表示将根据排名制作壁纸。</div>
+          </div>
+          <div class="news-item">
+            <div class="news-date">2026年10月30日</div>
+            <div class="news-title">外传短篇第3卷电子版上架 追加收录4页未使用分镜</div>
+            <div class="news-summary">电子版独家追加的4页分镜内容是叔叔在毕业典礼当天的独白，与正篇第44话修学旅行篇的争议无直接关联，但补充了角色学生时代的心理描写。</div>
+          </div>
+          <div class="news-item">
+            <div class="news-date">2026年10月26日</div>
+            <div class="news-title">“アニメイトタイムズ”报道修学旅行随行争议 引用匿名教师评论</div>
+            <div class="news-summary">报道引用了某私立女子高中教师的匿名说法“设备维护人员通常不列入随行名单”，同时指出该说法未获圣华女子学院官方回应。报道还整理近五年同类作品中的临时随行设定。</div>
+          </div>
+          <div class="news-item">
+            <div class="news-date">2026年10月22日</div>
+            <div class="news-title">5ch动漫版修学旅行篇讨论串突破400条回复</div>
+            <div class="news-summary">讨论集中在第44话第6页的随行人员名单，部分网友对比了近五年同类作品中的临时随行设定，还有人贴出文部科学省相关指引的条文截图，但未达成一致结论。</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10. 相关推荐 -->
+      <section id="recommendations">
+        <h2 class="section-title">相关推荐</h2>
+        <div class="rec-tag-list">
+          <span class="rec-tag">漫画第36话「叔叔的旧照片」</span>
+          <span class="rec-tag">第12话称呼由来</span>
+          <span class="rec-tag">屋顶便当篇第39-41话</span>
+          <span class="rec-tag">执行委员长与叔叔的仓库对话</span>
+          <span class="rec-tag">动画第8集ED卡原画</span>
+          <span class="rec-tag">外传第3卷「叔叔的过去」</span>
+          <span class="rec-tag">Pixiv角色关系图</span>
+          <span class="rec-tag">单行本第7卷附录设计稿</span>
+        </div>
+      </section>
+
+      <!-- 11. 热门榜单 -->
+      <section id="ranking">
+        <h2 class="section-title">热门榜单</h2>
+        <div class="ranking-list">
+          <div class="ranking-item">
+            <span class="ranking-num">01</span>
+            <span class="ranking-name">漫画第48话「学园祭的叔叔」</span>
+            <span class="ranking-score">热度 9,240</span>
+          </div>
+          <div class="ranking-item">
+            <span class="ranking-num">02</span>
+            <span class="ranking-name">动画第8集「屋顶的便当」</span>
+            <span class="ranking-score">评分 8.7</span>
+          </div>
+          <div class="ranking-item">
+            <span class="ranking-num">03</span>
+            <span class="ranking-name">外传第3卷「叔叔的过去」</span>
+            <span class="ranking-score">收藏 1,760</span>
+          </div>
+          <div class="ranking-item">
+            <span class="ranking-num">04</span>
+            <span class="ranking-name">漫画第42话「天台的道歉」</span>
+            <span class="ranking-score">热度 7,890</span>
+          </div>
+          <div class="ranking-item">
+            <span class="ranking-num">05</span>
+            <span class="ranking-name">Pixiv关系图「はるかぜ」</span>
+            <span class="ranking-score">收藏 2,412</span>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 右侧辅助栏 -->
+    <aside class="aux-sidebar" aria-label="辅助信息">
+      <div class="aux-card">
+        <h3>本周热榜</h3>
+        <ul class="hot-list">
+          <li>
+            <span class="hot-title">第48话仓库对话</span>
+            <span class="hot-meta">11月7日 · 讨论热度最高</span>
+          </li>
+          <li>
+            <span class="hot-title">动画ED卡原画</span>
+            <span class="hot-meta">11月5日 · 转发 1,200+</span>
+          </li>
+          <li>
+            <span class="hot-title">修学旅行随行争议</span>
+            <span class="hot-meta">10月22日 · 评论持续增加</span>
+          </li>
+          <li>
+            <span class="hot-title">外传毕业生身份揭示</span>
+            <span class="hot-meta">10月28日 · 收藏 1,760</span>
+          </li>
+        </ul>
+      </div>
+      <div class="aux-card interaction-box">
+        <h3>参与互动</h3>
+        <p>你有关于叔叔角色或学园祭篇的发现？欢迎投稿同人图或剧情分析。</p>
+        <a href="#" class="btn-outline" aria-label="投稿入口（示例）">投稿入口</a>
+      </div>
+      <div class="aux-card">
+        <h3>条目时间线</h3>
+        <ul class="hot-list">
+          <li><span class="hot-title">10月15日</span><span class="hot-meta">第42话「天台的道歉」</span></li>
+          <li><span class="hot-title">10月22日</span><span class="hot-meta">修学旅行篇讨论升温</span></li>
+          <li><span class="hot-title">10月28日</span><span class="hot-meta">外传第3卷发售</span></li>
+          <li><span class="hot-title">11月5日</span><span class="hot-meta">动画第8集播出</span></li>
+          <li><span class="hot-title">11月7日</span><span class="hot-meta">第48话更新</span></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <!-- 页脚 -->
+  <footer>
+    <div class="container">
+      <div class="footer-brand">
+        <h4>圣华女子学院公认叔叔动漫漫画</h4>
+        <p>收录2026年10月至11月期间漫画第36话至第48话、动画第1至8集、外传短篇全3卷的条目索引与读者讨论。内容覆盖学园祭篇、修学旅行篇、屋顶便当篇及角色背景补充，更新节奏随漫画连载与动画播出同步。</p>
+      </div>
+      <div class="footer-links">
+        <h5>栏目</h5>
+        <ul>
+          <li><a href="#overview">领域概览</a></li>
+          <li><a href="#featured">精选推荐</a></li>
+          <li><a href="#updates">最新更新</a></li>
+          <li><a href="#deep-dive">深度解析</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h5>互动</h5>
+        <ul>
+          <li><a href="#comments">用户评论</a></li>
+          <li><a href="#news">相关资讯</a></li>
+          <li><a href="#ranking">热门榜单</a></li>
+          <li><a href="#" aria-label="投稿入口（示例）">投稿入口</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <span>示例内容聚合页面 · 条目名称与数据均为虚构示例，用于展示内容结构</span>
+        <span>更新于2026年11月8日</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 回到顶部按钮 -->
+  <button class="back-to-top" id="backToTop" aria-label="回到顶部">↑</button>
+
+  <!-- 脚本 -->
+  <script>
+    (function() {
+      // 移动端菜单
+      const hamburger = document.getElementById('hamburgerBtn');
+      const mobileNav = document.getElementById('mobileNav');
+      const overlay = document.getElementById('overlay');
+
+      function closeMenu() {
+        mobileNav.classList.remove('active');
+        overlay.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
+      }
+
+      function openMenu() {
+        mobileNav.classList.add('active');
+        overlay.classList.add('active');
+        hamburger.setAttribute('aria-expanded', 'true');
+      }
+
+      hamburger.addEventListener('click', function() {
+        if (mobileNav.classList.contains('active')) {
+          closeMenu();
+        } else {
+          openMenu();
+        }
+      });
+
+      overlay.addEventListener('click', closeMenu);
+
+      mobileNav.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', closeMenu);
+      });
+
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && mobileNav.classList.contains('active')) {
+          closeMenu();
+        }
+      });
+
+      // 回到顶部
+      const backToTop = document.getElementById('backToTop');
+
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > window.innerHeight) {
+          backToTop.classList.add('visible');
+        } else {
+          backToTop.classList.remove('visible');
+        }
+      });
+
+      backToTop.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // 搜索功能（简单本地筛选）
+      const searchInput = document.getElementById('searchInput');
+      const searchBtn = document.getElementById('searchBtn');
+
+      function performSearch() {
+        const query = searchInput.value.trim().toLowerCase();
+        if (!query) {
+          document.querySelectorAll('.card, .update-item, .news-item, .ranking-item, .comment-card, .rec-tag').forEach(function(el) {
+            el.style.display = '';
+          });
+          return;
+        }
+        const items = document.querySelectorAll('.card, .update-item, .news-item, .ranking-item, .comment-card, .rec-tag');
+        items.forEach(function(el) {
+          const text = el.textContent.toLowerCase();
+          if (text.includes(query)) {
+            el.style.display = '';
+          } else {
+            el.style.display = 'none';
+          }
+        });
+        // 简单反馈
+        const visible = Array.from(items).filter(el => el.style.display !== 'none');
+        if (visible.length === 0) {
+          alert('没有找到匹配的内容，请尝试其他关键词。');
+        }
+      }
+
+      searchBtn.addEventListener('click', performSearch);
+      searchInput.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') {
+          performSearch();
+        }
+      });
+
+      // 侧栏导航高亮（简易）
+      const sections = document.querySelectorAll('main section[id]');
+      const navLinks = document.querySelectorAll('.channel-list a');
+
+      function highlightNav() {
+        let current = '';
+        const scrollPos = window.scrollY + 120;
+        sections.forEach(function(section) {
+          const top = section.offsetTop;
+          if (scrollPos >= top) {
+            current = section.getAttribute('id');
+          }
+        });
+        navLinks.forEach(function(link) {
+          link.style.background = '';
+          link.style.color = '';
+          if (link.getAttribute('href') === '#' + current) {
+            link.style.background = '#f5e6ed';
+            link.style.color = '#5e3a4f';
+          }
+        });
+      }
+
+      window.addEventListener('scroll', highlightNav);
+      highlightNav();
+
+      // 平滑滚动偏移（已由 CSS scroll-margin-top 处理）
+      // 分类入口点击滚动（可选，当前无链接）
+    })();
+  </script>
+
+  <!-- 结构化数据 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "圣华女子学院公认叔叔动漫漫画",
+    "description": "聚焦圣华女子学院系列中“公认叔叔”角色标签的漫画章节、动画片段与同人创作聚合页",
+    "url": ""
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "“公认叔叔”这个称呼是在哪一话出现的？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "漫画第12话，图书委员长在整理书架时对另一位女生说“那个人啊，叫他叔叔比较顺口吧”。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "叔叔角色在官方设定中的年龄和身份是什么？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "26岁，圣华女子学院毕业生，因家庭原因未升学，目前在学院负责设备维护和部分事务工作。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "修学旅行篇里叔叔随行是否经过了理事长批准？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "漫画第44话第3页显示叔叔持有理事长签发的临时随行证，但第6页的随行人员名单上没有他的名字。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "动画第8集和漫画第40话的主要区别在哪里？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "动画增加了约90秒的原创内容，叔叔追查便当失主时依次遇到三位女生，每人有一段对话；漫画中他直接交给了生活指导老师。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "同人创作中哪些标签可以找到质量较高的作品？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pixiv上“聖華女子学院 おじさん”标签下的作品，筛选时优先看标注了具体话数的。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "外传短篇第3卷补充了哪些正篇没有的信息？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "补充了叔叔就读时的教室位置、毕业典礼当天的独白分镜、学生时代与理事长的合影。"
+        }
+      }
+    ]
+  }
+  </script>
+</body>
+                                           </html>
