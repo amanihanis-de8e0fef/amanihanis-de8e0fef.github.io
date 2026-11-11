@@ -1,0 +1,1845 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>网爆黑料门 - 争议事件梳理与讨论</title>
+  <meta name="description" content="网爆黑料门聚焦网络争议事件与爆料内容，汇集近期热门争议条目、当事人回应、网友评论及深度事件解析，适合关注网络舆论与事件来龙去脉的读者浏览。">
+  <meta name="keywords" content="网爆黑料门">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23b3261e'/%3E%3Ccircle cx='50' cy='38' r='18' fill='%23fff'/%3E%3Crect x='38' y='60' width='24' height='24' rx='4' fill='%23fff'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --primary: #b3261e;
+      --primary-light: #e8c4c1;
+      --primary-dark: #7a1a15;
+      --bg: #faf6f5;
+      --surface: #ffffff;
+      --surface-alt: #fdf0ef;
+      --text: #1f1a1a;
+      --text-secondary: #5e5252;
+      --text-tertiary: #8a7a7a;
+      --border: #e8dddd;
+      --radius-card: 10px;
+      --radius-btn: 6px;
+      --radius-tag: 4px;
+      --radius-banner: 8px;
+      --shadow: 0 1px 3px rgba(0,0,0,0.06);
+      --shadow-hover: 0 4px 12px rgba(0,0,0,0.10);
+      --font: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      --header-height: 108px;
+      --announce-height: 40px;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: calc(var(--header-height) + var(--announce-height) + 12px); }
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 15px;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    img { display: block; max-width: 100%; }
+    ul { list-style: none; }
+    button { cursor: pointer; font-family: inherit; }
+
+    /* 吸顶公告条 */
+    .announce-bar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      height: var(--announce-height);
+      background: var(--primary-dark);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      font-size: 13px;
+      z-index: 1000;
+      padding: 0 16px;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .announce-bar .brand-mini {
+      font-weight: 700;
+      color: #ffd9d6;
+      letter-spacing: 0.5px;
+      flex-shrink: 0;
+    }
+    .announce-bar .sep { opacity: 0.4; }
+    .announce-bar .item { display: inline-flex; gap: 6px; align-items: center; }
+    .announce-bar .date { color: #ffb3ae; font-variant-numeric: tabular-nums; }
+    .announce-bar .tag-mini {
+      background: #ffd9d6;
+      color: var(--primary-dark);
+      font-size: 11px;
+      padding: 1px 6px;
+      border-radius: 3px;
+      font-weight: 600;
+    }
+
+    /* 吸顶页头 */
+    .site-header {
+      position: fixed;
+      top: var(--announce-height);
+      left: 0; right: 0;
+      height: calc(var(--header-height) - var(--announce-height));
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      z-index: 999;
+      display: flex;
+      align-items: center;
+    }
+    .header-inner {
+      max-width: 1380px;
+      margin: 0 auto;
+      padding: 0 24px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+    .logo-mark {
+      width: 38px; height: 38px;
+      border-radius: 8px;
+      background: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .logo-mark::before {
+      content: '';
+      width: 14px; height: 14px;
+      border-radius: 50%;
+      background: #fff;
+      margin-top: -6px;
+    }
+    .logo-mark::after {
+      content: '';
+      position: absolute;
+      bottom: 6px;
+      width: 18px; height: 8px;
+      border-radius: 2px;
+      background: #fff;
+      opacity: 0.85;
+    }
+    .logo-text {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--primary-dark);
+      letter-spacing: 0.5px;
+      line-height: 1.2;
+    }
+    .main-nav {
+      display: flex;
+      gap: 4px;
+      flex: 1;
+      overflow-x: auto;
+    }
+    .main-nav a {
+      color: var(--text-secondary);
+      font-size: 14px;
+      padding: 6px 12px;
+      border-radius: var(--radius-btn);
+      white-space: nowrap;
+      transition: background 0.15s, color 0.15s;
+    }
+    .main-nav a:hover {
+      background: var(--surface-alt);
+      color: var(--primary);
+      text-decoration: none;
+    }
+    .header-actions {
+      display: flex;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+    .btn-outline {
+      border: 1px solid var(--primary);
+      background: transparent;
+      color: var(--primary);
+      padding: 6px 16px;
+      border-radius: var(--radius-btn);
+      font-size: 13px;
+      font-weight: 600;
+      transition: background 0.15s;
+    }
+    .btn-outline:hover { background: var(--surface-alt); }
+    .btn-solid {
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      padding: 7px 16px;
+      border-radius: var(--radius-btn);
+      font-size: 13px;
+      font-weight: 600;
+      transition: background 0.15s;
+    }
+    .btn-solid:hover { background: var(--primary-dark); }
+
+    /* 主容器 */
+    .page-wrap {
+      max-width: 1380px;
+      margin: 0 auto;
+      padding: calc(var(--header-height) + var(--announce-height) + 8px) 24px 40px;
+    }
+
+    /* 首屏 */
+    .hero {
+      background: linear-gradient(135deg, #fdf0ef 0%, #fff5f4 40%, #f5e6e4 100%);
+      border-radius: var(--radius-banner);
+      padding: 48px 48px 44px;
+      margin-bottom: 32px;
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 40px;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      right: -60px; top: -60px;
+      width: 280px; height: 280px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(179,38,30,0.08), transparent 70%);
+      pointer-events: none;
+    }
+    .hero-text h1 {
+      font-size: 38px;
+      font-weight: 900;
+      color: var(--primary-dark);
+      letter-spacing: 1px;
+      margin-bottom: 14px;
+      line-height: 1.25;
+    }
+    .hero-desc {
+      font-size: 15px;
+      color: var(--text-secondary);
+      max-width: 560px;
+      margin-bottom: 22px;
+      line-height: 1.8;
+    }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .hero-visual {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .hero-card-mini {
+      background: #fff;
+      border-radius: var(--radius-card);
+      padding: 14px 16px;
+      box-shadow: var(--shadow);
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      border-left: 3px solid var(--primary);
+      transition: box-shadow 0.2s;
+    }
+    .hero-card-mini:hover { box-shadow: var(--shadow-hover); }
+    .hero-card-mini .badge {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: var(--radius-tag);
+      background: var(--surface-alt);
+      color: var(--primary);
+      white-space: nowrap;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .hero-card-mini .info { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+    .hero-card-mini .info strong { color: var(--text); font-weight: 600; display: block; margin-bottom: 2px; }
+
+    /* 三栏布局 */
+    .layout-3col {
+      display: grid;
+      grid-template-columns: 175px 1fr 240px;
+      gap: 28px;
+      align-items: start;
+    }
+
+    /* 左频道栏 */
+    .channel-sidebar {
+      position: sticky;
+      top: calc(var(--header-height) + var(--announce-height) + 16px);
+    }
+    .channel-box {
+      background: var(--surface);
+      border-radius: var(--radius-card);
+      padding: 16px 0;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+    .channel-box h3 {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-tertiary);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 0 16px 10px;
+    }
+    .channel-box ul li a {
+      display: block;
+      padding: 8px 16px;
+      font-size: 14px;
+      color: var(--text-secondary);
+      border-left: 3px solid transparent;
+      transition: background 0.15s, border-color 0.15s, color 0.15s;
+    }
+    .channel-box ul li a:hover, .channel-box ul li a.active {
+      background: var(--surface-alt);
+      border-left-color: var(--primary);
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* 中主内容 */
+    .main-content { min-width: 0; }
+    .section {
+      margin-bottom: 36px;
+    }
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+    .section-header h2 {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--text);
+      letter-spacing: 0.3px;
+    }
+    .section-header .sub {
+      font-size: 13px;
+      color: var(--text-tertiary);
+    }
+
+    /* 概览 */
+    .overview-text {
+      background: var(--surface);
+      border-radius: var(--radius-card);
+      padding: 24px 28px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.9;
+    }
+    .overview-text p + p { margin-top: 12px; }
+
+    /* 精选卡片网格 */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: var(--surface);
+      border-radius: var(--radius-card);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-hover);
+    }
+    .card-thumb {
+      width: 100%;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      background: var(--surface-alt);
+    }
+    .card-body {
+      padding: 14px 16px 16px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-tags {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+    }
+    .tag {
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: var(--radius-tag);
+      background: var(--surface-alt);
+      color: var(--primary);
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .tag.dark { background: var(--primary); color: #fff; }
+    .card h3 {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      line-height: 1.4;
+      color: var(--text);
+    }
+    .card .excerpt {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      flex: 1;
+      margin-bottom: 10px;
+    }
+    .card .meta {
+      font-size: 12px;
+      color: var(--text-tertiary);
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    /* 最新动态列表 */
+    .update-list {
+      background: var(--surface);
+      border-radius: var(--radius-card);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .update-item {
+      display: flex;
+      gap: 14px;
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border);
+      align-items: flex-start;
+      transition: background 0.15s;
+    }
+    .update-item:last-child { border-bottom: none; }
+    .update-item:hover { background: var(--surface-alt); }
+    .update-item .time-badge {
+      font-size: 11px;
+      color: var(--text-tertiary);
+      background: var(--bg);
+      padding: 3px 8px;
+      border-radius: var(--radius-tag);
+      white-space: nowrap;
+      flex-shrink: 0;
+      margin-top: 2px;
+      font-variant-numeric: tabular-nums;
+    }
+    .update-item .update-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 2px;
+    }
+    .update-item .update-desc {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    /* 分类入口 */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+    .category-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-card);
+      padding: 16px 14px;
+      text-align: center;
+      box-shadow: var(--shadow);
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .category-item:hover {
+      border-color: var(--primary-light);
+      box-shadow: var(--shadow-hover);
+      text-decoration: none;
+    }
+    .category-item .cat-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+    .category-item .cat-count {
+      font-size: 12px;
+      color: var(--text-tertiary);
+    }
+
+    /* 深度解析 */
+    .deep-analysis {
+      background: var(--surface);
+      border-radius: var(--radius-card);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      padding: 28px 32px;
+    }
+    .deep-analysis h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin: 22px 0 10px;
+      padding-left: 12px;
+      border-left: 3px solid var(--primary);
+    }
+    .deep-analysis h3:first-of-type { margin-top: 0; }
+    .deep-analysis p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.9;
+      margin-bottom: 12px;
+    }
+    .deep-analysis ul {
+      margin: 8px 0 14px 20px;
+      list-style: disc;
+    }
+    .deep-analysis ul li {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.8;
+      margin-bottom: 4px;
+    }
+    .deep-analysis .note {
+      background: var(--surface-alt);
+      border-left: 3px solid var(--primary);
+      padding: 12px 16px;
+      border-radius: 0 var(--radius-tag) var(--radius-tag) 0;
+      font-size: 14px;
+      color: var(--text-secondary);
+      margin: 14px 0;
+    }
+
+    /* 指南 */
+    .guide-steps {
+      display: grid;
+      gap: 12px;
+    }
+    .guide-step {
+      display: flex;
+      gap: 16px;
+      background: var(--surface);
+      border-radius: var(--radius-card);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      padding: 18px 20px;
+      align-items: flex-start;
+    }
+    .step-num {
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #fff;
+      font-size: 15px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .step-content h4 {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .step-content p {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    /* FAQ */
+    .faq-list { display: flex; flex-direction: column; gap: 8px; }
+    details.faq-item {
+      background: var(--surface);
+      border-radius: var(--radius-card);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    details.faq-item summary {
+      padding: 14px 20px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: background 0.15s;
+    }
+    details.faq-item summary::-webkit-details-marker { display: none; }
+    details.faq-item summary::before {
+      content: '+';
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--primary);
+      width: 20px;
+      flex-shrink: 0;
+    }
+    details.faq-item[open] summary::before { content: '−'; }
+    details.faq-item summary:hover { background: var(--surface-alt); }
+    details.faq-item .faq-answer {
+      padding: 0 20px 16px 50px;
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.8;
+    }
+
+    /* 评论 */
+    .comment-list { display: flex; flex-direction: column; gap: 10px; }
+    .comment-item {
+      background: var(--surface);
+      border-radius: var(--radius-card);
+      border: 1px solid var(--border);
+      padding: 14px 18px;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    .avatar {
+      width: 34px; height: 34px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary-light), var(--primary));
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .comment-body { flex: 1; min-width: 0; }
+    .comment-head {
+      display: flex;
+      gap: 10px;
+      align-items: baseline;
+      margin-bottom: 4px;
+      flex-wrap: wrap;
+    }
+    .comment-name { font-size: 13px; font-weight: 700; color: var(--text); }
+    .comment-time { font-size: 11px; color: var(--text-tertiary); }
+    .comment-text { font-size: 14px; color: var(--text-secondary); line-height: 1.6; }
+
+    /* 资讯 */
+    .news-list { display: flex; flex-direction: column; gap: 0; }
+    .news-item {
+      display: flex;
+      gap: 16px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--border);
+      align-items: flex-start;
+    }
+    .news-item:last-child { border-bottom: none; }
+    .news-date {
+      font-size: 12px;
+      color: var(--text-tertiary);
+      white-space: nowrap;
+      flex-shrink: 0;
+      padding-top: 2px;
+      font-variant-numeric: tabular-nums;
+      width: 80px;
+    }
+    .news-content h4 {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 4px;
+      color: var(--text);
+    }
+    .news-content p {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* 相关推荐标签云 */
+    .tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .tag-cloud a {
+      display: inline-block;
+      padding: 7px 14px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-tag);
+      font-size: 13px;
+      color: var(--text-secondary);
+      transition: border-color 0.15s, color 0.15s, background 0.15s;
+    }
+    .tag-cloud a:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+      background: var(--surface-alt);
+      text-decoration: none;
+    }
+
+    /* 榜单 */
+    .ranking-list {
+      background: var(--surface);
+      border-radius: var(--radius-card);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .ranking-item {
+      display: flex;
+      gap: 14px;
+      padding: 12px 18px;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
+    }
+    .ranking-item:last-child { border-bottom: none; }
+    .rank-num {
+      width: 24px;
+      font-size: 16px;
+      font-weight: 900;
+      color: var(--text-tertiary);
+      text-align: center;
+      flex-shrink: 0;
+    }
+    .rank-num.top { color: var(--primary); }
+    .ranking-item .rank-info { flex: 1; min-width: 0; }
+    .ranking-item .rank-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .ranking-item .rank-meta {
+      font-size: 12px;
+      color: var(--text-tertiary);
+    }
+    .heat-bar {
+      font-size: 12px;
+      color: var(--primary);
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    /* 右辅助栏 */
+    .aside-sidebar {
+      position: sticky;
+      top: calc(var(--header-height) + var(--announce-height) + 16px);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .aside-card {
+      background: var(--surface);
+      border-radius: var(--radius-card);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      padding: 18px;
+    }
+    .aside-card h4 {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-tertiary);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+    .hot-list { display: flex; flex-direction: column; gap: 10px; }
+    .hot-item {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      font-size: 13px;
+      line-height: 1.4;
+    }
+    .hot-item .hot-num {
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--text-tertiary);
+      width: 18px;
+      flex-shrink: 0;
+    }
+    .hot-item .hot-num.top { color: var(--primary); }
+    .hot-item a { color: var(--text); font-weight: 500; }
+    .hot-item a:hover { color: var(--primary); text-decoration: none; }
+    .aside-note {
+      font-size: 12px;
+      color: var(--text-tertiary);
+      line-height: 1.6;
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid var(--border);
+    }
+
+    /* 投稿互动 */
+    .interact-box {
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      border-radius: var(--radius-card);
+      padding: 22px 20px;
+      color: #fff;
+    }
+    .interact-box h4 {
+      font-size: 16px;
+      font-weight: 800;
+      margin-bottom: 6px;
+      color: #fff;
+      text-transform: none;
+      letter-spacing: 0;
+    }
+    .interact-box p {
+      font-size: 13px;
+      color: #ffd9d6;
+      line-height: 1.6;
+      margin-bottom: 14px;
+    }
+    .interact-box .btn-white {
+      display: inline-block;
+      background: #fff;
+      color: var(--primary-dark);
+      font-size: 13px;
+      font-weight: 700;
+      padding: 8px 18px;
+      border-radius: var(--radius-btn);
+      border: none;
+      transition: opacity 0.15s;
+    }
+    .interact-box .btn-white:hover { opacity: 0.9; text-decoration: none; }
+
+    /* 页尾 */
+    .site-footer {
+      background: var(--primary-dark);
+      color: #e8c4c1;
+      padding: 40px 24px 28px;
+      margin-top: 48px;
+    }
+    .footer-inner {
+      max-width: 1380px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 32px;
+    }
+    .footer-brand .logo-text { color: #fff; font-size: 18px; margin-bottom: 10px; }
+    .footer-brand p {
+      font-size: 13px;
+      line-height: 1.7;
+      color: #d4a8a4;
+      max-width: 320px;
+    }
+    .footer-col h5 {
+      font-size: 13px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    .footer-col ul li { margin-bottom: 6px; }
+    .footer-col ul li a {
+      color: #d4a8a4;
+      font-size: 13px;
+      transition: color 0.15s;
+    }
+    .footer-col ul li a:hover { color: #fff; text-decoration: none; }
+    .footer-bottom {
+      max-width: 1380px;
+      margin: 28px auto 0;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255,255,255,0.12);
+      font-size: 12px;
+      color: #b88e8a;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    /* 回顶 */
+    .back-top {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      width: 42px; height: 42px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      font-size: 18px;
+      box-shadow: var(--shadow-hover);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 500;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .back-top.show { display: flex; }
+    .back-top:hover { transform: translateY(-2px); }
+
+    /* 移动菜单按钮 */
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-btn);
+      padding: 6px 10px;
+      font-size: 18px;
+      color: var(--text);
+      line-height: 1;
+    }
+
+    /* 响应式 */
+    @media (max-width: 1024px) {
+      .layout-3col {
+        grid-template-columns: 1fr 1fr;
+        gap: 22px;
+      }
+      .channel-sidebar { display: none; }
+      .aside-sidebar {
+        position: static;
+        grid-column: 1 / -1;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .aside-sidebar .aside-card { flex: 1 1 240px; }
+      .hero { grid-template-columns: 1fr; padding: 32px 28px; gap: 24px; }
+      .hero-visual { flex-direction: row; flex-wrap: wrap; }
+      .hero-card-mini { flex: 1 1 240px; }
+      .category-grid { grid-template-columns: repeat(4, 1fr); }
+      .footer-inner { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 740px) {
+      :root { --header-height: 60px; }
+      .announce-bar { font-size: 12px; gap: 10px; justify-content: flex-start; padding: 0 12px; }
+      .announce-bar .item:nth-child(4) { display: none; }
+      .site-header { top: var(--announce-height); height: 52px; }
+      .header-inner { padding: 0 14px; gap: 12px; }
+      .main-nav { display: none; }
+      .main-nav.open {
+        display: flex;
+        position: fixed;
+        top: calc(var(--announce-height) + 52px);
+        left: 0; right: 0;
+        background: #fff;
+        flex-direction: column;
+        padding: 10px 14px;
+        border-bottom: 1px solid var(--border);
+        box-shadow: var(--shadow-hover);
+        z-index: 998;
+      }
+      .main-nav.open a { padding: 10px 12px; font-size: 15px; }
+      .menu-toggle { display: block; }
+      .header-actions .btn-outline { display: none; }
+      .layout-3col { grid-template-columns: 1fr; }
+      .page-wrap { padding: calc(var(--header-height) + var(--announce-height) + 8px) 14px 30px; }
+      .hero { padding: 24px 18px; }
+      .hero-text h1 { font-size: 28px; }
+      .category-grid { grid-template-columns: repeat(2, 1fr); }
+      .card-grid { grid-template-columns: 1fr; }
+      .aside-sidebar { flex-direction: column; }
+      .footer-inner { grid-template-columns: 1fr; }
+      .deep-analysis { padding: 20px 16px; }
+      .overview-text { padding: 18px 16px; }
+      .news-item { flex-direction: column; gap: 4px; }
+      .news-date { width: auto; }
+      .back-top { bottom: 16px; right: 16px; width: 38px; height: 38px; }
+      .hero-visual { flex-direction: column; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+    }
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
+    :focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+  </style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+  <!-- 吸顶公告条 -->
+  <div class="announce-bar" role="banner">
+    <span class="brand-mini">网爆黑料门</span>
+    <span class="sep">|</span>
+    <span class="item"><span class="date">11月8日</span><span class="tag-mini">新</span> 陈牧“录音门”完整版时间线整理</span>
+    <span class="sep">|</span>
+    <span class="item"><span class="date">11月7日</span> 林晓冉回应“聊天记录”争议：已委托律师</span>
+    <span class="sep">|</span>
+    <span class="item"><span class="date">11月6日</span> “夜光剧本2.0”话题阅读量破3亿</span>
+  </div>
+
+  <!-- 吸顶页头 -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo-area">
+        <div class="logo-mark" aria-hidden="true"></div>
+        <span class="logo-text">网爆黑料门</span>
+      </div>
+      <nav class="main-nav" id="mainNav" aria-label="主题导航">
+        <a href="#overview">领域概览</a>
+        <a href="#featured">精选推荐</a>
+        <a href="#updates">最新动态</a>
+        <a href="#categories">分类入口</a>
+        <a href="#deep">深度解析</a>
+        <a href="#guide">体验指南</a>
+        <a href="#faq">常见问题</a>
+        <a href="#comments">网友评论</a>
+        <a href="#news">相关资讯</a>
+        <a href="#ranking">热榜</a>
+      </nav>
+      <div class="header-actions">
+        <button class="btn-outline" type="button">投稿爆料</button>
+        <button class="btn-solid" type="button">加入讨论</button>
+        <button class="menu-toggle" id="menuToggle" aria-label="打开菜单" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-wrap">
+
+    <!-- 首屏 -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-text">
+        <h1 id="hero-title">网爆黑料门</h1>
+        <p class="hero-desc">汇集网络争议事件的爆料内容、当事人回应与舆论脉络。从录音、聊天记录到视频片段，按时间线梳理每个“门”的来龙去脉，标注信息源头与可信层级，帮你在碎片化信息中看清事实边界。</p>
+        <div class="hero-actions">
+          <a href="#updates" class="btn-solid" style="padding:10px 22px;font-size:14px;">查看最新动态</a>
+          <a href="#deep" class="btn-outline" style="padding:10px 22px;font-size:14px;">阅读深度解析</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-card-mini">
+          <span class="badge">录音门</span>
+          <div class="info"><strong>陈牧“录音门”完整版</strong>11月3日流出，时长47分钟，涉及3段对话</div>
+        </div>
+        <div class="hero-card-mini">
+          <span class="badge">聊天记录</span>
+          <div class="info"><strong>林晓冉回应“聊天记录”争议</strong>11月7日声明：截图存在断章取义</div>
+        </div>
+        <div class="hero-card-mini">
+          <span class="badge">视频片段</span>
+          <div class="info"><strong>“夜光剧本2.0”监控画面</strong>10月28日曝光，播放量超2800万</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 三栏布局 -->
+    <div class="layout-3col">
+
+      <!-- 左频道栏 -->
+      <aside class="channel-sidebar" aria-label="频道索引">
+        <div class="channel-box">
+          <h3>频道索引</h3>
+          <ul>
+            <li><a href="#overview" class="active">领域概览</a></li>
+            <li><a href="#featured">精选推荐</a></li>
+            <li><a href="#updates">最新动态</a></li>
+            <li><a href="#categories">分类入口</a></li>
+            <li><a href="#deep">深度解析</a></li>
+            <li><a href="#guide">体验指南</a></li>
+            <li><a href="#faq">常见问题</a></li>
+            <li><a href="#comments">网友评论</a></li>
+            <li><a href="#news">相关资讯</a></li>
+            <li><a href="#ranking">热榜</a></li>
+            <li><a href="#related">相关推荐</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- 中主内容 -->
+      <main class="main-content" id="mainContent">
+
+        <!-- 1. 领域概览 -->
+        <section class="section" id="overview">
+          <div class="section-header">
+            <h2>网络争议事件全景</h2>
+            <span class="sub">2026年10—11月</span>
+          </div>
+          <div class="overview-text">
+            <p>“黑料门”类内容通常围绕一段录音、一组聊天截图或一段监控视频展开，核心要素不外乎三样：信息源头是否可追溯、当事人如何回应、围观者如何站队。2026年10月下旬至11月初，中文互联网上密集出现了多个同类事件，涉及娱乐圈、网红圈和电竞圈。</p>
+            <p>陈牧“录音门”是目前讨论量最大的一个——47分钟完整版音频在11月3日由账号“圈内老鬼”首发，三天内转发超8万次，争议焦点在于录音是否存在剪辑以及对话发生的具体时间。林晓冉的“聊天记录”事件则走向不同：11月7日其工作室发布律师声明，称流传的微信截图有7处时间戳断裂，完整对话需经司法鉴定。电竞主播“夜光剧本2.0”的监控画面在10月28日曝光后，直播平台在11月1日下架了相关片段，理由是“涉嫌侵犯隐私”。</p>
+            <p>这些事件的共同特征是：原始素材的完整版本往往比截取版晚数天出现，而最早传播的版本通常只截取最具冲突性的15—30秒。从10月28日到11月8日，仅微博平台带“黑料”关键词的热搜条目就有11条，其中6条在48小时内被当事人否认或部分否认。</p>
+          </div>
+        </section>
+
+        <!-- 2. 精选内容推荐 -->
+        <section class="section" id="featured">
+          <div class="section-header">
+            <h2>本周争议条目精选</h2>
+            <span class="sub">按讨论热度排序</span>
+          </div>
+          <div class="card-grid">
+            <article class="card">
+              <img class="card-thumb" src="https://picsum.photos/seed/recording47/400/300" width="400" height="300" loading="lazy" alt="陈牧录音门完整版音频界面截图">
+              <div class="card-body">
+                <div class="card-tags"><span class="tag dark">录音</span><span class="tag">陈牧</span><span class="tag">47分钟</span></div>
+                <h3>陈牧“录音门”完整版</h3>
+                <p class="excerpt">11月3日流出的47分钟音频中，第12分钟和第31分钟各有一段明显音量跳变，音频鉴定博主“波形之外”指出这可能是剪辑点。陈牧方11月5日回应称录音“经过恶意拼接”。</p>
+                <div class="meta"><span>热度 98.2万</span><span>讨论 2.4万</span></div>
+              </div>
+            </article>
+            <article class="card">
+              <img class="card-thumb" src="https://picsum.photos/seed/chatlin7/400/300" width="400" height="300" loading="lazy" alt="林晓冉聊天记录截图局部">
+              <div class="card-body">
+                <div class="card-tags"><span class="tag dark">聊天记录</span><span class="tag">林晓冉</span><span class="tag">律师声明</span></div>
+                <h3>林晓冉微信截图争议</h3>
+                <p class="excerpt">7张微信对话截图在11月6日被多个娱乐账号转发，其中3张的头像与林晓冉公开使用的微信号不一致。工作室11月7日发布律师声明，指截图“存在7处时间戳断裂”。</p>
+                <div class="meta"><span>热度 76.5万</span><span>讨论 1.8万</span></div>
+              </div>
+            </article>
+            <article class="card">
+              <img class="card-thumb" src="https://picsum.photos/seed/nightscript2/400/300" width="400" height="300" loading="lazy" alt="夜光剧本2.0监控画面截图">
+              <div class="card-body">
+                <div class="card-tags"><span class="tag dark">视频</span><span class="tag">电竞</span><span class="tag">隐私争议</span></div>
+                <h3>“夜光剧本2.0”监控片段</h3>
+                <p class="excerpt">10月28日曝光的走廊监控画面显示两名主播深夜进入同一房间，但画面时间戳显示为10月19日凌晨2:17。平台11月1日下架片段，理由是“未经当事人同意传播监控影像”。</p>
+                <div class="meta"><span>热度 65.3万</span><span>讨论 1.5万</span></div>
+              </div>
+            </article>
+            <article class="card">
+              <img class="card-thumb" src="https://picsum.photos/seed/zhouaudio/400/300" width="400" height="300" loading="lazy" alt="周姓制片人饭局录音波形图">
+              <div class="card-body">
+                <div class="card-tags"><span class="tag dark">饭局录音</span><span class="tag">制片人</span><span class="tag">行业潜规则</span></div>
+                <h3>周制片人饭局录音</h3>
+                <p class="excerpt">10月30日流出的2分14秒饭局录音中，一个被指认为“周姓制片人”的声音提及“角色置换”等表述。当事人11月2日通过朋友向媒体否认，称“声音不是我的”。</p>
+                <div class="meta"><span>热度 58.7万</span><span>讨论 1.1万</span></div>
+              </div>
+            </article>
+            <article class="card">
+              <img class="card-thumb" src="https://picsum.photos/seed/susufake/400/300" width="400" height="300" loading="lazy" alt="苏苏小号截图合集">
+              <div class="card-body">
+                <div class="card-tags"><span class="tag dark">小号</span><span class="tag">网红</span><span class="tag">截图鉴定</span></div>
+                <h3>网红苏苏“小号门”</h3>
+                <p class="excerpt">11月4日有网友整理出12张疑似网红苏苏小号的发帖截图，其中5张的IP属地与苏苏大号一致。苏苏在11月5日直播中承认“有两个小号”，但否认发布过其中3条争议内容。</p>
+                <div class="meta"><span>热度 52.1万</span><span>讨论 9800</span></div>
+              </div>
+            </article>
+            <article class="card">
+              <img class="card-thumb" src="https://picsum.photos/seed/wangvideo/400/300" width="400" height="300" loading="lazy" alt="王某某片场视频截图">
+              <div class="card-body">
+                <div class="card-tags"><span class="tag dark">片场视频</span><span class="tag">剧组</span><span class="tag">时间线矛盾</span></div>
+                <h3>王某某“片场冲突”视频</h3>
+                <p class="excerpt">11月2日曝光的片场视频显示一名演员与场务发生推搡，但视频中的场记板日期为9月17日，而该演员9月17日在另一个城市有公开活动记录。时间线矛盾成为讨论焦点。</p>
+                <div class="meta"><span>热度 47.8万</span><span>讨论 8600</span></div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- 3. 最新动态 -->
+        <section class="section" id="updates">
+          <div class="section-header">
+            <h2>最新爆料与回应</h2>
+            <span class="sub">11月6日—8日</span>
+          </div>
+          <div class="update-list">
+            <div class="update-item">
+              <span class="time-badge">11-08</span>
+              <div>
+                <div class="update-title">陈牧“录音门”完整版时间线整理发布</div>
+                <div class="update-desc">账号“圈内老鬼”发布47分钟录音的分段标注版，标出12处音量异常点和3段对话的具体时间戳。</div>
+              </div>
+            </div>
+            <div class="update-item">
+              <span class="time-badge">11-08</span>
+              <div>
+                <div class="update-title">林晓冉工作室补充提交第二批截图鉴定材料</div>
+                <div class="update-desc">律师声明中新增5处截图异常说明，包括2处字体渲染不一致和3处时间戳跳跃，已提交平台方。</div>
+              </div>
+            </div>
+            <div class="update-item">
+              <span class="time-badge">11-07</span>
+              <div>
+                <div class="update-title">林晓冉回应“聊天记录”争议：截图存在断章取义</div>
+                <div class="update-desc">工作室声明称流传截图中有7处时间戳断裂，完整对话需司法鉴定，已委托律师对首发账号发函。</div>
+              </div>
+            </div>
+            <div class="update-item">
+              <span class="time-badge">11-06</span>
+              <div>
+                <div class="update-title">“夜光剧本2.0”话题阅读量破3亿</div>
+                <div class="update-desc">微博话题页显示阅读量3.1亿，讨论42万条，平台在11月1日下架原始监控片段后仍有大量二次剪辑版本在传播。</div>
+              </div>
+            </div>
+            <div class="update-item">
+              <span class="time-badge">11-05</span>
+              <div>
+                <div class="update-title">陈牧方回应：录音“经过恶意拼接”</div>
+                <div class="update-desc">陈牧经纪公司发布声明，称47分钟录音中有至少两处“非自然停顿”，保留追究剪辑者法律责任的权利。</div>
+              </div>
+            </div>
+            <div class="update-item">
+              <span class="time-badge">11-05</span>
+              <div>
+                <div class="update-title">网红苏苏直播承认“有两个小号”</div>
+                <div class="update-desc">直播中展示两个小号的注册时间分别为2024年3月和2025年6月，否认发布过3条争议内容，称“可能被盗号”。</div>
+              </div>
+            </div>
+            <div class="update-item">
+              <span class="time-badge">11-04</span>
+              <div>
+                <div class="update-title">12张疑似苏苏小号发帖截图被整理发布</div>
+                <div class="update-desc">网友对比5张截图的IP属地和发帖习惯，指出其中3条内容与苏苏大号历史发言的标点习惯一致。</div>
+              </div>
+            </div>
+            <div class="update-item">
+              <span class="time-badge">11-03</span>
+              <div>
+                <div class="update-title">陈牧“录音门”47分钟完整版音频流出</div>
+                <div class="update-desc">首发账号“圈内老鬼”发布音频，三小时内转发超2万次，音频中涉及3段对话，被指与某影视项目选角有关。</div>
+              </div>
+            </div>
+            <div class="update-item">
+              <span class="time-badge">11-02</span>
+              <div>
+                <div class="update-title">周制片人饭局录音当事人否认</div>
+                <div class="update-desc">通过朋友向媒体回应称“声音不是我的”，拒绝提供声纹鉴定，称“不想被蹭热度”。</div>
+              </div>
+            </div>
+            <div class="update-item">
+              <span class="time-badge">11-01</span>
+              <div>
+                <div class="update-title">平台下架“夜光剧本2.0”监控片段</div>
+                <div class="update-desc">直播平台公告称该片段“涉嫌侵犯隐私”，已下架并限制相关账号的传播权限，但二次剪辑版本仍在其他平台流通。</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 4. 分类入口 -->
+        <section class="section" id="categories">
+          <div class="section-header">
+            <h2>按事件类型查找</h2>
+            <span class="sub">8个分类</span>
+          </div>
+          <div class="category-grid">
+            <a href="#featured" class="category-item">
+              <div class="cat-name">录音泄露</div>
+              <div class="cat-count">4个条目</div>
+            </a>
+            <a href="#featured" class="category-item">
+              <div class="cat-name">聊天记录</div>
+              <div class="cat-count">3个条目</div>
+            </a>
+            <a href="#featured" class="category-item">
+              <div class="cat-name">监控视频</div>
+              <div class="cat-count">2个条目</div>
+            </a>
+            <a href="#featured" class="category-item">
+              <div class="cat-name">小号截图</div>
+              <div class="cat-count">5个条目</div>
+            </a>
+            <a href="#featured" class="category-item">
+              <div class="cat-name">当事人回应</div>
+              <div class="cat-count">6个条目</div>
+            </a>
+            <a href="#featured" class="category-item">
+              <div class="cat-name">律师声明</div>
+              <div class="cat-count">3个条目</div>
+            </a>
+            <a href="#featured" class="category-item">
+              <div class="cat-name">声纹鉴定</div>
+              <div class="cat-count">2个条目</div>
+            </a>
+            <a href="#featured" class="category-item">
+              <div class="cat-name">时间线矛盾</div>
+              <div class="cat-count">4个条目</div>
+            </a>
+          </div>
+        </section>
+
+        <!-- 5. 深度解析 -->
+        <section class="section" id="deep">
+          <div class="section-header">
+            <h2>黑料门的可信度拆解</h2>
+            <span class="sub">以三个事件为例</span>
+          </div>
+          <div class="deep-analysis">
+            <h3>录音的“剪辑点”比内容本身更值得看</h3>
+            <p>陈牧“录音门”的47分钟音频里，音频鉴定博主“波形之外”在11月5日发布的分析视频中圈出了12处音量异常。其中第12分钟和第31分钟的两处跳变最明显——前后音量差超过15分贝，且背景环境音出现短暂中断。这两处恰好出现在对话内容最具冲突性的段落前后。</p>
+            <p>判断一段录音是否经过剪辑，可以看三个可核对的痕迹：</p>
+            <ul>
+              <li><strong>环境音连续性</strong>：正常录音中背景底噪是连续的，剪辑点会出现底噪的突然消失或替换。第12分钟处的底噪从空调嗡鸣声变成了静音。</li>
+              <li><strong>波形断点</strong>：用免费软件Audacity放大波形，剪辑处通常呈现垂直切断而非自然衰减。原始音频在第31分钟的波形有0.3秒的完全平直段。</li>
+              <li><strong>说话人的呼吸节奏</strong>：被剪掉的部分导致前后句之间的呼吸间隔异常。第12分钟前一句结尾和下一句开头之间的间隔为0.8秒，而正常对话中类似转折的间隔在0.2—0.4秒之间。</li>
+            </ul>
+            <p>这些痕迹不能直接证明“剪辑者恶意篡改”，但能说明一件事：原始录音在发布前至少经过了两次处理。陈牧方11月5日的声明称“经过恶意拼接”，但未提供原始录音做对比。目前可公开核对的只有波形分析，声纹比对结果尚未公布。</p>
+
+            <h3>聊天记录截图的三层筛查法</h3>
+            <p>林晓冉“聊天记录”事件中，流传最广的7张截图里，有3张的头像与林晓冉公开使用的微信号不一致。工作室11月7日声明提到的“7处时间戳断裂”，具体指截图中连续两条消息的时间差为0秒，而微信正常显示不会出现完全相同的秒级时间戳。</p>
+            <p>拿到一组聊天截图时，可以按三层筛查：</p>
+            <ul>
+              <li><strong>第一层看界面元素</strong>：iOS和安卓的微信截图在字体渲染上有细微差异，截图中的字体如果与声称的手机系统不匹配，可信度打折。林晓冉事件中有2张截图显示的是安卓字体，但发布者声称来自iPhone。</li>
+              <li><strong>第二层看时间戳逻辑</strong>：连续两条消息时间戳完全相同、跨天消息的日期分隔线位置异常、深夜时段的回复速度不符合常理——这三类异常在本次事件中出现了5处。</li>
+              <li><strong>第三层看对话上下文</strong>：截图是否截掉了关键的前后文。7张截图中，有4张的第一条消息直接以冲突性内容开头，缺少正常的对话铺垫。</li>
+            </ul>
+            <div class="note">可核对的结构：林晓冉工作室声明中列出的7处时间戳断裂，具体位置为第1、2、4、5、6、7张截图的第2—3条消息之间。其中第4张截图的断裂最为明显——上一条消息时间为23:47:12，下一条为23:47:12，秒数完全相同。</div>
+
+            <h3>监控视频的“时间戳悖论”</h3>
+            <p>“夜光剧本2.0”的监控画面在10月28日曝光时，网友“吃瓜第一线”截取了画面右上角的时间戳：10月19日02:17。但画面中两名主播的公开行程显示，其中一位在10月19日当天在外地有直播记录。这就产生了一个可核对的矛盾：要么监控时间戳被人为调整过，要么直播行程记录有误。</p>
+            <p>监控视频的可信度判断有一个容易被忽略的点——时间戳的刷新频率。正常监控系统的时间戳每秒钟刷新一次，如果视频中的时间戳跳秒间隔不均匀，说明视频被抽帧或重新编码过。曝光视频中，02:17:03到02:17:08之间只有3次跳秒，意味着这5秒内至少丢失了2帧。</p>
+            <p>另外，画面中走廊灯光的开关状态与物业提供的10月19日当晚的维修记录存在冲突。物业记录显示当晚01:00—03:00走廊照明系统处于检修状态，但视频中的灯光正常亮起。这两个证据放在一起，指向同一个方向：该监控视频的拍摄时间可能并非10月19日。</p>
+          </div>
+        </section>
+
+        <!-- 6. 体验指南 -->
+        <section class="section" id="guide">
+          <div class="section-header">
+            <h2>面对一个“门”的阅读顺序</h2>
+            <span class="sub">先看什么、怎么判断</span>
+          </div>
+          <div class="guide-steps">
+            <div class="guide-step">
+              <div class="step-num">1</div>
+              <div class="step-content">
+                <h4>先找原始素材，别看二手转述</h4>
+                <p>任何一个“门”最早流出的版本通常在被转发时已经被截取或加工过。直接搜索首发账号的原帖，看发布时间、配文措辞和素材完整度。陈牧“录音门”的首发帖在11月3日15:22发布，配文只有一句话，音频文件名是“1124.mp3”——这个文件名后来被证实与录音内容无关。</p>
+              </div>
+            </div>
+            <div class="guide-step">
+              <div class="step-num">2</div>
+              <div class="step-content">
+                <h4>把当事人回应和爆料放在同一时间轴上</h4>
+                <p>回应的措辞和时机本身是信息。林晓冉工作室在截图流出后不到24小时发布律师声明，而陈牧方在录音流出两天后才回应。回应速度、是否提供可验证的证据、是否回避具体指控，这三项比声明的情绪强度更能说明问题。</p>
+              </div>
+            </div>
+            <div class="guide-step">
+              <div class="step-num">3</div>
+              <div class="step-content">
+                <h4>区分“已确认”和“待核实”</h4>
+                <p>录音是否存在？存在。录音是否完整？待核实。录音中说话人是否就是陈牧？目前只有波形分析，没有声纹鉴定。把每个信息点标注成这两类，能避免被情绪带着走。苏苏“小号门”中，小号存在是已确认的，但3条争议内容是否由苏苏发布，仍缺少平台后台数据。</p>
+              </div>
+            </div>
+            <div class="guide-step">
+              <div class="step-num">4</div>
+              <div class="step-content">
+                <h4>留意传播链条中的“二次加工者”</h4>
+                <p>首发账号之后的第二、第三转发者往往才是话题推高的关键。追踪转发量最大的三个账号，看它们是否同时参与了多个不相关事件的传播，以及是否在转发时添加了原文没有的解读。11月6日“夜光剧本2.0”话题阅读量破3亿，其中两个营销号贡献了超过40%的转发量，这两个账号在11月还参与了另外三个“门”的传播。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 7. FAQ -->
+        <section class="section" id="faq">
+          <div class="section-header">
+            <h2>常见问题</h2>
+            <span class="sub">6个问答</span>
+          </div>
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary>陈牧“录音门”的47分钟音频是完整的吗？</summary>
+              <div class="faq-answer">从波形分析看不是。音频鉴定博主“波形之外”在11月5日的分析视频中标注了12处音量异常点，其中第12分钟和第31分钟的两处跳变超过15分贝，且背景环境音出现中断。完整原始音频的时长和内容目前只有陈牧方持有，尚未公开。</div>
+            </details>
+            <details class="faq-item">
+              <summary>林晓冉的聊天记录截图有司法鉴定结果吗？</summary>
+              <div class="faq-answer">截至11月8日没有公开的司法鉴定结论。工作室11月7日声明称已委托律师对截图进行鉴定并提交平台方，但鉴定机构名称、送检时间和预计出结果的时间均未披露。声明中列出的7处时间戳断裂是工作室自行标注的，属于一方主张。</div>
+            </details>
+            <details class="faq-item">
+              <summary>“夜光剧本2.0”的监控视频为什么被下架？</summary>
+              <div class="faq-answer">平台11月1日公告的理由是“涉嫌侵犯隐私”，具体指未经当事人同意传播可识别个人行踪的监控影像。但下架前该片段已在多个社交平台被二次剪辑成不同版本，其中播放量最高的一版截掉了画面右上角的时间戳，导致后续传播中很少有人注意到10月19日这个日期矛盾。</div>
+            </details>
+            <details class="faq-item">
+              <summary>周制片人饭局录音里的声音能确认身份吗？</summary>
+              <div class="faq-answer">不能。目前只有发布者“娱乐圈爆料君”在10月30日配文中称“声音是周某某”，但未提供声纹比对或当事人确认。周姓制片人11月2日通过朋友向媒体否认，但拒绝做声纹鉴定。音频中说话人的身份处于“单方指认”状态，既未被证实也未被证伪。</div>
+            </details>
+            <details class="faq-item">
+              <summary>网红苏苏的小号截图里哪些是可信的？</summary>
+              <div class="faq-answer">苏苏在11月5日直播中承认有两个小号，注册时间分别为2024年3月和2025年6月，这部分可信。12张截图中有5张的IP属地与苏苏大号一致，这5张的账号归属有较高可信度。但3条争议内容是否由苏苏发布，目前只有截图，没有平台后台记录或登录日志佐证。</div>
+            </details>
+            <details class="faq-item">
+              <summary>王某某片场视频的时间线矛盾怎么解释？</summary>
+              <div class="faq-answer">视频中的场记板日期为9月17日，但该演员9月17日在另一个城市有公开活动记录，航班信息和活动现场照片均可查。可能的解释有三种：场记板日期填写错误、视频拍摄于另一天但场记板未更新、视频被编辑过。目前剧组未回应，视频发布者“片场速递”在11月3日删除了原帖。</div>
+            </details>
+          </div>
+        </section>
+
+        <!-- 8. 用户评论 -->
+        <section class="section" id="comments">
+          <div class="section-header">
+            <h2>网友在聊什么</h2>
+            <span class="sub">16条评论</span>
+          </div>
+          <div class="comment-list">
+            <div class="comment-item">
+              <div class="avatar">吃</div>
+              <div class="comment-body">
+                <div class="comment-head"><span class="comment-name">瓜田里的猹</span><span class="comment-time">11-08 09:12</span></div>
+                <div class="comment-text">录音那个第31分钟的波形平直段太明显了，我用手机放慢都能听出来中间少了半秒。但到底剪掉了什么，没人知道。</div>
+              </div>
+            </div>
+            <div class="comment-item">
+              <div class="avatar">路</div>
+              <div class="comment-body">
+                <div class="comment-head"><span class="comment-name">路过看热闹</span><span class="comment-time">11-08 08:45</span></div>
+                <div class="comment-text">林晓冉那个声明写得挺硬，但7处断裂只列了位置没放原图对比，说服力差点意思。</div>
+              </div>
+            </div>
+            <div class="comment-item">
+              <div class="avatar">电</div>
+              <div class="comment-body">
+                <div class="comment-head"><span class="comment-name">电竞老油条</span><span class="comment-time">11-07 23:30</span></div>
+                <div class="comment-text">夜光剧本2.0那视频我第一时间看了，右上角时间戳02:17跳秒确实不均匀，5秒只跳了3下，当时就觉得怪。</div>
+              </div>
+            </div>
+            <div class="comment-item">
+              <div class="avatar">苏</div>
+              <div class="comment-body">
+                <div class="comment-head"><span class="comment-name">苏打水没气</span><span class="comment-time">11-07 21:08</span></div>
+                <div class="comment-text">苏苏说“可能被盗号”这个理由真的用烂了。2026年了谁还信这套。</div>
+              </div>
+            </div>
+            <div class="comment-item">
+              <div class="avatar">波</div>
+              <div class="comment-body">
+                <div class="comment-head"><span class="comment-name">波形爱好者</span><span class="comment-time">11-07 19:44</span></div>
+                <div class="comment-text">补充一点，第12分钟底噪消失之前，空调嗡鸣声的频率是稳定的50Hz左右，消失那0.4秒之后回来的时候频率变成了52Hz，说明前后可能来自不同设备或不同时段。</div>
+              </div>
+            </div>
+            <div class="comment-item">
+              <div class="avatar">不</div>
+              <div class="comment-body">
+                <div class="comment-head"><span class="comment-name">不吃香菜</span><span class="comment-time">11-07 17:20</span></div>
+                <div class="comment-text">每次有这种事，最忙的就是律师。发声明比发专辑还勤。</div>
+              </div>
+            </div>
+            <div class="comment-item">
+              <div class="avatar">周</div>
+              <div class="comment-body">
+                <div class="comment-head"><span class="comment-name">周末不加班</span><span class="comment-time">11-07 15:55</span></div>
+                <div class="comment-text">周制片人那个录音才2分14秒，内容其实挺模糊的，“角色置换”四个字前后语境都不完整，就被解读成那样了。</div>
+              </div>
+            </div>
+            <div class="comment-item">
+              <div class="avatar">时</div>
+              <div class="comment-body">
+                <div class="comment-head"><span class="comment-name">时间线侦探</span><span class="comment-time">11-07 14:10</span></div>
+                <div class="comment-text">王某某那个片场视频，场记板写9月17日，但当天他在杭州有品牌活动，现场照片微博还搜得到。要么场记板写错，要么视频不是那天拍的。剧组到现在不说话也挺有意思。</div>
+              </div>
+            </div>
+            <div class="comment-item">
+              <div class="avatar">路</div>
+              <div class="comment-body">
+                <div class="comment-head"><span class="comment-name">路人甲不甲</span><span class="comment-time">11-07 11:32</span></div>
+                <div class="comment-text">有一说一，陈牧那个录音47分钟我听了前15分钟，大部分内容其实很无聊，就是正常聊天，真正有争议的就那两三分钟。</div>
+              </div>
+            </div>
+            <div class="comment-item">
+              <div class="avatar">看</div>
+              <div class="comment-body">
+                <div class="comment-head"><span class="comment-name">看门大爷</span><span class="comment-time">11-07 09:48</span></div>
+                <div class="comment-text">今天天气不错，适合吃瓜。</div>
+              </div>
+            </div>
+            <div class="comment-item">
+              <div class="avatar">鉴</div>
+              <div class="comment-body">
+                <div class="comment-head"><span class="comment-name">鉴定科小王</span><span class="comment-time">11-06 22:15</span></div>
+                <div class="comment-text">聊天记录截图那几张，第4张23:47:12连续两条，微信根本不会这样显示。要么是P的，要么是导出时出了bug，但后者概率极低。</div>
+              </div>
+            </div>
+            <div class="comment-item">
+              <div class="avatar">营</div>
+              <div class="comment-body">
+                <div class="comment-head"><span class="comment-name">营销号观察员</span><span class="comment-time">11-06 20:40</span></div>
+                <div class="comment-text">“圈内老鬼”这个号10月份发了6条爆料，其中4条后来被当事人否认，命中率一般般吧。</div>
+              </div>
+            </div>
+            <div class="comment-item">
+              <div class="avatar">夜</div>
+              <div class="comment-body">
+                <div class="comment-head"><span class="comment-name">夜猫子小陈</span><span class="comment-time">11-06 18:22</span></div>
+                <div class="comment-text">凌晨两点多进房间这事儿本身不违法也不违背道德吧？关键看进去干嘛了。监控只有走廊画面，房间里的事谁也不知道，全靠猜。</div>
+              </div>
+            </div>
+            <div class="comment-item">
+              <div class="avatar">律</div>
+              <div class="comment-body">
+                <div class="comment-head"><span class="comment-name">律师函收割机</span><span class="comment-time">11-06 16:05</span></div>
+                <div class="comment-text">最近明星声明里“已委托律师”出现的频率比“感谢大家关心”还高。</div>
+              </div>
+            </div>
+            <div class="comment-item">
+              <div class="avatar">吃</div>
+              <div class="comment-body">
+                <div class="comment-head"><span class="comment-name">吃瓜不吐皮</span><span class="comment-time">11-06 13:50</span></div>
+                <div class="comment-text">苏苏小号那12张截图里，有两条标点习惯确实跟她大号一模一样，都是逗号后面不加空格。这种细节一般人不会注意。</div>
+              </div>
+            </div>
+            <div class="comment-item">
+              <div class="avatar">深</div>
+              <div class="comment-body">
+                <div class="comment-head"><span class="comment-name">深夜刷帖</span><span class="comment-time">11-06 11:18</span></div>
+                <div class="comment-text">每次这种事件最后都是不了了之。录音的等声纹鉴定，截图的等司法结果，视频的等剧组回应。等来等去就没人记得了。</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 9. 相关资讯 -->
+        <section class="section" id="news">
+          <div class="section-header">
+            <h2>相关资讯</h2>
+            <span class="sub">6条</span>
+          </div>
+          <div class="news-list">
+            <div class="news-item">
+              <span class="news-date">2026-11-08</span>
+              <div class="news-content">
+                <h4>“圈内老鬼”发布录音分段标注版</h4>
+                <p>标注版将47分钟音频切分为12个片段，每个片段标注了起止时间和音量异常点，其中第31分钟片段被单独圈出，播放量已超120万。</p>
+              </div>
+            </div>
+            <div class="news-item">
+              <span class="news-date">2026-11-07</span>
+              <div class="news-content">
+                <h4>林晓冉工作室向首发账号发律师函</h4>
+                <p>律师函要求首发账号“娱乐八姐”在11月10日前删除相关截图并公开道歉，否则将提起诉讼。“娱乐八姐”尚未回应。</p>
+              </div>
+            </div>
+            <div class="news-item">
+              <span class="news-date">2026-11-06</span>
+              <div class="news-content">
+                <h4>“夜光剧本2.0”二次剪辑版本仍在传播</h4>
+                <p>平台11月1日下架原始片段后，至少出现7个二次剪辑版本，其中播放量最高的版本截掉了时间戳，播放量已超800万。</p>
+              </div>
+            </div>
+            <div class="news-item">
+              <span class="news-date">2026-11-05</span>
+              <div class="news-content">
+                <h4>陈牧经纪公司声明：录音“经过恶意拼接”</h4>
+                <p>声明全文487字，提到“非自然停顿”2处，但未附原始录音或声纹比对报告，也未说明“非自然停顿”的具体位置。</p>
+              </div>
+            </div>
+            <div class="news-item">
+              <span class="news-date">2026-11-03</span>
+              <div class="news-content">
+                <h4>“片场速递”删除王某某片场视频原帖</h4>
+                <p>原帖发布于10月31日，播放量约230万，删除前未发布任何说明。该账号在11月1日还发布了另一条片场花絮，未受影响。</p>
+              </div>
+            </div>
+            <div class="news-item">
+              <span class="news-date">2026-10-30</span>
+              <div class="news-content">
+                <h4>周制片人饭局录音首发账号新增粉丝4.2万</h4>
+                <p>“娱乐圈爆料君”在10月30日发布录音后24小时内涨粉4.2万，该账号此前30天的平均单条涨粉量约为800。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 10. 相关推荐 -->
+        <section class="section" id="related">
+          <div class="section-header">
+            <h2>相关内容方向</h2>
+            <span class="sub">按标签索引</span>
+          </div>
+          <div class="tag-cloud">
+            <a href="#featured">陈牧录音门第31分钟</a>
+            <a href="#featured">林晓冉时间戳断裂</a>
+            <a href="#featured">夜光剧本2.0跳秒分析</a>
+            <a href="#featured">苏苏小号IP属地</a>
+            <a href="#featured">周制片人声纹鉴定</a>
+            <a href="#featured">王某某场记板日期</a>
+            <a href="#deep">剪辑点识别方法</a>
+            <a href="#guide">爆料传播链条追踪</a>
+          </div>
+        </section>
+
+        <!-- 11. 补充板块：热榜 -->
+        <section class="section" id="ranking">
+          <div class="section-header">
+            <h2>本周黑料门热榜</h2>
+            <span class="sub">截至11月8日12:00</span>
+          </div>
+          <div class="ranking-list">
+            <div class="ranking-item">
+              <span class="rank-num top">1</span>
+              <div class="rank-info">
+                <div class="rank-title">陈牧“录音门”完整版音频</div>
+                <div class="rank-meta">录音 / 47分钟 / 首发11月3日</div>
+              </div>
+              <span class="heat-bar">98.2万</span>
+            </div>
+            <div class="ranking-item">
+              <span class="rank-num top">2</span>
+              <div class="rank-info">
+                <div class="rank-title">林晓冉微信截图7处时间戳断裂</div>
+                <div class="rank-meta">聊天记录 / 律师声明 / 11月7日</div>
+              </div>
+              <span class="heat-bar">76.5万</span>
+            </div>
+            <div class="ranking-item">
+              <span class="rank-num top">3</span>
+              <div class="rank-info">
+                <div class="rank-title">“夜光剧本2.0”监控时间戳矛盾</div>
+                <div class="rank-meta">视频 / 平台下架 / 10月28日</div>
+              </div>
+              <span class="heat-bar">65.3万</span>
+            </div>
+            <div class="ranking-item">
+              <span class="rank-num">4</span>
+              <div class="rank-info">
+                <div class="rank-title">周制片人饭局录音“角色置换”</div>
+                <div class="rank-meta">录音 / 当事人否认 / 10月30日</div>
+              </div>
+              <span class="heat-bar">58.7万</span>
+            </div>
+            <div class="ranking-item">
+              <span class="rank-num">5</span>
+              <div class="rank-info">
+                <div class="rank-title">苏苏“小号门”12张截图IP属地对比</div>
+                <div class="rank-meta">截图 / 直播回应 / 11月4日</div>
+              </div>
+              <span class="heat-bar">52.1万</span>
+            </div>
+            <div class="ranking-item">
+              <span class="rank-num">6</span>
+              <div class="rank-info">
+                <div class="rank-title">王某某片场视频场记板日期矛盾</div>
+                <div class="rank-meta">视频 / 原帖删除 / 10月31日</div>
+              </div>
+              <span class="heat-bar">47.8万</span>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <!-- 右辅助栏 -->
+      <aside class="aside-sidebar" aria-label="辅助信息">
+        <div class="aside-card">
+          <h4>今日热榜</h4>
+          <div class="hot-list">
+            <div class="hot-item"><span class="hot-num top">1</span><a href="#featured">陈牧录音第31分钟波形分析</a></div>
+            <div class="hot-item"><span class="hot-num top">2</span><a href="#featured">林晓冉律师函送达情况</a></div>
+            <div class="hot-item"><span class="hot-num top">3</span><a href="#updates">平台下架夜光剧本2.0后续</a></div>
+            <div class="hot-item"><span class="hot-num">4</span><a href="#featured">苏苏小号登录设备猜测</a></div>
+            <div class="hot-item"><span class="hot-num">5</span><a href="#featured">周制片人拒绝声纹鉴定</a></div>
+            <div class="hot-item"><span class="hot-num">6</span><a href="#featured">王某某9月17日行程记录</a></div>
+          </div>
+          <div class="aside-note">榜单按11月7日18:00至11月8日12:00的搜索量与讨论量综合排序。</div>
+        </div>
+
+        <div class="aside-card">
+          <h4>信息层级提示</h4>
+          <div style="font-size:13px;color:var(--text-secondary);line-height:1.7;">
+            <p><strong>已确认：</strong>录音存在、截图存在、监控视频存在。</p>
+            <p><strong>当事人回应：</strong>陈牧方称“恶意拼接”，林晓冉方称“断章取义”，苏苏承认小号。</p>
+            <p><strong>待核实：</strong>声纹鉴定结果、司法鉴定结论、场记板日期解释。</p>
+            <p style="margin-top:8px;font-size:12px;color:var(--text-tertiary);">以上层级划分基于截至11月8日可公开检索的信息。</p>
+          </div>
+        </div>
+
+        <div class="interact-box">
+          <h4>有料要爆？</h4>
+          <p>遇到录音、截图或视频线索，可以投稿。请尽量附上原始文件和时间信息，方便核实。</p>
+          <a href="#featured" class="btn-white">前往投稿入口</a>
+        </div>
+
+        <div class="aside-card">
+          <h4>事件更新频率</h4>
+          <div style="font-size:13px;color:var(--text-secondary);line-height:1.7;">
+            <p>10月28日—11月8日期间，站内追踪的6个主要“门”共产生17条当事人回应、9条平台处置公告、4份律师声明。</p>
+            <p style="margin-top:8px;">平均每个事件从爆出到当事人首次回应的时间为31小时。</p>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+
+  <!-- 页尾 -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo-text">网爆黑料门</div>
+        <p>追踪2026年10月下旬至11月上旬的网络争议事件，覆盖录音、截图、视频三类主要爆料形态。每个条目标注首发时间、传播量级与当事人回应状态，信息层级分为已确认、当事人回应与待核实三类。</p>
+      </div>
+      <div class="footer-col">
+        <h5>事件索引</h5>
+        <ul>
+          <li><a href="#featured">陈牧录音门</a></li>
+          <li><a href="#featured">林晓冉聊天记录</a></li>
+          <li><a href="#featured">夜光剧本2.0</a></li>
+          <li><a href="#featured">苏苏小号门</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>内容类型</h5>
+        <ul>
+          <li><a href="#categories">录音泄露</a></li>
+          <li><a href="#categories">聊天记录</a></li>
+          <li><a href="#categories">监控视频</a></li>
+          <li><a href="#categories">律师声明</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>参与互动</h5>
+        <ul>
+          <li><a href="#featured">投稿爆料</a></li>
+          <li><a href="#comments">评论区</a></li>
+          <li><a href="#ranking">热榜</a></li>
+          <li><a href="#related">标签索引</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 网爆黑料门 · 内容聚合示例站点</span>
+      <span>页面信息更新于 2026-11-08 12:00 · 对应正文“最新动态”板块11月8日条目</span>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="回到顶部">↑</button>
+
+  <script>
+    (function() {
+      // 移动菜单
+      var menuToggle = document.getElementById('menuToggle');
+      var mainNav = document.getElementById('mainNav');
+      if (menuToggle && mainNav) {
+        menuToggle.addEventListener('click', function(e) {
+          e.stopPropagation();
+          var isOpen = mainNav.classList.toggle('open');
+          menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+        mainNav.querySelectorAll('a').forEach(function(link) {
+          link.addEventListener('click', function() {
+            mainNav.classList.remove('open');
+            menuToggle.setAttribute('aria-expanded', 'false');
+          });
+        });
+        document.addEventListener('click', function(e) {
+          if (!mainNav.contains(e.target) && e.target !== menuToggle) {
+            mainNav.classList.remove('open');
+            menuToggle.setAttribute('aria-expanded', 'false');
+          }
+        });
+        document.addEventListener('keydown', function(e) {
+          if (e.key === 'Escape' && mainNav.classList.contains('open')) {
+            mainNav.classList.remove('open');
+            menuToggle.setAttribute('aria-expanded', 'false');
+            menuToggle.focus();
+          }
+        });
+      }
+
+      // 回顶按钮
+      var backTop = document.getElementById('backTop');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > window.innerHeight) {
+          backTop.classList.add('show');
+        } else {
+          backTop.classList.remove('show');
+        }
+      });
+      backTop.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // 左侧频道高亮
+      var sections = document.querySelectorAll('main section[id]');
+      var channelLinks = document.querySelectorAll('.channel-box a');
+      if (sections.length && channelLinks.length) {
+        var observer = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              var id = entry.target.getAttribute('id');
+              channelLinks.forEach(function(link) {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + id) {
+                  link.classList.add('active');
+                }
+              });
+            }
+          });
+        }, { rootMargin: '-120px 0px -60% 0px', threshold: 0 });
+        sections.forEach(function(section) { observer.observe(section); });
+      }
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "网爆黑料门",
+    "description": "网爆黑料门聚焦网络争议事件与爆料内容，汇集近期热门争议条目、当事人回应、网友评论及深度事件解析，适合关注网络舆论与事件来龙去脉的读者浏览。",
+    "inLanguage": "zh-CN"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "陈牧“录音门”的47分钟音频是完整的吗？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "从波形分析看不是。音频鉴定博主“波形之外”在11月5日的分析视频中标注了12处音量异常点，其中第12分钟和第31分钟的两处跳变超过15分贝，且背景环境音出现中断。完整原始音频的时长和内容目前只有陈牧方持有，尚未公开。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "林晓冉的聊天记录截图有司法鉴定结果吗？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "截至11月8日没有公开的司法鉴定结论。工作室11月7日声明称已委托律师对截图进行鉴定并提交平台方，但鉴定机构名称、送检时间和预计出结果的时间均未披露。声明中列出的7处时间戳断裂是工作室自行标注的，属于一方主张。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "“夜光剧本2.0”的监控视频为什么被下架？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "平台11月1日公告的理由是“涉嫌侵犯隐私”，具体指未经当事人同意传播可识别个人行踪的监控影像。但下架前该片段已在多个社交平台被二次剪辑成不同版本，其中播放量最高的一版截掉了画面右上角的时间戳，导致后续传播中很少有人注意到10月19日这个日期矛盾。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "周制片人饭局录音里的声音能确认身份吗？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "不能。目前只有发布者“娱乐圈爆料君”在10月30日配文中称“声音是周某某”，但未提供声纹比对或当事人确认。周姓制片人11月2日通过朋友向媒体否认，但拒绝做声纹鉴定。音频中说话人的身份处于“单方指认”状态，既未被证实也未被证伪。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "网红苏苏的小号截图里哪些是可信的？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "苏苏在11月5日直播中承认有两个小号，注册时间分别为2024年3月和2025年6月，这部分可信。12张截图中有5张的IP属地与苏苏大号一致，这5张的账号归属有较高可信度。但3条争议内容是否由苏苏发布，目前只有截图，没有平台后台记录或登录日志佐证。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "王某某片场视频的时间线矛盾怎么解释？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "视频中的场记板日期为9月17日，但该演员9月17日在另一个城市有公开活动记录，航班信息和活动现场照片均可查。可能的解释有三种：场记板日期填写错误、视频拍摄于另一天但场记板未更新、视频被编辑过。目前剧组未回应，视频发布者“片场速递”在11月3日删除了原帖。"
+        }
+      }
+    ]
+  }
+  </script>
+</body>
+            </html>
